@@ -42,3 +42,4 @@ next-env.d.ts
 .n-dx.local.json
 .rex/n-dx_workflow.md
 .rex/execution-log*.jsonl
+.run-logs/

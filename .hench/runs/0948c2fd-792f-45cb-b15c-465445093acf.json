@@ -1,0 +1,33 @@
+{
+  "id": "0948c2fd-792f-45cb-b15c-465445093acf",
+  "taskId": "68a762f0-83d4-474b-93a8-c0e53494bccf",
+  "taskTitle": "Wire page.tsx to render dashboard layout with all components",
+  "startedAt": "2026-06-08T20:54:15.594Z",
+  "status": "running",
+  "turns": 0,
+  "tokenUsage": {
+    "input": 0,
+    "output": 0
+  },
+  "turnTokenUsage": [],
+  "toolCalls": [],
+  "model": "claude-sonnet-4-6",
+  "invocationContext": "cli",
+  "vendor": "claude",
+  "weight": "standard",
+  "diagnostics": {
+    "tokenDiagnosticStatus": "unavailable",
+    "parseMode": "stream-json",
+    "notes": [],
+    "vendor": "claude",
+    "sandbox": "workspace-write",
+    "approvals": "never"
+  },
+  "lastActivityAt": "2026-06-08T20:55:15.667Z",
+  "tokens": {
+    "input": 0,
+    "output": 0,
+    "cached": 0,
+    "total": 0
+  }
+}
