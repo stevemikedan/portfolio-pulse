@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "1.0.0",
+  "primaryLanguage": "svg",
+  "languages": [
+    "svg",
+    "typescript",
+    "other",
+    "javascript",
+    "json",
+    "yaml",
+    "markdown",
+    "css"
+  ],
+  "frameworks": [
+    "nextjs",
+    "react"
+  ],
+  "releaseInfrastructure": [
+    {
+      "kind": "package.json",
+      "evidence": "package.json"
+    }
+  ],
+  "buildSurfaces": [
+    {
+      "path": "pnpm-workspace.yaml",
+      "kind": "pnpm workspace"
+    }
+  ],
+  "ciSurfaces": [],
+  "importGraphQuality": "sparse"
+}

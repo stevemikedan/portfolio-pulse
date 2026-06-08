@@ -1,0 +1,33 @@
+{
+  "components": [
+    {
+      "file": "src/app/layout.tsx",
+      "name": "RootLayout",
+      "kind": "function",
+      "line": 20,
+      "isDefaultExport": true,
+      "conventionExports": []
+    },
+    {
+      "file": "src/app/page.tsx",
+      "name": "Home",
+      "kind": "function",
+      "line": 3,
+      "isDefaultExport": true,
+      "conventionExports": []
+    }
+  ],
+  "usageEdges": [],
+  "routeModules": [],
+  "routeTree": [],
+  "serverRoutes": [],
+  "summary": {
+    "totalComponents": 2,
+    "totalRouteModules": 0,
+    "totalUsageEdges": 0,
+    "totalServerRoutes": 0,
+    "routeConventions": {},
+    "mostUsedComponents": [],
+    "layoutDepth": 0
+  }
+}

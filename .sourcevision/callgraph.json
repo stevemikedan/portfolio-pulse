@@ -1,0 +1,98 @@
+{
+  "functions": [
+    {
+      "file": "src/app/layout.tsx",
+      "name": "RootLayout",
+      "line": 20,
+      "column": 0,
+      "qualifiedName": "RootLayout",
+      "isExported": true
+    },
+    {
+      "file": "src/app/page.tsx",
+      "name": "Home",
+      "line": 3,
+      "column": 0,
+      "qualifiedName": "Home",
+      "isExported": true
+    }
+  ],
+  "edges": [
+    {
+      "callerFile": "eslint.config.mjs",
+      "caller": "<module>",
+      "calleeFile": null,
+      "callee": "defineConfig",
+      "type": "direct",
+      "line": 5,
+      "column": 21
+    },
+    {
+      "callerFile": "eslint.config.mjs",
+      "caller": "<module>",
+      "calleeFile": null,
+      "callee": "globalIgnores",
+      "type": "direct",
+      "line": 9,
+      "column": 2
+    },
+    {
+      "callerFile": "src/app/layout.tsx",
+      "caller": "<module>",
+      "calleeFile": null,
+      "callee": "Geist",
+      "type": "direct",
+      "line": 5,
+      "column": 18
+    },
+    {
+      "callerFile": "src/app/layout.tsx",
+      "caller": "<module>",
+      "calleeFile": null,
+      "callee": "Geist_Mono",
+      "type": "direct",
+      "line": 10,
+      "column": 18
+    }
+  ],
+  "summary": {
+    "totalFunctions": 2,
+    "totalCalls": 4,
+    "filesWithCalls": 2,
+    "mostCalled": [
+      {
+        "qualifiedName": "Geist",
+        "file": "<external>",
+        "callerCount": 1
+      },
+      {
+        "qualifiedName": "Geist_Mono",
+        "file": "<external>",
+        "callerCount": 1
+      },
+      {
+        "qualifiedName": "defineConfig",
+        "file": "<external>",
+        "callerCount": 1
+      },
+      {
+        "qualifiedName": "globalIgnores",
+        "file": "<external>",
+        "callerCount": 1
+      }
+    ],
+    "mostCalling": [
+      {
+        "qualifiedName": "<module>",
+        "file": "eslint.config.mjs",
+        "calleeCount": 2
+      },
+      {
+        "qualifiedName": "<module>",
+        "file": "src/app/layout.tsx",
+        "calleeCount": 2
+      }
+    ],
+    "cycleCount": 0
+  }
+}

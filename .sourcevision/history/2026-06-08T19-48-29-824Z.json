@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0.0",
+  "snapshots": [
+    {
+      "zoneId": "app",
+      "zoneName": "App",
+      "cohesion": 1,
+      "coupling": 0,
+      "riskScore": 0,
+      "fileCount": 3,
+      "timestamp": "2026-06-08T19:48:29.824Z"
+    },
+    {
+      "zoneId": "root",
+      "zoneName": "Root",
+      "cohesion": 0,
+      "coupling": 0,
+      "riskScore": 0.5,
+      "fileCount": 4,
+      "timestamp": "2026-06-08T19:48:29.824Z"
+    }
+  ],
+  "analyzedAt": "2026-06-08T19:48:29.824Z"
+}

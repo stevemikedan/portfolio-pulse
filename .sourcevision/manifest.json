@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "1.0.0",
+  "toolVersion": "0.1.0",
+  "analyzedAt": "2026-06-08T19:48:30.030Z",
+  "targetPath": "C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse",
+  "modules": {
+    "inventory": {
+      "status": "complete",
+      "startedAt": "2026-06-08T19:48:29.466Z",
+      "completedAt": "2026-06-08T19:48:29.569Z"
+    },
+    "imports": {
+      "status": "complete",
+      "startedAt": "2026-06-08T19:48:29.571Z",
+      "completedAt": "2026-06-08T19:48:29.665Z"
+    },
+    "classifications": {
+      "status": "complete",
+      "startedAt": "2026-06-08T19:48:29.667Z",
+      "completedAt": "2026-06-08T19:48:29.737Z"
+    },
+    "zones": {
+      "status": "complete",
+      "startedAt": "2026-06-08T19:48:29.738Z",
+      "completedAt": "2026-06-08T19:48:29.823Z"
+    },
+    "components": {
+      "status": "complete",
+      "startedAt": "2026-06-08T19:48:29.831Z",
+      "completedAt": "2026-06-08T19:48:29.926Z"
+    },
+    "callgraph": {
+      "status": "complete",
+      "startedAt": "2026-06-08T19:48:29.928Z",
+      "completedAt": "2026-06-08T19:48:30.030Z"
+    }
+  },
+  "language": "typescript",
+  "languages": [
+    "typescript"
+  ],
+  "zoneOutputs": true
+}

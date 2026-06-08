@@ -1,0 +1,22 @@
+{
+  "id": "app",
+  "name": "App",
+  "description": "3 files, primarily TypeScript, CSS",
+  "files": [
+    "src/app/globals.css",
+    "src/app/layout.tsx",
+    "src/app/page.tsx"
+  ],
+  "entryPoints": [],
+  "cohesion": 1,
+  "coupling": 0,
+  "fileCount": 3,
+  "lineCount": 124,
+  "riskMetrics": {
+    "cohesion": 1,
+    "coupling": 0,
+    "riskScore": 0,
+    "riskLevel": "healthy",
+    "failsThreshold": false
+  }
+}

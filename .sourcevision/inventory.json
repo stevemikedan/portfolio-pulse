@@ -1,0 +1,211 @@
+{
+  "files": [
+    {
+      "path": ".gitignore",
+      "size": 497,
+      "language": "Other",
+      "lineCount": 42,
+      "hash": "10856741466271ba9ddcc93f86f20ba688d98a7e52d8f56dd5afe385f7412a27",
+      "role": "config",
+      "category": "root",
+      "lastModified": 1780948106849
+    },
+    {
+      "path": "README.md",
+      "size": 1450,
+      "language": "Markdown",
+      "lineCount": 36,
+      "hash": "60b55ff7df79af72590f9524208e46642bc32bdc175cdad41349681c0e2f958f",
+      "role": "docs",
+      "category": "root",
+      "lastModified": 1780948083132
+    },
+    {
+      "path": "eslint.config.mjs",
+      "size": 465,
+      "language": "JavaScript",
+      "lineCount": 18,
+      "hash": "870f1adccecf3051cbcd9fd307cef51d7633cf510979c181a81f4b1797273493",
+      "role": "config",
+      "category": "root",
+      "lastModified": 1780948083152
+    },
+    {
+      "path": "next.config.ts",
+      "size": 133,
+      "language": "TypeScript",
+      "lineCount": 7,
+      "hash": "614bce25b089c3f19b1e17a6346c74b858034040154c6621e7d35303004767cc",
+      "role": "config",
+      "category": "root",
+      "lastModified": 1780948083222
+    },
+    {
+      "path": "package.json",
+      "size": 538,
+      "language": "JSON",
+      "lineCount": 26,
+      "hash": "bb2b500382814fe517bf91bc816b07aedb59a4fa9037fac6c03cc2bdce339336",
+      "role": "config",
+      "category": "root",
+      "lastModified": 1780948084081
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "size": 135454,
+      "language": "YAML",
+      "lineCount": 4115,
+      "hash": "6501af58e2a95c4dbd125f66a39171cd37d7bcb028fc82284f89dc94392d97d6",
+      "role": "generated",
+      "category": "root",
+      "lastModified": 1780948109024
+    },
+    {
+      "path": "pnpm-workspace.yaml",
+      "size": 57,
+      "language": "YAML",
+      "lineCount": 3,
+      "hash": "3ff85564ea77ba0e86c05a6a3cce42828d01a6546f0ba56bb10d6fc046f65845",
+      "role": "other",
+      "category": "root",
+      "lastModified": 1780948084080
+    },
+    {
+      "path": "postcss.config.mjs",
+      "size": 94,
+      "language": "JavaScript",
+      "lineCount": 7,
+      "hash": "dfac7ac2d86d326a0e5adb024e7943c181393ed17a5fcb8f0315b24c7da6ddde",
+      "role": "config",
+      "category": "root",
+      "lastModified": 1780948083169
+    },
+    {
+      "path": "public/file.svg",
+      "size": 391,
+      "language": "SVG",
+      "lineCount": 1,
+      "hash": "2b67812c325c199a02536cdbeea0c593a72f707d323b72ee3e08dbab06753bd4",
+      "role": "asset",
+      "category": "public",
+      "lastModified": 1780948083174
+    },
+    {
+      "path": "public/globe.svg",
+      "size": 1035,
+      "language": "SVG",
+      "lineCount": 1,
+      "hash": "b614b9bf183925957661ac851498fe1d8029fd43a62fbfed86f9e2624a57e7cf",
+      "role": "asset",
+      "category": "public",
+      "lastModified": 1780948083183
+    },
+    {
+      "path": "public/next.svg",
+      "size": 1375,
+      "language": "SVG",
+      "lineCount": 1,
+      "hash": "55995dfad6ecb4945a1e856ddca03c5e16aa5bf13fd21b4df6a74ae79357bcfc",
+      "role": "asset",
+      "category": "public",
+      "lastModified": 1780948083191
+    },
+    {
+      "path": "public/vercel.svg",
+      "size": 128,
+      "language": "SVG",
+      "lineCount": 1,
+      "hash": "f081337b2fee635b455b63275406a3e7f39d6a014e25ad90dab5a67e62a12ac4",
+      "role": "asset",
+      "category": "public",
+      "lastModified": 1780948083198
+    },
+    {
+      "path": "public/window.svg",
+      "size": 385,
+      "language": "SVG",
+      "lineCount": 1,
+      "hash": "644768c4aaeb4767bce293344eeb0c125fb804a94d801440424072202d85e3a1",
+      "role": "asset",
+      "category": "public",
+      "lastModified": 1780948083204
+    },
+    {
+      "path": "src/app/favicon.ico",
+      "size": 25931,
+      "language": "Other",
+      "lineCount": 0,
+      "hash": "2b8ad2d33455a8f736fc3a8ebf8f0bdea8848ad4c0db48a2833bd0f9cd775932",
+      "role": "asset",
+      "category": "src-app",
+      "lastModified": 1780948083027
+    },
+    {
+      "path": "src/app/globals.css",
+      "size": 488,
+      "language": "CSS",
+      "lineCount": 26,
+      "hash": "769edf77bd0d101a2d26e6c5656defba8cd885ff37d92279fa293a2756fe5651",
+      "role": "other",
+      "category": "src-app",
+      "lastModified": 1780948082985
+    },
+    {
+      "path": "src/app/layout.tsx",
+      "size": 719,
+      "language": "TypeScript",
+      "lineCount": 33,
+      "hash": "b98a24027c5c78385b127baf3c2f4f29b18c2c8c19c0beed8c74bb57bd98e4ef",
+      "role": "source",
+      "category": "src-app",
+      "lastModified": 1780948083251
+    },
+    {
+      "path": "src/app/page.tsx",
+      "size": 2882,
+      "language": "TypeScript",
+      "lineCount": 65,
+      "hash": "359fd0c734c7632e73f8299501bda0765a07ab36d0e26e42d92cc93f6ba983c2",
+      "role": "source",
+      "category": "src-app",
+      "lastModified": 1780948083571
+    },
+    {
+      "path": "tsconfig.json",
+      "size": 670,
+      "language": "JSON",
+      "lineCount": 34,
+      "hash": "5c51df4c59f4510d8c7dadf07a5c32132228826a3b331da5e286207b4df7ef9c",
+      "role": "config",
+      "category": "root",
+      "lastModified": 1780948083568
+    }
+  ],
+  "summary": {
+    "totalFiles": 18,
+    "totalLines": 4417,
+    "byLanguage": {
+      "Other": 2,
+      "JavaScript": 2,
+      "TypeScript": 3,
+      "JSON": 2,
+      "YAML": 2,
+      "SVG": 5,
+      "Markdown": 1,
+      "CSS": 1
+    },
+    "byRole": {
+      "config": 6,
+      "generated": 1,
+      "other": 2,
+      "asset": 6,
+      "docs": 1,
+      "source": 2
+    },
+    "byCategory": {
+      "root": 9,
+      "public": 5,
+      "src-app": 4
+    }
+  }
+}

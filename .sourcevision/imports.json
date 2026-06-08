@@ -1,0 +1,62 @@
+{
+  "edges": [
+    {
+      "from": "src/app/layout.tsx",
+      "to": "src/app/globals.css",
+      "type": "static",
+      "symbols": [
+        "*"
+      ],
+      "weight": 1
+    }
+  ],
+  "external": [
+    {
+      "package": "eslint",
+      "importedBy": [
+        "eslint.config.mjs"
+      ],
+      "symbols": [
+        "defineConfig",
+        "globalIgnores"
+      ]
+    },
+    {
+      "package": "eslint-config-next",
+      "importedBy": [
+        "eslint.config.mjs"
+      ],
+      "symbols": [
+        "default"
+      ]
+    },
+    {
+      "package": "next",
+      "importedBy": [
+        "next.config.ts",
+        "src/app/layout.tsx",
+        "src/app/page.tsx"
+      ],
+      "symbols": [
+        "Geist",
+        "Geist_Mono",
+        "Metadata",
+        "NextConfig",
+        "default"
+      ]
+    }
+  ],
+  "summary": {
+    "totalEdges": 1,
+    "totalExternal": 3,
+    "circularCount": 0,
+    "circulars": [],
+    "mostImported": [
+      {
+        "path": "src/app/globals.css",
+        "count": 1
+      }
+    ],
+    "avgImportsPerFile": 1
+  }
+}
