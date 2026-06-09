@@ -12,3 +12,5 @@ acceptanceCriteria:
   - "Maps to Activity type with correct activityType"
   - "Includes repo context"
 ---
+
+**TDD requirement:** Write failing tests first, then implement to make them pass. Run pnpm test to verify.

@@ -13,3 +13,5 @@ acceptanceCriteria:
   - "Identifies unplanned work (activity not matching any task)"
   - "Returns typed GapItem[] with category, severity, description"
 ---
+
+**TDD requirement:** Write failing tests first, then implement to make them pass. Run pnpm test to verify.

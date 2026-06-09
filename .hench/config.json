@@ -20,7 +20,8 @@
       "node",
       "git",
       "tsc",
-      "vitest"
+      "vitest",
+      "pnpm"
     ],
     "commandTimeout": 30000,
     "maxFileSize": 1048576,
@@ -48,5 +49,6 @@
   "maxFailedAttempts": 3,
   "autoCommit": false,
   "planOnlyMaxRetries": 2,
-  "claudePath": "claude"
+  "claudePath": "claude",
+  "fullTestCommand": "pnpm test"
 }

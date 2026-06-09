@@ -14,3 +14,5 @@ acceptanceCriteria:
   - "Returns JSON array on success"
   - "Returns error response with message on failure"
 ---
+
+**TDD requirement:** Write failing tests first, then implement to make them pass. Run pnpm test to verify.

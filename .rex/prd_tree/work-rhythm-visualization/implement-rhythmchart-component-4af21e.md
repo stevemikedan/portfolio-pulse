@@ -14,3 +14,5 @@ acceptanceCriteria:
   - "Dark theme styling matches dashboard"
   - "Accepts RhythmDataPoint[] as props"
 ---
+
+**TDD requirement:** Write failing tests first, then implement to make them pass. Run pnpm test to verify.

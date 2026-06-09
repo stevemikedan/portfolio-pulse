@@ -12,3 +12,5 @@ acceptanceCriteria:
   - "Summary gap score displayed"
   - "Accepts GapItem[] as props"
 ---
+
+**TDD requirement:** Write failing tests first, then implement to make them pass. Run pnpm test to verify.
