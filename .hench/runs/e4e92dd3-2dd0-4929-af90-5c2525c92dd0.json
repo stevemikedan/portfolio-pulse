@@ -1,0 +1,33 @@
+{
+  "id": "e4e92dd3-2dd0-4929-af90-5c2525c92dd0",
+  "taskId": "e0d341d4-a9e9-4ccd-ab68-c57cf8ea5285",
+  "taskTitle": "Implement GapAnalysis component to display gap results",
+  "startedAt": "2026-06-12T19:16:31.542Z",
+  "status": "running",
+  "turns": 0,
+  "tokenUsage": {
+    "input": 0,
+    "output": 0
+  },
+  "turnTokenUsage": [],
+  "toolCalls": [],
+  "model": "claude-sonnet-4-6",
+  "invocationContext": "cli",
+  "vendor": "claude",
+  "weight": "standard",
+  "diagnostics": {
+    "tokenDiagnosticStatus": "unavailable",
+    "parseMode": "stream-json",
+    "notes": [],
+    "vendor": "claude",
+    "sandbox": "workspace-write",
+    "approvals": "never"
+  },
+  "lastActivityAt": "2026-06-12T19:19:01.610Z",
+  "tokens": {
+    "input": 0,
+    "output": 0,
+    "cached": 0,
+    "total": 0
+  }
+}

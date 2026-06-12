@@ -18,4 +18,6 @@ acceptanceCriteria:
   - "Identifies neglected tasks (no activity in 3+ days)"
   - "Identifies unplanned work (activity not matching any task)"
   - "Returns typed GapItem[] with category, severity, description"
+commits:
+  - {"hash":"90d6bf88025aed748258441e32cd1ae89c5281b9","author":"Steve Daniel","authorEmail":"steve@endotech.us","timestamp":"2026-06-12T13:41:51-04:00"}
 ---
