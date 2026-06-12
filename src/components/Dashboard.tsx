@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo, useCallback } from 'react';
+import { useState, useMemo } from 'react';
 import { useTasks } from '@/hooks/useTasks';
 import { useActivity } from '@/hooks/useActivity';
 import { detectGaps } from '@/lib/gap-detection';
@@ -12,13 +12,14 @@ import { GapAnalysis } from './GapAnalysis';
 import { RhythmChart } from './RhythmChart';
 import { NewTaskForm } from './NewTaskForm';
 import { CsvImport } from './CsvImport';
-import type { TaskStatus, Priority } from '@/lib/types';
+import type { Task } from '@/lib/types';
 
 export function Dashboard() {
   const { tasks, loading, error, refresh } = useTasks();
   const { activity } = useActivity();
   const { rhythm } = mockData;
-  const [showNewTaskForm, setShowNewTaskForm] = useState(false);
+  // undefined = form closed · null = creating a new task · Task = editing that task
+  const [formTask, setFormTask] = useState<Task | null | undefined>(undefined);
 
   const stats = useMemo(() => {
     const totalTasks = tasks.length;
@@ -36,35 +37,6 @@ export function Dashboard() {
   }, [tasks]);
 
   const gaps = useMemo(() => detectGaps(tasks, activity), [tasks, activity]);
-
-  const handleStatusChange = useCallback(
-    (id: string, status: TaskStatus) => {
-      fetch(`/api/tasks/${id}`, {
-        method: 'PATCH',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ status }),
-      }).then(() => refresh());
-    },
-    [refresh],
-  );
-
-  const handlePriorityChange = useCallback(
-    (id: string, priority: Priority) => {
-      fetch(`/api/tasks/${id}`, {
-        method: 'PATCH',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ priority }),
-      }).then(() => refresh());
-    },
-    [refresh],
-  );
-
-  const handleDelete = useCallback(
-    (id: string) => {
-      fetch(`/api/tasks/${id}`, { method: 'DELETE' }).then(() => refresh());
-    },
-    [refresh],
-  );
 
   if (loading) {
     return (
@@ -94,11 +66,12 @@ export function Dashboard() {
 
   return (
     <>
-      {showNewTaskForm && (
+      {formTask !== undefined && (
         <NewTaskForm
-          onClose={() => setShowNewTaskForm(false)}
+          task={formTask}
+          onClose={() => setFormTask(undefined)}
           onSuccess={() => {
-            setShowNewTaskForm(false);
+            setFormTask(undefined);
             refresh();
           }}
         />
@@ -114,10 +87,8 @@ export function Dashboard() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <AssignmentsList
             tasks={tasks}
-            onNew={() => setShowNewTaskForm(true)}
-            onStatusChange={handleStatusChange}
-            onPriorityChange={handlePriorityChange}
-            onDelete={handleDelete}
+            onNew={() => setFormTask(null)}
+            onOpen={(t) => setFormTask(t)}
             headerActions={<CsvImport onSuccess={refresh} />}
           />
           <ActivityFeed events={activity} />

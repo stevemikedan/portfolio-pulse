@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { render, screen, fireEvent } from "@testing-library/react";
 import { describe, it, expect, vi } from "vitest";
 import { AssignmentsList } from "./AssignmentsList";
 import type { Task } from "@/lib/types";
@@ -36,9 +36,7 @@ const makeTasks = (overrides: Partial<Task>[] = []): Task[] => [
 ];
 
 const defaultProps = {
-  onStatusChange: noop,
-  onPriorityChange: noop,
-  onDelete: noop,
+  onOpen: noop,
 };
 
 describe("AssignmentsList", () => {
@@ -98,16 +96,18 @@ describe("AssignmentsList", () => {
     expect(screen.getByText("My Assignments")).toBeInTheDocument();
   });
 
-  it("renders a status select for each task", () => {
-    render(<AssignmentsList tasks={makeTasks()} {...defaultProps} />);
-    const selects = screen.getAllByRole("combobox", { name: "Status" });
-    expect(selects).toHaveLength(3);
+  it("calls onOpen with the task when a row is clicked", () => {
+    const onOpen = vi.fn();
+    render(<AssignmentsList tasks={makeTasks()} onOpen={onOpen} />);
+    fireEvent.click(screen.getByText("Done task"));
+    expect(onOpen).toHaveBeenCalledWith(expect.objectContaining({ id: "t3" }));
   });
 
-  it("renders a delete button for each task", () => {
-    render(<AssignmentsList tasks={makeTasks()} {...defaultProps} />);
-    const delButtons = screen.getAllByRole("button", { name: "Delete task" });
-    expect(delButtons).toHaveLength(3);
+  it("does not open the task when the source link is clicked", () => {
+    const onOpen = vi.fn();
+    render(<AssignmentsList tasks={makeTasks()} onOpen={onOpen} />);
+    fireEvent.click(screen.getByText("GH"));
+    expect(onOpen).not.toHaveBeenCalled();
   });
 
   it("renders a New button when onNew is provided", () => {

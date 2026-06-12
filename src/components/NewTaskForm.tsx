@@ -1,20 +1,24 @@
 'use client';
 
 import { useState } from 'react';
-import type { TaskStatus, Priority } from '@/lib/types';
+import type { Task, TaskStatus, Priority } from '@/lib/types';
 
-interface NewTaskFormProps {
+interface TaskFormProps {
+  /** When provided, the form edits this task (PATCH). When null/absent, it creates a new task (POST). */
+  task?: Task | null;
   onClose: () => void;
   onSuccess: () => void;
 }
 
-export function NewTaskForm({ onClose, onSuccess }: NewTaskFormProps) {
-  const [title, setTitle] = useState('');
-  const [status, setStatus] = useState<TaskStatus>('todo');
-  const [priority, setPriority] = useState<Priority>('medium');
-  const [project, setProject] = useState('');
-  const [dueDate, setDueDate] = useState('');
+export function NewTaskForm({ task, onClose, onSuccess }: TaskFormProps) {
+  const isEdit = !!task;
+  const [title, setTitle] = useState(task?.title ?? '');
+  const [status, setStatus] = useState<TaskStatus>(task?.status ?? 'todo');
+  const [priority, setPriority] = useState<Priority>(task?.priority ?? 'medium');
+  const [project, setProject] = useState(task?.project ?? '');
+  const [dueDate, setDueDate] = useState(task?.dueDate ?? '');
   const [submitting, setSubmitting] = useState(false);
+  const [deleting, setDeleting] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
   async function handleSubmit(e: React.FormEvent) {
@@ -22,29 +26,50 @@ export function NewTaskForm({ onClose, onSuccess }: NewTaskFormProps) {
     setSubmitting(true);
     setError(null);
     try {
-      const res = await fetch('/api/tasks', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          title: title.trim(),
-          source: 'notion',
-          status,
-          priority,
-          project: project.trim() || undefined,
-          dueDate: dueDate || undefined,
-        }),
-      });
+      const payload = {
+        title: title.trim(),
+        status,
+        priority,
+        project: project.trim() || undefined,
+        dueDate: dueDate || undefined,
+      };
+      const res = isEdit
+        ? await fetch(`/api/tasks/${task!.id}`, {
+            method: 'PATCH',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload),
+          })
+        : await fetch('/api/tasks', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ ...payload, source: 'notion' }),
+          });
       if (!res.ok) {
         const data = (await res.json()) as { error?: string };
         throw new Error(data.error ?? String(res.status));
       }
       onSuccess();
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Failed to create task');
-    } finally {
+      setError(err instanceof Error ? err.message : 'Failed to save task');
       setSubmitting(false);
     }
   }
+
+  async function handleDelete() {
+    if (!isEdit) return;
+    setDeleting(true);
+    setError(null);
+    try {
+      const res = await fetch(`/api/tasks/${task!.id}`, { method: 'DELETE' });
+      if (!res.ok) throw new Error(String(res.status));
+      onSuccess();
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Failed to delete task');
+      setDeleting(false);
+    }
+  }
+
+  const busy = submitting || deleting;
 
   return (
     <div
@@ -56,7 +81,7 @@ export function NewTaskForm({ onClose, onSuccess }: NewTaskFormProps) {
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex items-center justify-between mb-4">
-          <h2 className="text-sm font-semibold">New Task</h2>
+          <h2 className="text-sm font-semibold">{isEdit ? 'Edit Task' : 'New Task'}</h2>
           <button
             type="button"
             onClick={onClose}
@@ -130,6 +155,16 @@ export function NewTaskForm({ onClose, onSuccess }: NewTaskFormProps) {
           </div>
           {error && <p className="text-xs text-red-400">{error}</p>}
           <div className="flex gap-3 pt-1">
+            {isEdit && (
+              <button
+                type="button"
+                onClick={handleDelete}
+                disabled={busy}
+                className="px-4 py-2 text-sm rounded-lg border border-red-500/40 text-red-400 hover:bg-red-500/10 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+              >
+                {deleting ? 'Deleting…' : 'Delete'}
+              </button>
+            )}
             <button
               type="button"
               onClick={onClose}
@@ -139,10 +174,10 @@ export function NewTaskForm({ onClose, onSuccess }: NewTaskFormProps) {
             </button>
             <button
               type="submit"
-              disabled={submitting || !title.trim()}
+              disabled={busy || !title.trim()}
               className="flex-1 px-4 py-2 text-sm rounded-lg bg-blue-500 text-white hover:bg-blue-600 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
             >
-              {submitting ? 'Creating…' : 'Create'}
+              {isEdit ? (submitting ? 'Saving…' : 'Save') : submitting ? 'Creating…' : 'Create'}
             </button>
           </div>
         </form>
