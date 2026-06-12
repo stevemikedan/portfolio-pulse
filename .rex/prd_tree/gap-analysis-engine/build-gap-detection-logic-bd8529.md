@@ -7,11 +7,12 @@ priority: "critical"
 tags:
   - "core"
   - "critical-path"
+blockedBy:
+  - "de2a4f0e-6e7b-468a-8e03-6857f078c8bb"
+  - "a973d286-fb57-44e9-9cf5-27858fd7a49b"
 acceptanceCriteria:
   - "Function accepts Task[] and Activity[]"
   - "Identifies neglected tasks (no activity in 3+ days)"
   - "Identifies unplanned work (activity not matching any task)"
   - "Returns typed GapItem[] with category, severity, description"
 ---
-
-**TDD requirement:** Write failing tests first, then implement to make them pass. Run pnpm test to verify.

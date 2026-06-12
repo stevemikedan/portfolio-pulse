@@ -18,5 +18,3 @@ acceptanceCriteria:
 commits:
   - {"hash":"be3a161c92723711ed44fdf5178b62e22c324673","author":"Steve Daniel","authorEmail":"steve@endotech.us","timestamp":"2026-06-08T17:07:16-04:00"}
 ---
-
-**TDD requirement:** Write failing tests first, then implement to make them pass. Run pnpm test to verify.

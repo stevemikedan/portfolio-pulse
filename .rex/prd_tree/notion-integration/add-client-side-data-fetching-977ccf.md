@@ -6,10 +6,10 @@ status: "pending"
 priority: "medium"
 tags:
   - "frontend"
+blockedBy:
+  - "a973d286-fb57-44e9-9cf5-27858fd7a49b"
 acceptanceCriteria:
   - "Hook returns tasks, loading, error, refresh"
   - "Fetches on mount"
   - "Handles error states"
 ---
-
-**TDD requirement:** Write failing tests first, then implement to make them pass. Run pnpm test to verify.

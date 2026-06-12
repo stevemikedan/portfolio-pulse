@@ -11,5 +11,3 @@ acceptanceCriteria:
   - "GET /api/notion/databases returns list of accessible databases"
   - "Each entry includes id, title, and icon"
 ---
-
-**TDD requirement:** Write failing tests first, then implement to make them pass. Run pnpm test to verify.

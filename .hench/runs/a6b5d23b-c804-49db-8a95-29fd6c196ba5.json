@@ -1,0 +1,33 @@
+{
+  "id": "a6b5d23b-c804-49db-8a95-29fd6c196ba5",
+  "taskId": "de2a4f0e-6e7b-468a-8e03-6857f078c8bb",
+  "taskTitle": "Create /api/github/activity API route with Octokit setup",
+  "startedAt": "2026-06-12T16:11:10.338Z",
+  "status": "running",
+  "turns": 0,
+  "tokenUsage": {
+    "input": 0,
+    "output": 0
+  },
+  "turnTokenUsage": [],
+  "toolCalls": [],
+  "model": "claude-sonnet-4-6",
+  "invocationContext": "cli",
+  "vendor": "claude",
+  "weight": "standard",
+  "diagnostics": {
+    "tokenDiagnosticStatus": "unavailable",
+    "parseMode": "stream-json",
+    "notes": [],
+    "vendor": "claude",
+    "sandbox": "workspace-write",
+    "approvals": "never"
+  },
+  "lastActivityAt": "2026-06-12T16:12:40.402Z",
+  "tokens": {
+    "input": 0,
+    "output": 0,
+    "cached": 0,
+    "total": 0
+  }
+}

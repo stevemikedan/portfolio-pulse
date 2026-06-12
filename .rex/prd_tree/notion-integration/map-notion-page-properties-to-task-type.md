@@ -12,5 +12,3 @@ acceptanceCriteria:
   - "Sets source field to notion"
   - "Extracts title, status, priority, dueDate, assignee"
 ---
-
-**TDD requirement:** Write failing tests first, then implement to make them pass. Run pnpm test to verify.

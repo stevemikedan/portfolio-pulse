@@ -11,5 +11,3 @@ acceptanceCriteria:
   - "Chart updates when range changes"
   - "Default to 14d"
 ---
-
-**TDD requirement:** Write failing tests first, then implement to make them pass. Run pnpm test to verify.

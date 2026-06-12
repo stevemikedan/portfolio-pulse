@@ -27,11 +27,14 @@ export interface ActivityEvent {
   matchedTaskId?: string; // links activity to a task
 }
 
+export type GapCategory = "neglected" | "unplanned" | "overloaded";
+export type GapSeverity = "warning" | "info" | "danger";
+
 export interface GapItem {
-  type: "neglected" | "unplanned" | "overloaded";
+  type: GapCategory;
   label: string;
   detail: string;
-  severity: "warning" | "info" | "danger";
+  severity: GapSeverity;
   relatedTaskId?: string;
 }
 

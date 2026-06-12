@@ -9,6 +9,6 @@ status: "pending"
 
 | Title | Status |
 |-------|--------|
-| [Add gap types to types.ts — GapItem, GapCategory, GapSeverity](./add-gap-types-to-types-ts-a259cf.md) | pending |
+| [Add gap types to types.ts — GapItem, GapCategory, GapSeverity](./add-gap-types-to-types-ts-a259cf.md) | completed |
 | [Build gap detection logic — compare assignments vs activity](./build-gap-detection-logic-bd8529.md) | pending |
 | [Implement GapAnalysis component to display gap results](./implement-gapanalysis-component-e0d341.md) | pending |
