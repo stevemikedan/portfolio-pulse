@@ -2,6 +2,7 @@
 
 import { useState, useMemo, useCallback } from 'react';
 import { useTasks } from '@/hooks/useTasks';
+import { useActivity } from '@/hooks/useActivity';
 import { detectGaps } from '@/lib/gap-detection';
 import { mockData } from '@/lib/mock-data';
 import { StatCards } from './StatCards';
@@ -15,7 +16,8 @@ import type { TaskStatus, Priority } from '@/lib/types';
 
 export function Dashboard() {
   const { tasks, loading, error, refresh } = useTasks();
-  const { activity, rhythm } = mockData;
+  const { activity } = useActivity();
+  const { rhythm } = mockData;
   const [showNewTaskForm, setShowNewTaskForm] = useState(false);
 
   const stats = useMemo(() => {

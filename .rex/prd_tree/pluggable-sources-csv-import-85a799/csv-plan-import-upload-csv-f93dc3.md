@@ -18,4 +18,6 @@ acceptanceCriteria:
   - "In-app upload control (file input) on the dashboard triggers the import and refetches so new tasks appear"
   - "Malformed CSV / missing required columns produce a clear error message, not a crash"
   - "A sample CSV format is documented (header row) for the demo"
+commits:
+  - {"hash":"561492deecaf4e2eadd3786913ef49d4126a914b","author":"Steve Daniel","authorEmail":"steve@endotech.us","timestamp":"2026-06-12T16:51:04-04:00"}
 ---

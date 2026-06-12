@@ -1,0 +1,33 @@
+{
+  "id": "60a8b9a5-798b-4438-b004-b6066dc133c3",
+  "taskId": "2c4cdc0d-faff-4c62-b306-6055d4e58880",
+  "taskTitle": "Local git activity source — read git log from repo paths, map to ActivityEvent",
+  "startedAt": "2026-06-12T20:52:29.005Z",
+  "status": "running",
+  "turns": 0,
+  "tokenUsage": {
+    "input": 0,
+    "output": 0
+  },
+  "turnTokenUsage": [],
+  "toolCalls": [],
+  "model": "claude-sonnet-4-6",
+  "invocationContext": "cli",
+  "vendor": "claude",
+  "weight": "standard",
+  "diagnostics": {
+    "tokenDiagnosticStatus": "unavailable",
+    "parseMode": "stream-json",
+    "notes": [],
+    "vendor": "claude",
+    "sandbox": "workspace-write",
+    "approvals": "never"
+  },
+  "lastActivityAt": "2026-06-12T20:58:29.140Z",
+  "tokens": {
+    "input": 0,
+    "output": 0,
+    "cached": 0,
+    "total": 0
+  }
+}

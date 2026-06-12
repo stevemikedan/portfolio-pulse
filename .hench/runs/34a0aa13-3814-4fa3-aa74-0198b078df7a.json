@@ -3,31 +3,1048 @@
   "taskId": "f93dc3fa-33c6-4973-893e-1fda07e2b869",
   "taskTitle": "CSV plan import — upload CSV, parse to tasks, insert into Prisma",
   "startedAt": "2026-06-12T20:46:41.656Z",
-  "status": "running",
-  "turns": 0,
+  "status": "completed",
+  "turns": 34,
   "tokenUsage": {
-    "input": 0,
-    "output": 0
+    "input": 208,
+    "output": 16911,
+    "cacheCreationInput": 197292,
+    "cacheReadInput": 4730262
   },
-  "turnTokenUsage": [],
-  "toolCalls": [],
+  "turnTokenUsage": [
+    {
+      "turn": 1,
+      "input": 3,
+      "output": 5,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 16861,
+      "cacheReadInput": 21089
+    },
+    {
+      "turn": 1,
+      "input": 3,
+      "output": 5,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 16861,
+      "cacheReadInput": 21089
+    },
+    {
+      "turn": 1,
+      "input": 3,
+      "output": 5,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 16861,
+      "cacheReadInput": 21089
+    },
+    {
+      "turn": 1,
+      "input": 3,
+      "output": 5,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 16861,
+      "cacheReadInput": 21089
+    },
+    {
+      "turn": 1,
+      "input": 1,
+      "output": 60,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 312,
+      "cacheReadInput": 37950
+    },
+    {
+      "turn": 1,
+      "input": 1,
+      "output": 8,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 2544,
+      "cacheReadInput": 38262
+    },
+    {
+      "turn": 2,
+      "input": 1,
+      "output": 8,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 2544,
+      "cacheReadInput": 38262
+    },
+    {
+      "turn": 2,
+      "input": 1,
+      "output": 8,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 2544,
+      "cacheReadInput": 38262
+    },
+    {
+      "turn": 2,
+      "input": 1,
+      "output": 8,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 2544,
+      "cacheReadInput": 38262
+    },
+    {
+      "turn": 2,
+      "input": 1,
+      "output": 8,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 2544,
+      "cacheReadInput": 38262
+    },
+    {
+      "turn": 2,
+      "input": 1,
+      "output": 32,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 2955,
+      "cacheReadInput": 40806
+    },
+    {
+      "turn": 3,
+      "input": 1,
+      "output": 32,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 2955,
+      "cacheReadInput": 40806
+    },
+    {
+      "turn": 3,
+      "input": 1,
+      "output": 32,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 2955,
+      "cacheReadInput": 40806
+    },
+    {
+      "turn": 3,
+      "input": 1,
+      "output": 32,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 2955,
+      "cacheReadInput": 40806
+    },
+    {
+      "turn": 3,
+      "input": 1,
+      "output": 35,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 3981,
+      "cacheReadInput": 43761
+    },
+    {
+      "turn": 4,
+      "input": 1,
+      "output": 35,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 3981,
+      "cacheReadInput": 43761
+    },
+    {
+      "turn": 4,
+      "input": 1,
+      "output": 35,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 3981,
+      "cacheReadInput": 43761
+    },
+    {
+      "turn": 4,
+      "input": 1,
+      "output": 35,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 3981,
+      "cacheReadInput": 43761
+    },
+    {
+      "turn": 4,
+      "input": 1,
+      "output": 46,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 3346,
+      "cacheReadInput": 47742
+    },
+    {
+      "turn": 5,
+      "input": 1,
+      "output": 46,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 3346,
+      "cacheReadInput": 47742
+    },
+    {
+      "turn": 5,
+      "input": 1,
+      "output": 46,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 3346,
+      "cacheReadInput": 47742
+    },
+    {
+      "turn": 5,
+      "input": 1,
+      "output": 63,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 195,
+      "cacheReadInput": 51088
+    },
+    {
+      "turn": 5,
+      "input": 1,
+      "output": 31,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 264,
+      "cacheReadInput": 51283
+    },
+    {
+      "turn": 6,
+      "input": 1,
+      "output": 31,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 264,
+      "cacheReadInput": 51283
+    },
+    {
+      "turn": 6,
+      "input": 1,
+      "output": 31,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 264,
+      "cacheReadInput": 51283
+    },
+    {
+      "turn": 6,
+      "input": 1,
+      "output": 31,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 264,
+      "cacheReadInput": 51283
+    },
+    {
+      "turn": 7,
+      "input": 36,
+      "output": 1,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 7111,
+      "cacheReadInput": 51547
+    },
+    {
+      "turn": 7,
+      "input": 36,
+      "output": 1,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 7111,
+      "cacheReadInput": 51547
+    },
+    {
+      "turn": 7,
+      "input": 1,
+      "output": 58,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 446,
+      "cacheReadInput": 58658
+    },
+    {
+      "turn": 8,
+      "input": 1,
+      "output": 2,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 226,
+      "cacheReadInput": 59104
+    },
+    {
+      "turn": 8,
+      "input": 1,
+      "output": 2,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 226,
+      "cacheReadInput": 59104
+    },
+    {
+      "turn": 9,
+      "input": 1,
+      "output": 4,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 859,
+      "cacheReadInput": 59330
+    },
+    {
+      "turn": 9,
+      "input": 1,
+      "output": 4,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 859,
+      "cacheReadInput": 59330
+    },
+    {
+      "turn": 10,
+      "input": 1,
+      "output": 2,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 1504,
+      "cacheReadInput": 60189
+    },
+    {
+      "turn": 10,
+      "input": 1,
+      "output": 2,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 1504,
+      "cacheReadInput": 60189
+    },
+    {
+      "turn": 11,
+      "input": 1,
+      "output": 2,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 883,
+      "cacheReadInput": 61693
+    },
+    {
+      "turn": 11,
+      "input": 1,
+      "output": 2,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 883,
+      "cacheReadInput": 61693
+    },
+    {
+      "turn": 11,
+      "input": 1,
+      "output": 63,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 632,
+      "cacheReadInput": 62576
+    },
+    {
+      "turn": 12,
+      "input": 1,
+      "output": 1,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 557,
+      "cacheReadInput": 63208
+    },
+    {
+      "turn": 12,
+      "input": 1,
+      "output": 1,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 557,
+      "cacheReadInput": 63208
+    },
+    {
+      "turn": 13,
+      "input": 1,
+      "output": 3,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 634,
+      "cacheReadInput": 63765
+    },
+    {
+      "turn": 13,
+      "input": 1,
+      "output": 3,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 634,
+      "cacheReadInput": 63765
+    },
+    {
+      "turn": 13,
+      "input": 1,
+      "output": 64,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 271,
+      "cacheReadInput": 64399
+    },
+    {
+      "turn": 14,
+      "input": 1,
+      "output": 2,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 328,
+      "cacheReadInput": 64670
+    },
+    {
+      "turn": 14,
+      "input": 1,
+      "output": 2,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 328,
+      "cacheReadInput": 64670
+    },
+    {
+      "turn": 15,
+      "input": 1,
+      "output": 4,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 270,
+      "cacheReadInput": 64998
+    },
+    {
+      "turn": 15,
+      "input": 1,
+      "output": 4,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 270,
+      "cacheReadInput": 64998
+    },
+    {
+      "turn": 16,
+      "input": 1,
+      "output": 1,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 155,
+      "cacheReadInput": 65268
+    },
+    {
+      "turn": 16,
+      "input": 1,
+      "output": 1,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 155,
+      "cacheReadInput": 65268
+    },
+    {
+      "turn": 17,
+      "input": 1,
+      "output": 2,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 333,
+      "cacheReadInput": 65423
+    },
+    {
+      "turn": 17,
+      "input": 1,
+      "output": 2,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 333,
+      "cacheReadInput": 65423
+    },
+    {
+      "turn": 17,
+      "input": 1,
+      "output": 49,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 733,
+      "cacheReadInput": 65756
+    },
+    {
+      "turn": 18,
+      "input": 1,
+      "output": 1,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 416,
+      "cacheReadInput": 66489
+    },
+    {
+      "turn": 18,
+      "input": 1,
+      "output": 1,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 416,
+      "cacheReadInput": 66489
+    },
+    {
+      "turn": 18,
+      "input": 3,
+      "output": 7,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 571,
+      "cacheReadInput": 66905
+    },
+    {
+      "turn": 18,
+      "input": 3,
+      "output": 7,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 571,
+      "cacheReadInput": 66905
+    },
+    {
+      "turn": 18,
+      "input": 1,
+      "output": 57,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 270,
+      "cacheReadInput": 67476
+    },
+    {
+      "turn": 18,
+      "input": 1,
+      "output": 57,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 235,
+      "cacheReadInput": 67746
+    },
+    {
+      "turn": 19,
+      "input": 1,
+      "output": 1,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 305,
+      "cacheReadInput": 67981
+    },
+    {
+      "turn": 19,
+      "input": 67,
+      "output": 15785,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 47197,
+      "cacheReadInput": 1599162
+    }
+  ],
+  "toolCalls": [
+    {
+      "turn": 1,
+      "tool": "Bash",
+      "input": {
+        "command": "ls C:/Users/steve/dev/Claude\\ CoWork/portfolio-pulse/src",
+        "description": "List project source structure"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 1,
+      "tool": "Bash",
+      "input": {
+        "command": "ls C:/Users/steve/dev/Claude\\ CoWork/portfolio-pulse/src/app/api",
+        "description": "List API routes"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 1,
+      "tool": "Glob",
+      "input": {
+        "pattern": "src/**/*",
+        "path": "C:/Users/steve/dev/Claude CoWork/portfolio-pulse"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 2,
+      "tool": "Read",
+      "input": {
+        "file_path": "C:/Users/steve/dev/Claude CoWork/portfolio-pulse/src/app/api/tasks/route.ts"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 2,
+      "tool": "Read",
+      "input": {
+        "file_path": "C:/Users/steve/dev/Claude CoWork/portfolio-pulse/src/lib/task-helpers.ts"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 2,
+      "tool": "Read",
+      "input": {
+        "file_path": "C:/Users/steve/dev/Claude CoWork/portfolio-pulse/src/lib/types.ts"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 3,
+      "tool": "Read",
+      "input": {
+        "file_path": "C:/Users/steve/dev/Claude CoWork/portfolio-pulse/src/components/Dashboard.tsx"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 3,
+      "tool": "Read",
+      "input": {
+        "file_path": "C:/Users/steve/dev/Claude CoWork/portfolio-pulse/src/components/NewTaskForm.tsx"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 4,
+      "tool": "Read",
+      "input": {
+        "file_path": "C:/Users/steve/dev/Claude CoWork/portfolio-pulse/src/components/AssignmentsList.tsx"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 4,
+      "tool": "Read",
+      "input": {
+        "file_path": "C:/Users/steve/dev/Claude CoWork/portfolio-pulse/package.json"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 5,
+      "tool": "Glob",
+      "input": {
+        "pattern": "prisma/**/*",
+        "path": "C:/Users/steve/dev/Claude CoWork/portfolio-pulse"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 5,
+      "tool": "Read",
+      "input": {
+        "file_path": "C:/Users/steve/dev/Claude CoWork/portfolio-pulse/prisma/schema.prisma"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 6,
+      "tool": "Bash",
+      "input": {
+        "command": "ls \"C:/Users/steve/dev/Claude CoWork/portfolio-pulse/public\" 2>/dev/null || echo \"no public dir\"",
+        "description": "Check if public directory exists"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 6,
+      "tool": "Bash",
+      "input": {
+        "command": "ls \"C:/Users/steve/dev/Claude CoWork/portfolio-pulse/src/app/api\"",
+        "description": "List API directories"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 7,
+      "tool": "Edit",
+      "input": {
+        "replace_all": false,
+        "file_path": "C:/Users/steve/dev/Claude CoWork/portfolio-pulse/src/lib/types.ts",
+        "old_string": "export type Priority = \"high\" | \"medium\" | \"low\" | \"none\";\nexport type TaskSource = \"notion\" | \"github\";\nexport type TaskStatus = \"todo\" | \"in_progress\" | \"done\" | \"blocked\";",
+        "new_string": "export type Priority = \"high\" | \"medium\" | \"low\" | \"none\";\nexport type TaskSource = \"notion\" | \"github\" | \"csv\";\nexport type TaskStatus = \"todo\" | \"in_progress\" | \"done\" | \"blocked\";"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 7,
+      "tool": "Edit",
+      "input": {
+        "replace_all": false,
+        "file_path": "C:/Users/steve/dev/Claude CoWork/portfolio-pulse/src/lib/task-helpers.ts",
+        "old_string": "export const VALID_SOURCES = [\"notion\", \"github\"] as const;",
+        "new_string": "export const VALID_SOURCES = [\"notion\", \"github\", \"csv\"] as const;"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 8,
+      "tool": "Write",
+      "input": {
+        "file_path": "C:/Users/steve/dev/Claude CoWork/portfolio-pulse/src/lib/csv-parser.ts",
+        "content": "/**\n * Minimal RFC-4180 compliant CSV parser.\n * Handles quoted fields, escaped double-quotes, and CRLF/LF line endings.\n * Returns an array of objects keyed by the lowercased header row values.\n */\nexport function parseCSV(text: string): Record<string, string>[] {\n  const lines = splitLines(text);\n  if (lines.length === 0) return [];\n\n  const headers = splitCSVLine(lines[0]).map((h) => h.toLowerCase().trim());\n\n  if (headers.every((h) => h === \"\")) return [];\n\n  const rows: Record<string, string>[] = [];\n  for (let i = 1; i < lines.length; i++) {\n    const line = lines[i];\n    if (!line.trim()) continue;\n    const values = splitCSVLine(line);\n    const row: Record<string, string> = {};\n    headers.forEach((h, idx) => {\n      row[h] = (values[idx] ?? \"\").trim();\n    });\n    rows.push(row);\n  }\n  return rows;\n}\n\nfunction splitLines(text: string): string[] {\n  // Split on CRLF or LF, preserve quoted newlines within fields\n  const lines: string[] = [];\n  let current = \"\";\n  let inQuotes = false;\n\n  for (let i = 0; i < text.length; i++) {\n    const ch = text[i];\n    if (ch === '\"') {\n      if (inQuotes && text[i + 1] === '\"') {\n        current += '\"';\n        i++;\n      } else {\n        inQuotes = !inQuotes;\n        current += ch;\n      }\n    } else if ((ch === \"\\r\" || ch === \"\\n\") && !inQuotes) {\n      if (ch === \"\\r\" && text[i + 1] === \"\\n\") i++;\n      lines.push(current);\n      current = \"\";\n    } else {\n      current += ch;\n    }\n  }\n  if (current) lines.push(current);\n  return lines;\n}\n\nfunction splitCSVLine(line: string): string[] {\n  const fields: string[] = [];\n  let current = \"\";\n  let inQuotes = false;\n\n  for (let i = 0; i < line.length; i++) {\n    const ch = line[i];\n    if (ch === '\"') {\n      if (inQuotes && line[i + 1] === '\"') {\n        current += '\"';\n        i++;\n      } else {\n        inQuotes = !inQuotes;\n      }\n    } else if (ch === \",\" && !inQuotes) {\n      fields.push(current);\n      current = \"\";\n    } else {\n      current += ch;\n    }\n  }\n  fields.push(current);\n  return fields;\n}\n"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 9,
+      "tool": "Write",
+      "input": {
+        "file_path": "C:/Users/steve/dev/Claude CoWork/portfolio-pulse/src/app/api/import/csv/route.ts",
+        "content": "import { NextResponse } from \"next/server\";\nimport { prisma } from \"@/lib/prisma\";\nimport { parseCSV } from \"@/lib/csv-parser\";\nimport { VALID_STATUSES, VALID_PRIORITIES } from \"@/lib/task-helpers\";\n\n// Column name aliases — all lowercased, mapped to canonical column names.\nconst COLUMN_ALIASES: Record<string, string> = {\n  name: \"title\",\n  task: \"title\",\n  \"task name\": \"title\",\n  \"due date\": \"duedate\",\n  \"due_date\": \"duedate\",\n  due: \"duedate\",\n  tag: \"tags\",\n  label: \"tags\",\n  labels: \"tags\",\n  prio: \"priority\",\n  proj: \"project\",\n};\n\nfunction normalizeHeader(h: string): string {\n  const lower = h.toLowerCase().trim();\n  return COLUMN_ALIASES[lower] ?? lower.replace(/[\\s_-]+/g, \"\");\n}\n\n// Deterministic ID derived from the CSV title so re-importing updates rather than duplicates.\nfunction makeDeterministicId(title: string): string {\n  return \"csv-\" + Buffer.from(title.toLowerCase().trim()).toString(\"base64url\");\n}\n\nexport async function POST(request: Request) {\n  let formData: FormData;\n  try {\n    formData = await request.formData();\n  } catch {\n    return NextResponse.json({ error: \"Expected multipart/form-data\" }, { status: 400 });\n  }\n\n  const file = formData.get(\"file\");\n  if (!file || !(file instanceof Blob)) {\n    return NextResponse.json({ error: \"No file uploaded (field name: file)\" }, { status: 400 });\n  }\n\n  const text = await file.text();\n\n  let rows: Record<string, string>[];\n  try {\n    rows = parseCSV(text);\n  } catch {\n    return NextResponse.json({ error: \"Failed to parse CSV\" }, { status: 400 });\n  }\n\n  if (rows.length === 0) {\n    return NextResponse.json(\n      { error: \"CSV has no data rows. Expected a header row followed by at least one data row.\" },\n      { status: 400 },\n    );\n  }\n\n  // Check that the 'title' column exists (after alias normalization).\n  const normalizedKeys = Object.keys(rows[0]).map(normalizeHeader);\n  if (!normalizedKeys.includes(\"title\")) {\n    return NextResponse.json(\n      {\n        error:\n          'Missing required column \"title\". ' +\n          \"Accepted header names: title, name, task. \" +\n          \"Sample header: title,status,priority,project,dueDate,tags\",\n      },\n      { status: 400 },\n    );\n  }\n\n  let imported = 0;\n  let skipped = 0;\n  const errors: string[] = [];\n\n  for (let i = 0; i < rows.length; i++) {\n    // Normalize raw keys to canonical names.\n    const raw = rows[i];\n    const row: Record<string, string> = {};\n    for (const [k, v] of Object.entries(raw)) {\n      row[normalizeHeader(k)] = v;\n    }\n\n    const title = row.title?.trim();\n    if (!title) {\n      skipped++;\n      continue;\n    }\n\n    const rawStatus = row.status?.toLowerCase().trim() ?? \"\";\n    const status = (VALID_STATUSES as readonly string[]).includes(rawStatus) ? rawStatus : \"todo\";\n\n    const rawPriority = row.priority?.toLowerCase().trim() ?? \"\";\n    const priority = (VALID_PRIORITIES as readonly string[]).includes(rawPriority)\n      ? rawPriority\n      : \"medium\";\n\n    // Tags: semicolon-separated list.\n    const tags =\n      row.tags?.trim()\n        ? row.tags.split(\";\").map((t) => t.trim()).filter(Boolean)\n        : undefined;\n\n    // dueDate: accept YYYY-MM-DD or any Date-parseable string.\n    let dueDate: string | null = null;\n    if (row.duedate?.trim()) {\n      const d = new Date(row.duedate.trim());\n      if (!isNaN(d.getTime())) {\n        dueDate = row.duedate.trim();\n      }\n    }\n\n    const id = makeDeterministicId(title);\n\n    try {\n      await prisma.task.upsert({\n        where: { id },\n        create: {\n          id,\n          title,\n          source: \"csv\",\n          status,\n          priority,\n          project: row.project?.trim() || null,\n          dueDate,\n          tags: tags ? JSON.stringify(tags) : null,\n          sourceUrl: null,\n          lastActivity: null,\n          assignee: null,\n        },\n        update: {\n          title,\n          status,\n          priority,\n          project: row.project?.trim() || null,\n          dueDate,\n          tags: tags ? JSON.stringify(tags) : null,\n        },\n      });\n      imported++;\n    } catch (err) {\n      errors.push(\n        `Row ${i + 2}: ${err instanceof Error ? err.message : String(err)}`,\n      );\n    }\n  }\n\n  return NextResponse.json({ imported, skipped, errors });\n}\n"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 10,
+      "tool": "Write",
+      "input": {
+        "file_path": "C:/Users/steve/dev/Claude CoWork/portfolio-pulse/src/components/CsvImport.tsx",
+        "content": "\"use client\";\n\nimport { useRef, useState } from \"react\";\n\ninterface CsvImportProps {\n  onSuccess: () => void;\n}\n\ninterface ImportResult {\n  imported: number;\n  skipped: number;\n  errors: string[];\n}\n\nexport function CsvImport({ onSuccess }: CsvImportProps) {\n  const inputRef = useRef<HTMLInputElement>(null);\n  const [uploading, setUploading] = useState(false);\n  const [result, setResult] = useState<ImportResult | null>(null);\n  const [errorMsg, setErrorMsg] = useState<string | null>(null);\n\n  async function handleFile(file: File) {\n    setUploading(true);\n    setResult(null);\n    setErrorMsg(null);\n\n    const formData = new FormData();\n    formData.append(\"file\", file);\n\n    try {\n      const res = await fetch(\"/api/import/csv\", { method: \"POST\", body: formData });\n      const data = (await res.json()) as ImportResult & { error?: string };\n\n      if (!res.ok) {\n        setErrorMsg(data.error ?? `Error ${res.status}`);\n        return;\n      }\n\n      setResult(data);\n      if (data.imported > 0) onSuccess();\n    } catch (err) {\n      setErrorMsg(err instanceof Error ? err.message : \"Upload failed\");\n    } finally {\n      setUploading(false);\n    }\n  }\n\n  const label =\n    result && !errorMsg\n      ? `${result.imported} imported${result.skipped > 0 ? `, ${result.skipped} skipped` : \"\"}${result.errors.length > 0 ? `, ${result.errors.length} errors` : \"\"}`\n      : null;\n\n  return (\n    <div className=\"flex items-center gap-2\">\n      <input\n        ref={inputRef}\n        type=\"file\"\n        accept=\".csv,text/csv\"\n        className=\"hidden\"\n        onChange={(e) => {\n          const file = e.target.files?.[0];\n          if (file) {\n            void handleFile(file);\n            e.target.value = \"\";\n          }\n        }}\n      />\n      <button\n        type=\"button\"\n        onClick={() => inputRef.current?.click()}\n        disabled={uploading}\n        className=\"flex-shrink-0 text-xs px-2.5 py-1 rounded-lg border border-[var(--border)] hover:bg-[var(--bg-hover)] transition-colors disabled:opacity-50 disabled:cursor-not-allowed\"\n      >\n        {uploading ? \"Importing…\" : \"Import CSV\"}\n      </button>\n      {label && <span className=\"text-xs text-emerald-400\">{label}</span>}\n      {errorMsg && <span className=\"text-xs text-red-400\">{errorMsg}</span>}\n    </div>\n  );\n}\n"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 11,
+      "tool": "Edit",
+      "input": {
+        "replace_all": false,
+        "file_path": "C:/Users/steve/dev/Claude CoWork/portfolio-pulse/src/components/AssignmentsList.tsx",
+        "old_string": "\"use client\";\n\nimport type { Task, TaskStatus, Priority } from \"@/lib/types\";\n\nconst statusColors: Record<string, string> = {\n  todo: \"bg-purple-500/10 text-purple-400\",\n  in_progress: \"bg-amber-500/10 text-amber-400\",\n  done: \"bg-emerald-500/10 text-emerald-400\",\n  blocked: \"bg-red-500/10 text-red-400\",\n};\n\nconst priorityDot: Record<string, string> = {\n  high: \"bg-red-400\",\n  medium: \"bg-amber-400\",\n  low: \"bg-blue-400\",\n  none: \"bg-gray-500\",\n};\n\nconst sourceIcon: Record<string, string> = {\n  notion: \"N\",\n  github: \"GH\",\n};",
+        "new_string": "\"use client\";\n\nimport type { Task, TaskStatus, Priority } from \"@/lib/types\";\n\nconst statusColors: Record<string, string> = {\n  todo: \"bg-purple-500/10 text-purple-400\",\n  in_progress: \"bg-amber-500/10 text-amber-400\",\n  done: \"bg-emerald-500/10 text-emerald-400\",\n  blocked: \"bg-red-500/10 text-red-400\",\n};\n\nconst priorityDot: Record<string, string> = {\n  high: \"bg-red-400\",\n  medium: \"bg-amber-400\",\n  low: \"bg-blue-400\",\n  none: \"bg-gray-500\",\n};\n\nconst sourceIcon: Record<string, string> = {\n  notion: \"N\",\n  github: \"GH\",\n  csv: \"CSV\",\n};"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 11,
+      "tool": "Edit",
+      "input": {
+        "replace_all": false,
+        "file_path": "C:/Users/steve/dev/Claude CoWork/portfolio-pulse/src/components/AssignmentsList.tsx",
+        "old_string": "interface AssignmentsListProps {\n  tasks: Task[];\n  onNew?: () => void;\n  onStatusChange: (id: string, status: TaskStatus) => void;\n  onPriorityChange: (id: string, priority: Priority) => void;\n  onDelete: (id: string) => void;\n}\n\nexport function AssignmentsList({\n  tasks,\n  onNew,\n  onStatusChange,\n  onPriorityChange,\n  onDelete,\n}: AssignmentsListProps) {",
+        "new_string": "interface AssignmentsListProps {\n  tasks: Task[];\n  onNew?: () => void;\n  onStatusChange: (id: string, status: TaskStatus) => void;\n  onPriorityChange: (id: string, priority: Priority) => void;\n  onDelete: (id: string) => void;\n  headerActions?: React.ReactNode;\n}\n\nexport function AssignmentsList({\n  tasks,\n  onNew,\n  onStatusChange,\n  onPriorityChange,\n  onDelete,\n  headerActions,\n}: AssignmentsListProps) {"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 12,
+      "tool": "Edit",
+      "input": {
+        "replace_all": false,
+        "file_path": "C:/Users/steve/dev/Claude CoWork/portfolio-pulse/src/components/AssignmentsList.tsx",
+        "old_string": "      <div className=\"px-4 py-3 border-b border-[var(--border)] flex items-center justify-between gap-2\">\n        <div>\n          <h2 className=\"text-sm font-semibold\">My Assignments</h2>\n          <p className=\"text-xs text-[var(--text-3)]\">\n            From Notion + GitHub — sorted by status &amp; priority\n          </p>\n        </div>\n        {onNew && (\n          <button\n            type=\"button\"\n            onClick={onNew}\n            className=\"flex-shrink-0 text-xs px-2.5 py-1 rounded-lg bg-blue-500 text-white hover:bg-blue-600 transition-colors\"\n          >\n            + New\n          </button>\n        )}\n      </div>",
+        "new_string": "      <div className=\"px-4 py-3 border-b border-[var(--border)] flex items-center justify-between gap-2\">\n        <div>\n          <h2 className=\"text-sm font-semibold\">My Assignments</h2>\n          <p className=\"text-xs text-[var(--text-3)]\">\n            From Notion + GitHub — sorted by status &amp; priority\n          </p>\n        </div>\n        <div className=\"flex items-center gap-2 flex-shrink-0\">\n          {headerActions}\n          {onNew && (\n            <button\n              type=\"button\"\n              onClick={onNew}\n              className=\"text-xs px-2.5 py-1 rounded-lg bg-blue-500 text-white hover:bg-blue-600 transition-colors\"\n            >\n              + New\n            </button>\n          )}\n        </div>\n      </div>"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 13,
+      "tool": "Edit",
+      "input": {
+        "replace_all": false,
+        "file_path": "C:/Users/steve/dev/Claude CoWork/portfolio-pulse/src/components/Dashboard.tsx",
+        "old_string": "import { NewTaskForm } from './NewTaskForm';\nimport type { TaskStatus, Priority } from '@/lib/types';",
+        "new_string": "import { NewTaskForm } from './NewTaskForm';\nimport { CsvImport } from './CsvImport';\nimport type { TaskStatus, Priority } from '@/lib/types';"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 13,
+      "tool": "Edit",
+      "input": {
+        "replace_all": false,
+        "file_path": "C:/Users/steve/dev/Claude CoWork/portfolio-pulse/src/components/Dashboard.tsx",
+        "old_string": "          <AssignmentsList\n            tasks={tasks}\n            onNew={() => setShowNewTaskForm(true)}\n            onStatusChange={handleStatusChange}\n            onPriorityChange={handlePriorityChange}\n            onDelete={handleDelete}\n          />",
+        "new_string": "          <AssignmentsList\n            tasks={tasks}\n            onNew={() => setShowNewTaskForm(true)}\n            onStatusChange={handleStatusChange}\n            onPriorityChange={handlePriorityChange}\n            onDelete={handleDelete}\n            headerActions={<CsvImport onSuccess={refresh} />}\n          />"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 14,
+      "tool": "Write",
+      "input": {
+        "file_path": "C:/Users/steve/dev/Claude CoWork/portfolio-pulse/public/sample-tasks.csv",
+        "content": "title,status,priority,project,dueDate,tags\nBuild login page,in_progress,high,MyApp,2026-06-20,frontend;auth\nWrite API docs,todo,medium,MyApp,,documentation\nFix auth bug,blocked,high,MyApp,2026-06-15,backend;auth\nDeploy to staging,todo,low,MyApp,,devops\nCode review backlog,todo,medium,MyApp,,review\nUpdate dependencies,todo,low,MyApp,,maintenance;devops\n"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 15,
+      "tool": "Bash",
+      "input": {
+        "command": "cd \"C:/Users/steve/dev/Claude CoWork/portfolio-pulse\" && npx tsc --noEmit 2>&1",
+        "description": "Run TypeScript type check",
+        "timeout": 60000
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 16,
+      "tool": "Bash",
+      "input": {
+        "command": "cd \"C:/Users/steve/dev/Claude CoWork/portfolio-pulse\" && npx vitest run 2>&1",
+        "description": "Run test suite",
+        "timeout": 60000
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 17,
+      "tool": "Bash",
+      "input": {
+        "command": "cd \"C:/Users/steve/dev/Claude CoWork/portfolio-pulse\" && git add -A",
+        "description": "Stage all changes"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 17,
+      "tool": "Write",
+      "input": {
+        "file_path": "C:/Users/steve/dev/Claude CoWork/portfolio-pulse/.hench-commit-msg.txt",
+        "content": "feat: add CSV import — POST /api/import/csv, CsvImport UI, csv source type\n\n- src/lib/csv-parser.ts: minimal RFC-4180 CSV parser (quoted fields, CRLF)\n- src/app/api/import/csv/route.ts: multipart upload endpoint; maps headers\n  (with aliases) to Task shape; upserts by deterministic id; returns\n  { imported, skipped, errors } without throwing on bad rows\n- src/components/CsvImport.tsx: file-input button wired to the endpoint;\n  shows inline success/error feedback and calls onSuccess() to refetch\n- src/components/AssignmentsList.tsx: accepts headerActions prop; renders\n  CsvImport next to +New; adds csv to sourceIcon map\n- src/components/Dashboard.tsx: passes <CsvImport onSuccess={refresh} />\n  as headerActions\n- src/lib/types.ts: adds \"csv\" to TaskSource union\n- src/lib/task-helpers.ts: adds \"csv\" to VALID_SOURCES\n- public/sample-tasks.csv: sample CSV documenting accepted headers\n"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 18,
+      "tool": "ToolSearch",
+      "input": {
+        "query": "select:mcp__rex__update_task_status,mcp__rex__append_log",
+        "max_results": 2
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 18,
+      "tool": "mcp__rex__update_task_status",
+      "input": {
+        "id": "f93dc3fa-33c6-4973-893e-1fda07e2b869",
+        "status": "completed",
+        "resolutionType": "code-change",
+        "resolutionDetail": "Implemented POST /api/import/csv with multipart form upload, RFC-4180 CSV parser, upsert-by-deterministic-id, and CsvImport UI component wired into the dashboard AssignmentsList header."
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 18,
+      "tool": "mcp__rex__update_task_status",
+      "input": {
+        "id": "f93dc3fa-33c6-4973-893e-1fda07e2b869",
+        "status": "completed",
+        "resolutionType": "code-change",
+        "resolutionDetail": "Implemented POST /api/import/csv with multipart form upload, RFC-4180 CSV parser, upsert-by-deterministic-id, and CsvImport UI component wired into the dashboard AssignmentsList header."
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 18,
+      "tool": "mcp__rex__append_log",
+      "input": {
+        "event": "task_completed",
+        "itemId": "f93dc3fa-33c6-4973-893e-1fda07e2b869",
+        "detail": "CSV import implemented. New files: src/lib/csv-parser.ts (RFC-4180 parser), src/app/api/import/csv/route.ts (multipart upload endpoint, upserts by deterministic id from title, returns {imported,skipped,errors}), src/components/CsvImport.tsx (file input + status feedback). Modified: types.ts adds csv to TaskSource, task-helpers.ts adds csv to VALID_SOURCES, AssignmentsList gets headerActions prop + csv sourceIcon, Dashboard wires CsvImport. Sample CSV at public/sample-tasks.csv. All 124 tests pass, tsc clean."
+      },
+      "output": "",
+      "durationMs": 0
+    }
+  ],
   "model": "claude-sonnet-4-6",
   "invocationContext": "cli",
   "vendor": "claude",
   "weight": "standard",
   "diagnostics": {
-    "tokenDiagnosticStatus": "unavailable",
+    "tokenDiagnosticStatus": "complete",
     "parseMode": "stream-json",
     "notes": [],
     "vendor": "claude",
     "sandbox": "workspace-write",
-    "approvals": "never"
+    "approvals": "never",
+    "promptSections": [
+      {
+        "name": "system",
+        "byteLength": 1678
+      },
+      {
+        "name": "brief",
+        "byteLength": 4967
+      }
+    ]
   },
-  "lastActivityAt": "2026-06-12T20:50:11.757Z",
+  "lastActivityAt": "2026-06-12T20:51:04.827Z",
   "tokens": {
-    "input": 0,
-    "output": 0,
-    "cached": 0,
-    "total": 0
-  }
+    "input": 208,
+    "output": 16911,
+    "cached": 4927554,
+    "total": 4944673
+  },
+  "summary": "The MCP tools need permission grants from the user. The implementation is complete and staged. Here's a summary of what was done:\n\n**Files created:**\n- `src/lib/csv-parser.ts` — RFC-4180 compliant CSV parser handling quoted fields, escaped quotes, and CRLF\n- `src/app/api/import/csv/route.ts` — `POST /api/import/csv`: accepts `multipart/form-data`, maps headers (with aliases like `name→title`, `due date→dueDate`), defaults invalid status/priority gracefully, upserts into Prisma by deterministic i",
+  "structuredSummary": {
+    "filesChanged": [
+      ".hench/locks/14500.lock",
+      ".hench/locks/42744.lock",
+      ".hench/runs/1905fed6-a2ac-484f-ba24-93f87dd783cc.json",
+      ".hench/runs/34a0aa13-3814-4fa3-aa74-0198b078df7a.json",
+      ".rex/prd_tree/local-task-store-prisma-sqlite/add-in-app-task-crud-ui-create-f8a28a.md",
+      ".rex/prd_tree/pluggable-sources-csv-import-85a799/csv-plan-import-upload-csv-f93dc3.md",
+      ".rex/prd_tree/pluggable-sources-csv-import-85a799/index.md",
+      "public/sample-tasks.csv",
+      "src/app/api/import/csv/route.ts",
+      "src/components/AssignmentsList.tsx",
+      "src/components/CsvImport.tsx",
+      "src/components/Dashboard.tsx",
+      "src/lib/csv-parser.ts",
+      "src/lib/task-helpers.ts",
+      "src/lib/types.ts"
+    ],
+    "filesRead": [],
+    "commandsExecuted": [],
+    "testsRun": [],
+    "counts": {
+      "filesRead": 0,
+      "filesChanged": 15,
+      "commandsExecuted": 0,
+      "testsRun": 0,
+      "toolCallsTotal": 33
+    },
+    "fileChangesWithStatus": [
+      "D\t.hench/locks/14500.lock",
+      "A\t.hench/locks/42744.lock",
+      "M\t.hench/runs/1905fed6-a2ac-484f-ba24-93f87dd783cc.json",
+      "A\t.hench/runs/34a0aa13-3814-4fa3-aa74-0198b078df7a.json",
+      "M\t.rex/prd_tree/local-task-store-prisma-sqlite/add-in-app-task-crud-ui-create-f8a28a.md",
+      "M\t.rex/prd_tree/pluggable-sources-csv-import-85a799/csv-plan-import-upload-csv-f93dc3.md",
+      "M\t.rex/prd_tree/pluggable-sources-csv-import-85a799/index.md",
+      "A\tpublic/sample-tasks.csv",
+      "A\tsrc/app/api/import/csv/route.ts",
+      "M\tsrc/components/AssignmentsList.tsx",
+      "A\tsrc/components/CsvImport.tsx",
+      "M\tsrc/components/Dashboard.tsx",
+      "A\tsrc/lib/csv-parser.ts",
+      "M\tsrc/lib/task-helpers.ts",
+      "M\tsrc/lib/types.ts"
+    ]
+  },
+  "memoryStats": {
+    "peakRssBytes": 114548736,
+    "systemAvailableAtStartBytes": 8952868864,
+    "systemAvailableAtEndBytes": 8599498752,
+    "systemTotalBytes": 34040307712
+  },
+  "testGate": {
+    "ran": false,
+    "passed": true,
+    "packages": [],
+    "skipReason": "No files modified in prior phases"
+  },
+  "finishedAt": "2026-06-12T20:51:04.827Z"
 }
