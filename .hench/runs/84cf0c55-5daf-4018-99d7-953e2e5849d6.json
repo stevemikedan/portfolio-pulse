@@ -1,0 +1,33 @@
+{
+  "id": "84cf0c55-5daf-4018-99d7-953e2e5849d6",
+  "taskId": "7b71fda1-32bc-4613-a9fd-a92dabf89caa",
+  "taskTitle": "Create /api/tasks route — Prisma default, merge Notion when token present",
+  "startedAt": "2026-06-12T20:18:57.565Z",
+  "status": "running",
+  "turns": 0,
+  "tokenUsage": {
+    "input": 0,
+    "output": 0
+  },
+  "turnTokenUsage": [],
+  "toolCalls": [],
+  "model": "claude-sonnet-4-6",
+  "invocationContext": "cli",
+  "vendor": "claude",
+  "weight": "standard",
+  "diagnostics": {
+    "tokenDiagnosticStatus": "unavailable",
+    "parseMode": "stream-json",
+    "notes": [],
+    "vendor": "claude",
+    "sandbox": "workspace-write",
+    "approvals": "never"
+  },
+  "lastActivityAt": "2026-06-12T20:20:57.636Z",
+  "tokens": {
+    "input": 0,
+    "output": 0,
+    "cached": 0,
+    "total": 0
+  }
+}

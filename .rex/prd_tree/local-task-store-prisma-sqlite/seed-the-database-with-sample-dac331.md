@@ -16,4 +16,6 @@ acceptanceCriteria:
   - "prisma/seed.ts inserts the sample tasks currently in src/lib/mock-data.ts into the Task table"
   - "Wired as prisma db seed (package.json prisma.seed) and/or an npm run seed script"
   - "Idempotent — safe to run repeatedly without duplicating rows (upsert by id)"
+commits:
+  - {"hash":"7d934fe3e44180bf0800b24266764f4a2104a160","author":"Steve Daniel","authorEmail":"steve@endotech.us","timestamp":"2026-06-12T16:17:52-04:00"}
 ---

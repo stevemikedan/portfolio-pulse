@@ -14,6 +14,6 @@ description: "Self-contained local database as the default source of truth for t
 |-------|--------|
 | [Add in-app task CRUD UI — create form, inline status/priority edit, delete](./add-in-app-task-crud-ui-create-f8a28a.md) | pending |
 | [Add task mutation routes — POST/PATCH/DELETE /api/tasks](./add-task-mutation-routes-post-f05b02.md) | pending |
-| [Create /api/tasks route — Prisma default, merge Notion when token present](./create-api-tasks-route-prisma-7b71fd.md) | pending |
+| [Create /api/tasks route — Prisma default, merge Notion when token present](./create-api-tasks-route-prisma-7b71fd.md) | completed |
 | [Seed the database with sample tasks from mock-data](./seed-the-database-with-sample-dac331.md) | completed |
 | [Set up Prisma with SQLite — schema, client singleton, initial migration](./set-up-prisma-with-sqlite-4dcfe5.md) | completed |
