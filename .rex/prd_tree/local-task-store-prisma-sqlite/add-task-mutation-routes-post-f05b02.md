@@ -17,4 +17,6 @@ acceptanceCriteria:
   - "PATCH /api/tasks/[id] updates allowed fields (status, priority, title, project, dueDate, tags); 404 if missing; returns updated Task"
   - "DELETE /api/tasks/[id] removes the task; 404 if missing; returns success"
   - "Input validation and typed error responses; tags (de)serialized consistently with the GET /api/tasks route"
+commits:
+  - {"hash":"0222e2b3691f4015f58debac71799596b39f4b64","author":"Steve Daniel","authorEmail":"steve@endotech.us","timestamp":"2026-06-12T16:33:50-04:00"}
 ---

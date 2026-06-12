@@ -1,0 +1,33 @@
+{
+  "id": "1905fed6-a2ac-484f-ba24-93f87dd783cc",
+  "taskId": "f8a28ac9-9e5b-4f8a-a9f5-a36d1fe2ff7c",
+  "taskTitle": "Add in-app task CRUD UI — create form, inline status/priority edit, delete",
+  "startedAt": "2026-06-12T20:40:22.890Z",
+  "status": "running",
+  "turns": 0,
+  "tokenUsage": {
+    "input": 0,
+    "output": 0
+  },
+  "turnTokenUsage": [],
+  "toolCalls": [],
+  "model": "claude-sonnet-4-6",
+  "invocationContext": "cli",
+  "vendor": "claude",
+  "weight": "standard",
+  "diagnostics": {
+    "tokenDiagnosticStatus": "unavailable",
+    "parseMode": "stream-json",
+    "notes": [],
+    "vendor": "claude",
+    "sandbox": "workspace-write",
+    "approvals": "never"
+  },
+  "lastActivityAt": "2026-06-12T20:45:22.984Z",
+  "tokens": {
+    "input": 0,
+    "output": 0,
+    "cached": 0,
+    "total": 0
+  }
+}

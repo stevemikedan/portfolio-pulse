@@ -1,6 +1,6 @@
 "use client";
 
-import type { Task } from "@/lib/types";
+import type { Task, TaskStatus, Priority } from "@/lib/types";
 
 const statusColors: Record<string, string> = {
   todo: "bg-purple-500/10 text-purple-400",
@@ -27,7 +27,21 @@ function daysUntil(dateStr?: string): number | null {
   return Math.ceil(diff / (1000 * 60 * 60 * 24));
 }
 
-export function AssignmentsList({ tasks }: { tasks: Task[] }) {
+interface AssignmentsListProps {
+  tasks: Task[];
+  onNew?: () => void;
+  onStatusChange: (id: string, status: TaskStatus) => void;
+  onPriorityChange: (id: string, priority: Priority) => void;
+  onDelete: (id: string) => void;
+}
+
+export function AssignmentsList({
+  tasks,
+  onNew,
+  onStatusChange,
+  onPriorityChange,
+  onDelete,
+}: AssignmentsListProps) {
   const sorted = [...tasks].sort((a, b) => {
     const prio = { high: 0, medium: 1, low: 2, none: 3 };
     const statusOrder = { in_progress: 0, todo: 1, blocked: 2, done: 3 };
@@ -38,9 +52,22 @@ export function AssignmentsList({ tasks }: { tasks: Task[] }) {
 
   return (
     <div className="bg-[var(--bg-card)] border border-[var(--border)] rounded-xl overflow-hidden">
-      <div className="px-4 py-3 border-b border-[var(--border)]">
-        <h2 className="text-sm font-semibold">My Assignments</h2>
-        <p className="text-xs text-[var(--text-3)]">From Notion + GitHub — sorted by status & priority</p>
+      <div className="px-4 py-3 border-b border-[var(--border)] flex items-center justify-between gap-2">
+        <div>
+          <h2 className="text-sm font-semibold">My Assignments</h2>
+          <p className="text-xs text-[var(--text-3)]">
+            From Notion + GitHub — sorted by status &amp; priority
+          </p>
+        </div>
+        {onNew && (
+          <button
+            type="button"
+            onClick={onNew}
+            className="flex-shrink-0 text-xs px-2.5 py-1 rounded-lg bg-blue-500 text-white hover:bg-blue-600 transition-colors"
+          >
+            + New
+          </button>
+        )}
       </div>
       <div className="divide-y divide-[var(--border)] max-h-[400px] overflow-y-auto">
         {sorted.map((task) => {
@@ -51,9 +78,11 @@ export function AssignmentsList({ tasks }: { tasks: Task[] }) {
           return (
             <div
               key={task.id}
-              className="px-4 py-3 hover:bg-[var(--bg-hover)] transition-colors flex items-start gap-3"
+              className="px-4 py-3 hover:bg-[var(--bg-hover)] transition-colors flex items-start gap-3 group"
             >
-              <div className={`w-2 h-2 rounded-full mt-1.5 flex-shrink-0 ${priorityDot[task.priority]}`} />
+              <div
+                className={`w-2 h-2 rounded-full mt-1.5 flex-shrink-0 ${priorityDot[task.priority]}`}
+              />
               <div className="flex-1 min-w-0">
                 <div className="flex items-center gap-2 mb-1">
                   <span className="text-sm font-medium truncate">{task.title}</span>
@@ -76,11 +105,33 @@ export function AssignmentsList({ tasks }: { tasks: Task[] }) {
                   {task.project && (
                     <span className="text-[0.65rem] text-[var(--text-3)]">{task.project}</span>
                   )}
-                  <span className={`text-[0.6rem] px-1.5 py-0.5 rounded font-medium ${statusColors[task.status]}`}>
-                    {task.status.replace("_", " ")}
-                  </span>
+                  <select
+                    value={task.status}
+                    onChange={(e) => onStatusChange(task.id, e.target.value as TaskStatus)}
+                    aria-label="Status"
+                    className={`text-[0.6rem] px-1.5 py-0.5 rounded font-medium border-0 cursor-pointer appearance-none ${statusColors[task.status]}`}
+                  >
+                    <option value="todo">to do</option>
+                    <option value="in_progress">in progress</option>
+                    <option value="done">done</option>
+                    <option value="blocked">blocked</option>
+                  </select>
+                  <select
+                    value={task.priority}
+                    onChange={(e) => onPriorityChange(task.id, e.target.value as Priority)}
+                    aria-label="Priority"
+                    className="text-[0.6rem] px-1.5 py-0.5 rounded bg-[var(--bg-hover)] text-[var(--text-3)] border-0 cursor-pointer appearance-none"
+                  >
+                    <option value="high">↑ high</option>
+                    <option value="medium">→ medium</option>
+                    <option value="low">↓ low</option>
+                    <option value="none">– none</option>
+                  </select>
                   {task.tags?.map((tag) => (
-                    <span key={tag} className="text-[0.6rem] px-1.5 py-0.5 rounded bg-[var(--bg-hover)] text-[var(--text-3)]">
+                    <span
+                      key={tag}
+                      className="text-[0.6rem] px-1.5 py-0.5 rounded bg-[var(--bg-hover)] text-[var(--text-3)]"
+                    >
                       {tag}
                     </span>
                   ))}
@@ -96,6 +147,14 @@ export function AssignmentsList({ tasks }: { tasks: Task[] }) {
                   )}
                 </div>
               </div>
+              <button
+                type="button"
+                onClick={() => onDelete(task.id)}
+                aria-label="Delete task"
+                className="flex-shrink-0 mt-0.5 w-5 h-5 flex items-center justify-center text-[0.65rem] text-[var(--text-3)] hover:text-red-400 opacity-0 group-hover:opacity-100 transition-opacity rounded"
+              >
+                ✕
+              </button>
             </div>
           );
         })}

@@ -3,14 +3,587 @@
   "taskId": "f05b02c9-babd-421e-94e9-a570b1dff4f6",
   "taskTitle": "Add task mutation routes — POST/PATCH/DELETE /api/tasks",
   "startedAt": "2026-06-12T20:31:29.111Z",
-  "status": "running",
-  "turns": 0,
+  "status": "completed",
+  "turns": 14,
   "tokenUsage": {
-    "input": 0,
-    "output": 0
+    "input": 76,
+    "output": 6585,
+    "cacheCreationInput": 176015,
+    "cacheReadInput": 1737720
   },
-  "turnTokenUsage": [],
-  "toolCalls": [],
+  "turnTokenUsage": [
+    {
+      "turn": 1,
+      "input": 3,
+      "output": 6,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 17046,
+      "cacheReadInput": 21089
+    },
+    {
+      "turn": 1,
+      "input": 3,
+      "output": 6,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 17046,
+      "cacheReadInput": 21089
+    },
+    {
+      "turn": 1,
+      "input": 3,
+      "output": 6,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 17046,
+      "cacheReadInput": 21089
+    },
+    {
+      "turn": 1,
+      "input": 0,
+      "output": 0,
+      "diagnosticStatus": "unavailable",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "turn": 1,
+      "input": 3,
+      "output": 1,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 13024
+    },
+    {
+      "turn": 1,
+      "input": 0,
+      "output": 0,
+      "diagnosticStatus": "unavailable",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "turn": 1,
+      "input": 3,
+      "output": 1,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 13024
+    },
+    {
+      "turn": 1,
+      "input": 0,
+      "output": 0,
+      "diagnosticStatus": "unavailable",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "turn": 1,
+      "input": 3,
+      "output": 1,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 13024
+    },
+    {
+      "turn": 1,
+      "input": 0,
+      "output": 0,
+      "diagnosticStatus": "unavailable",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "turn": 1,
+      "input": 3,
+      "output": 1,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 13024
+    },
+    {
+      "turn": 1,
+      "input": 0,
+      "output": 0,
+      "diagnosticStatus": "unavailable",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "turn": 1,
+      "input": 3,
+      "output": 1,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 13024
+    },
+    {
+      "turn": 1,
+      "input": 0,
+      "output": 0,
+      "diagnosticStatus": "unavailable",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "turn": 1,
+      "input": 7,
+      "output": 1,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 2264,
+      "cacheReadInput": 13024
+    },
+    {
+      "turn": 1,
+      "input": 0,
+      "output": 0,
+      "diagnosticStatus": "unavailable",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "turn": 1,
+      "input": 1,
+      "output": 12,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 1973,
+      "cacheReadInput": 38135
+    },
+    {
+      "turn": 2,
+      "input": 1,
+      "output": 12,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 1973,
+      "cacheReadInput": 38135
+    },
+    {
+      "turn": 2,
+      "input": 1,
+      "output": 12,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 1973,
+      "cacheReadInput": 38135
+    },
+    {
+      "turn": 2,
+      "input": 1,
+      "output": 24,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 3366,
+      "cacheReadInput": 40108
+    },
+    {
+      "turn": 3,
+      "input": 1,
+      "output": 24,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 3366,
+      "cacheReadInput": 40108
+    },
+    {
+      "turn": 3,
+      "input": 1,
+      "output": 24,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 3366,
+      "cacheReadInput": 40108
+    },
+    {
+      "turn": 4,
+      "input": 1,
+      "output": 1,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 1692,
+      "cacheReadInput": 43474
+    },
+    {
+      "turn": 4,
+      "input": 1,
+      "output": 1,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 1692,
+      "cacheReadInput": 43474
+    },
+    {
+      "turn": 5,
+      "input": 1,
+      "output": 2,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 1279,
+      "cacheReadInput": 45166
+    },
+    {
+      "turn": 5,
+      "input": 1,
+      "output": 2,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 1279,
+      "cacheReadInput": 45166
+    },
+    {
+      "turn": 5,
+      "input": 1,
+      "output": 58,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 256,
+      "cacheReadInput": 46445
+    },
+    {
+      "turn": 5,
+      "input": 1,
+      "output": 59,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 141,
+      "cacheReadInput": 46701
+    },
+    {
+      "turn": 6,
+      "input": 1,
+      "output": 2,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 1052,
+      "cacheReadInput": 46842
+    },
+    {
+      "turn": 6,
+      "input": 1,
+      "output": 2,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 1052,
+      "cacheReadInput": 46842
+    },
+    {
+      "turn": 7,
+      "input": 1,
+      "output": 1,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 154,
+      "cacheReadInput": 47894
+    },
+    {
+      "turn": 7,
+      "input": 1,
+      "output": 1,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 154,
+      "cacheReadInput": 47894
+    },
+    {
+      "turn": 7,
+      "input": 1,
+      "output": 49,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 908,
+      "cacheReadInput": 48048
+    },
+    {
+      "turn": 8,
+      "input": 1,
+      "output": 1,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 324,
+      "cacheReadInput": 48956
+    },
+    {
+      "turn": 8,
+      "input": 1,
+      "output": 1,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 324,
+      "cacheReadInput": 48956
+    },
+    {
+      "turn": 8,
+      "input": 3,
+      "output": 6,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 572,
+      "cacheReadInput": 49280
+    },
+    {
+      "turn": 8,
+      "input": 3,
+      "output": 6,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 572,
+      "cacheReadInput": 49280
+    },
+    {
+      "turn": 8,
+      "input": 1,
+      "output": 52,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 368,
+      "cacheReadInput": 49852
+    },
+    {
+      "turn": 9,
+      "input": 1,
+      "output": 1,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 263,
+      "cacheReadInput": 50220
+    },
+    {
+      "turn": 9,
+      "input": 18,
+      "output": 6208,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 29394,
+      "cacheReadInput": 622210
+    }
+  ],
+  "toolCalls": [
+    {
+      "turn": 1,
+      "tool": "Agent",
+      "input": {
+        "description": "Explore existing API routes and types",
+        "subagent_type": "Explore",
+        "prompt": "In the Next.js project at C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse, I need to understand the existing structure before adding POST/PATCH/DELETE routes for /api/tasks.\n\nPlease read and return the full contents of:\n1. src/app/api/tasks/route.ts (the existing GET route)\n2. src/lib/types.ts (Task type definition)\n3. prisma/schema.prisma (Prisma schema)\n4. src/lib/prisma.ts (Prisma client singleton)\n\nAlso check if there's a src/app/api/tasks/[id]/ directory already.\n\nReturn the complete file contents — I need to see everything to implement correctly."
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 1,
+      "tool": "Read",
+      "input": {
+        "file_path": "C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse\\src\\app\\api\\tasks\\route.ts"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 1,
+      "tool": "Read",
+      "input": {
+        "file_path": "C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse\\src\\lib\\types.ts"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 1,
+      "tool": "Read",
+      "input": {
+        "file_path": "C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse\\prisma\\schema.prisma"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 1,
+      "tool": "Read",
+      "input": {
+        "file_path": "C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse\\src\\lib\\prisma.ts"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 1,
+      "tool": "Bash",
+      "input": {
+        "command": "ls -la \"C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse\\src\\app\\api\\tasks\\\""
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 1,
+      "tool": "PowerShell",
+      "input": {
+        "command": "Get-ChildItem -Path \"C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse\\src\\app\\api\\tasks\\\" -Force"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 2,
+      "tool": "Read",
+      "input": {
+        "file_path": "C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse\\src\\app\\api\\tasks\\route.ts"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 3,
+      "tool": "Write",
+      "input": {
+        "file_path": "C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse\\src\\lib\\task-helpers.ts",
+        "content": "import type { Task } from \"@/lib/types\";\n\nexport type PrismaTaskRow = {\n  id: string;\n  title: string;\n  source: string;\n  sourceUrl: string | null;\n  project: string | null;\n  status: string;\n  priority: string;\n  dueDate: string | null;\n  tags: string | null;\n  lastActivity: string | null;\n  assignee: string | null;\n};\n\nexport function prismaTaskToTask(t: PrismaTaskRow): Task {\n  return {\n    id: t.id,\n    title: t.title,\n    source: t.source as Task[\"source\"],\n    sourceUrl: t.sourceUrl ?? undefined,\n    project: t.project ?? undefined,\n    status: t.status as Task[\"status\"],\n    priority: t.priority as Task[\"priority\"],\n    dueDate: t.dueDate ?? undefined,\n    tags: t.tags ? (JSON.parse(t.tags) as string[]) : undefined,\n    lastActivity: t.lastActivity ?? undefined,\n    assignee: t.assignee ?? undefined,\n  };\n}\n\nexport const VALID_SOURCES = [\"notion\", \"github\"] as const;\nexport const VALID_STATUSES = [\"todo\", \"in_progress\", \"done\", \"blocked\"] as const;\nexport const VALID_PRIORITIES = [\"high\", \"medium\", \"low\", \"none\"] as const;\n"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 4,
+      "tool": "Write",
+      "input": {
+        "file_path": "C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse\\src\\app\\api\\tasks\\route.ts",
+        "content": "import { NextResponse } from \"next/server\";\nimport { prisma } from \"@/lib/prisma\";\nimport { fetchNotionTasks } from \"@/lib/notion-tasks\";\nimport {\n  prismaTaskToTask,\n  VALID_SOURCES,\n  VALID_STATUSES,\n  VALID_PRIORITIES,\n} from \"@/lib/task-helpers\";\nimport type { Task } from \"@/lib/types\";\n\n// Merge remote tasks over local ones, de-duping by id.\n// Live remote data wins when IDs collide.\nfunction mergeTasks(local: Task[], remote: Task[]): Task[] {\n  const byId = new Map<string, Task>();\n  for (const task of local) byId.set(task.id, task);\n  for (const task of remote) byId.set(task.id, task);\n  return Array.from(byId.values());\n}\n\nexport async function GET() {\n  const dbRows = await prisma.task.findMany();\n  const localTasks = dbRows.map(prismaTaskToTask);\n\n  const token = process.env.NOTION_TOKEN;\n  const databaseId = process.env.NOTION_TASKS_DATABASE_ID;\n\n  if (!token || !databaseId) {\n    return NextResponse.json(localTasks);\n  }\n\n  let notionTasks: Task[] = [];\n  try {\n    notionTasks = await fetchNotionTasks(token, databaseId);\n  } catch {\n    // Notion failure is non-fatal — return local tasks only\n  }\n\n  return NextResponse.json(mergeTasks(localTasks, notionTasks));\n}\n\nexport async function POST(request: Request) {\n  let body: unknown;\n  try {\n    body = await request.json();\n  } catch {\n    return NextResponse.json({ error: \"Invalid JSON\" }, { status: 400 });\n  }\n\n  if (!body || typeof body !== \"object\" || Array.isArray(body)) {\n    return NextResponse.json({ error: \"Request body must be an object\" }, { status: 400 });\n  }\n\n  const input = body as Record<string, unknown>;\n\n  // Validate required fields\n  if (typeof input.title !== \"string\" || input.title.trim() === \"\") {\n    return NextResponse.json({ error: \"title is required\" }, { status: 400 });\n  }\n  if (!VALID_SOURCES.includes(input.source as Task[\"source\"])) {\n    return NextResponse.json(\n      { error: `source must be one of: ${VALID_SOURCES.join(\", \")}` },\n      { status: 400 },\n    );\n  }\n  if (!VALID_STATUSES.includes(input.status as Task[\"status\"])) {\n    return NextResponse.json(\n      { error: `status must be one of: ${VALID_STATUSES.join(\", \")}` },\n      { status: 400 },\n    );\n  }\n  if (!VALID_PRIORITIES.includes(input.priority as Task[\"priority\"])) {\n    return NextResponse.json(\n      { error: `priority must be one of: ${VALID_PRIORITIES.join(\", \")}` },\n      { status: 400 },\n    );\n  }\n  if (input.tags !== undefined && !Array.isArray(input.tags)) {\n    return NextResponse.json({ error: \"tags must be an array of strings\" }, { status: 400 });\n  }\n\n  const id = crypto.randomUUID();\n  const tags = Array.isArray(input.tags) ? (input.tags as string[]) : undefined;\n\n  const created = await prisma.task.create({\n    data: {\n      id,\n      title: (input.title as string).trim(),\n      source: input.source as string,\n      status: input.status as string,\n      priority: input.priority as string,\n      sourceUrl: typeof input.sourceUrl === \"string\" ? input.sourceUrl : null,\n      project: typeof input.project === \"string\" ? input.project : null,\n      dueDate: typeof input.dueDate === \"string\" ? input.dueDate : null,\n      tags: tags ? JSON.stringify(tags) : null,\n      lastActivity: typeof input.lastActivity === \"string\" ? input.lastActivity : null,\n      assignee: typeof input.assignee === \"string\" ? input.assignee : null,\n    },\n  });\n\n  return NextResponse.json(prismaTaskToTask(created), { status: 201 });\n}\n"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 5,
+      "tool": "Bash",
+      "input": {
+        "command": "mkdir -p \"C:/Users/steve/dev/Claude CoWork/portfolio-pulse/src/app/api/tasks/[id]\"",
+        "description": "Create [id] directory for task-specific routes"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 5,
+      "tool": "Bash",
+      "input": {
+        "command": "New-Item -ItemType Directory -Path \"C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse\\src\\app\\api\\tasks\\[id]\" -Force",
+        "description": "Create [id] directory for task-specific routes"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 5,
+      "tool": "Write",
+      "input": {
+        "file_path": "C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse\\src\\app\\api\\tasks\\[id]\\route.ts",
+        "content": "import { NextResponse } from \"next/server\";\nimport { prisma } from \"@/lib/prisma\";\nimport {\n  prismaTaskToTask,\n  VALID_STATUSES,\n  VALID_PRIORITIES,\n} from \"@/lib/task-helpers\";\nimport type { Task } from \"@/lib/types\";\n\ntype RouteContext = { params: Promise<{ id: string }> };\n\nexport async function PATCH(request: Request, context: RouteContext) {\n  const { id } = await context.params;\n\n  const existing = await prisma.task.findUnique({ where: { id } });\n  if (!existing) {\n    return NextResponse.json({ error: \"Task not found\" }, { status: 404 });\n  }\n\n  let body: unknown;\n  try {\n    body = await request.json();\n  } catch {\n    return NextResponse.json({ error: \"Invalid JSON\" }, { status: 400 });\n  }\n\n  if (!body || typeof body !== \"object\" || Array.isArray(body)) {\n    return NextResponse.json({ error: \"Request body must be an object\" }, { status: 400 });\n  }\n\n  const input = body as Record<string, unknown>;\n\n  // Validate allowed fields\n  if (\"status\" in input && !VALID_STATUSES.includes(input.status as Task[\"status\"])) {\n    return NextResponse.json(\n      { error: `status must be one of: ${VALID_STATUSES.join(\", \")}` },\n      { status: 400 },\n    );\n  }\n  if (\"priority\" in input && !VALID_PRIORITIES.includes(input.priority as Task[\"priority\"])) {\n    return NextResponse.json(\n      { error: `priority must be one of: ${VALID_PRIORITIES.join(\", \")}` },\n      { status: 400 },\n    );\n  }\n  if (\"title\" in input && (typeof input.title !== \"string\" || input.title.trim() === \"\")) {\n    return NextResponse.json({ error: \"title must be a non-empty string\" }, { status: 400 });\n  }\n  if (\"tags\" in input && !Array.isArray(input.tags)) {\n    return NextResponse.json({ error: \"tags must be an array of strings\" }, { status: 400 });\n  }\n\n  const data: Record<string, string | null> = {};\n  if (\"title\" in input) data.title = (input.title as string).trim();\n  if (\"status\" in input) data.status = input.status as string;\n  if (\"priority\" in input) data.priority = input.priority as string;\n  if (\"project\" in input) data.project = typeof input.project === \"string\" ? input.project : null;\n  if (\"dueDate\" in input) data.dueDate = typeof input.dueDate === \"string\" ? input.dueDate : null;\n  if (\"tags\" in input)\n    data.tags = Array.isArray(input.tags) ? JSON.stringify(input.tags) : null;\n\n  const updated = await prisma.task.update({ where: { id }, data });\n  return NextResponse.json(prismaTaskToTask(updated));\n}\n\nexport async function DELETE(_request: Request, context: RouteContext) {\n  const { id } = await context.params;\n\n  const existing = await prisma.task.findUnique({ where: { id } });\n  if (!existing) {\n    return NextResponse.json({ error: \"Task not found\" }, { status: 404 });\n  }\n\n  await prisma.task.delete({ where: { id } });\n  return NextResponse.json({ success: true });\n}\n"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 6,
+      "tool": "Bash",
+      "input": {
+        "command": "cd \"C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse\" && npx tsc --noEmit 2>&1",
+        "description": "Run TypeScript type check",
+        "timeout": 60000
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 7,
+      "tool": "Bash",
+      "input": {
+        "command": "cd \"C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse\" && git add -A && git status",
+        "description": "Stage all changes and show status"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 7,
+      "tool": "Write",
+      "input": {
+        "file_path": "C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse\\.hench-commit-msg.txt",
+        "content": "feat: add POST/PATCH/DELETE /api/tasks mutation routes\n\n- POST /api/tasks: validates required fields (title, source, status, priority),\n  generates a UUID id, persists via Prisma, returns 201 with the created Task\n- PATCH /api/tasks/[id]: updates allowed fields (title, status, priority, project,\n  dueDate, tags); returns 404 if not found; returns updated Task\n- DELETE /api/tasks/[id]: removes the task; returns 404 if not found; returns { success: true }\n- Extracted prismaTaskToTask and enum constants to src/lib/task-helpers.ts to keep\n  tag serialization consistent across all routes\n- Input validation returns typed error responses with appropriate HTTP status codes\n"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 8,
+      "tool": "ToolSearch",
+      "input": {
+        "query": "select:mcp__rex__update_task_status,mcp__rex__append_log",
+        "max_results": 2
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 8,
+      "tool": "mcp__rex__update_task_status",
+      "input": {
+        "id": "f05b02c9-babd-421e-94e9-a570b1dff4f6",
+        "status": "completed",
+        "resolutionType": "code-change",
+        "resolutionDetail": "Added POST /api/tasks, PATCH /api/tasks/[id], DELETE /api/tasks/[id] with input validation, 404 handling, and consistent tag serialization via shared task-helpers.ts"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 8,
+      "tool": "mcp__rex__append_log",
+      "input": {
+        "event": "task_completed",
+        "itemId": "f05b02c9-babd-421e-94e9-a570b1dff4f6",
+        "detail": "Implemented POST /api/tasks (creates task, validates required fields, returns 201), PATCH /api/tasks/[id] (updates title/status/priority/project/dueDate/tags, 404 if missing), DELETE /api/tasks/[id] (deletes task, 404 if missing). Extracted prismaTaskToTask and enum constants to src/lib/task-helpers.ts to keep tag serialization consistent. TypeScript check passes clean."
+      },
+      "output": "",
+      "durationMs": 0
+    }
+  ],
   "model": "claude-sonnet-4-6",
   "invocationContext": "cli",
   "vendor": "claude",
@@ -21,13 +594,73 @@
     "notes": [],
     "vendor": "claude",
     "sandbox": "workspace-write",
-    "approvals": "never"
+    "approvals": "never",
+    "promptSections": [
+      {
+        "name": "system",
+        "byteLength": 1678
+      },
+      {
+        "name": "brief",
+        "byteLength": 5460
+      }
+    ]
   },
-  "lastActivityAt": "2026-06-12T20:32:59.161Z",
+  "lastActivityAt": "2026-06-12T20:33:51.160Z",
   "tokens": {
-    "input": 0,
-    "output": 0,
-    "cached": 0,
-    "total": 0
-  }
+    "input": 76,
+    "output": 6585,
+    "cached": 1913735,
+    "total": 1920396
+  },
+  "summary": "The MCP tools need permission grants. Here's a summary of what was implemented:\n\n**Files created/modified:**\n\n- **`src/lib/task-helpers.ts`** (new) — Shared `prismaTaskToTask()` converter plus `VALID_SOURCES`, `VALID_STATUSES`, `VALID_PRIORITIES` constants, extracted so tag serialization is identical across all routes.\n\n- **`src/app/api/tasks/route.ts`** (updated) — Now imports `prismaTaskToTask` from the helper. Added `POST` handler: validates required fields (`title`, `source`, `status`, `prio",
+  "structuredSummary": {
+    "filesChanged": [
+      ".hench/locks/2632.lock",
+      ".hench/locks/44348.lock",
+      ".hench/runs/0d929426-affc-4ede-97e1-681bc87d4f26.json",
+      ".hench/runs/30dcbdbb-ac39-424b-ac02-a795c97ac93a.json",
+      ".rex/prd_tree/local-task-store-prisma-sqlite/add-task-mutation-routes-post-f05b02.md",
+      ".rex/prd_tree/local-task-store-prisma-sqlite/index.md",
+      ".rex/prd_tree/notion-integration/add-usetasks-hook-and-wire-977ccf.md",
+      "src/app/api/tasks/[id]/route.ts",
+      "src/app/api/tasks/route.ts",
+      "src/lib/task-helpers.ts"
+    ],
+    "filesRead": [],
+    "commandsExecuted": [],
+    "testsRun": [],
+    "counts": {
+      "filesRead": 0,
+      "filesChanged": 10,
+      "commandsExecuted": 0,
+      "testsRun": 0,
+      "toolCallsTotal": 19
+    },
+    "fileChangesWithStatus": [
+      "A\t.hench/locks/2632.lock",
+      "D\t.hench/locks/44348.lock",
+      "M\t.hench/runs/0d929426-affc-4ede-97e1-681bc87d4f26.json",
+      "A\t.hench/runs/30dcbdbb-ac39-424b-ac02-a795c97ac93a.json",
+      "M\t.rex/prd_tree/local-task-store-prisma-sqlite/add-task-mutation-routes-post-f05b02.md",
+      "M\t.rex/prd_tree/local-task-store-prisma-sqlite/index.md",
+      "M\t.rex/prd_tree/notion-integration/add-usetasks-hook-and-wire-977ccf.md",
+      "A\tsrc/app/api/tasks/[id]/route.ts",
+      "M\tsrc/app/api/tasks/route.ts",
+      "A\tsrc/lib/task-helpers.ts"
+    ]
+  },
+  "memoryStats": {
+    "peakRssBytes": 113889280,
+    "systemAvailableAtStartBytes": 8535592960,
+    "systemAvailableAtEndBytes": 8504389632,
+    "systemTotalBytes": 34040307712
+  },
+  "testGate": {
+    "ran": false,
+    "passed": true,
+    "packages": [],
+    "skipReason": "No files modified in prior phases"
+  },
+  "finishedAt": "2026-06-12T20:33:51.160Z"
 }

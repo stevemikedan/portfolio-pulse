@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo } from 'react';
+import { useState, useMemo, useCallback } from 'react';
 import { useTasks } from '@/hooks/useTasks';
 import { detectGaps } from '@/lib/gap-detection';
 import { mockData } from '@/lib/mock-data';
@@ -9,10 +9,13 @@ import { AssignmentsList } from './AssignmentsList';
 import { ActivityFeed } from './ActivityFeed';
 import { GapAnalysis } from './GapAnalysis';
 import { RhythmChart } from './RhythmChart';
+import { NewTaskForm } from './NewTaskForm';
+import type { TaskStatus, Priority } from '@/lib/types';
 
 export function Dashboard() {
-  const { tasks, loading, error } = useTasks();
+  const { tasks, loading, error, refresh } = useTasks();
   const { activity, rhythm } = mockData;
+  const [showNewTaskForm, setShowNewTaskForm] = useState(false);
 
   const stats = useMemo(() => {
     const totalTasks = tasks.length;
@@ -30,6 +33,35 @@ export function Dashboard() {
   }, [tasks]);
 
   const gaps = useMemo(() => detectGaps(tasks, activity), [tasks, activity]);
+
+  const handleStatusChange = useCallback(
+    (id: string, status: TaskStatus) => {
+      fetch(`/api/tasks/${id}`, {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ status }),
+      }).then(() => refresh());
+    },
+    [refresh],
+  );
+
+  const handlePriorityChange = useCallback(
+    (id: string, priority: Priority) => {
+      fetch(`/api/tasks/${id}`, {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ priority }),
+      }).then(() => refresh());
+    },
+    [refresh],
+  );
+
+  const handleDelete = useCallback(
+    (id: string) => {
+      fetch(`/api/tasks/${id}`, { method: 'DELETE' }).then(() => refresh());
+    },
+    [refresh],
+  );
 
   if (loading) {
     return (
@@ -58,20 +90,37 @@ export function Dashboard() {
   }
 
   return (
-    <div className="space-y-6">
-      <StatCards
-        totalTasks={stats.totalTasks}
-        inProgress={stats.inProgress}
-        overdue={stats.overdue}
-        finishRate={stats.finishRate}
-        activeRepos={stats.activeRepos}
-      />
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <AssignmentsList tasks={tasks} />
-        <ActivityFeed events={activity} />
-        <GapAnalysis gaps={gaps} />
-        <RhythmChart data={rhythm} />
+    <>
+      {showNewTaskForm && (
+        <NewTaskForm
+          onClose={() => setShowNewTaskForm(false)}
+          onSuccess={() => {
+            setShowNewTaskForm(false);
+            refresh();
+          }}
+        />
+      )}
+      <div className="space-y-6">
+        <StatCards
+          totalTasks={stats.totalTasks}
+          inProgress={stats.inProgress}
+          overdue={stats.overdue}
+          finishRate={stats.finishRate}
+          activeRepos={stats.activeRepos}
+        />
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <AssignmentsList
+            tasks={tasks}
+            onNew={() => setShowNewTaskForm(true)}
+            onStatusChange={handleStatusChange}
+            onPriorityChange={handlePriorityChange}
+            onDelete={handleDelete}
+          />
+          <ActivityFeed events={activity} />
+          <GapAnalysis gaps={gaps} />
+          <RhythmChart data={rhythm} />
+        </div>
       </div>
-    </div>
+    </>
   );
 }
