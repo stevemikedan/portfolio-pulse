@@ -1,0 +1,18 @@
+---
+id: "7b71fda1-32bc-4613-a9fd-a92dabf89caa"
+level: "task"
+title: "Create /api/tasks route — Prisma default, merge Notion when token present"
+status: "pending"
+priority: "critical"
+tags:
+  - "backend"
+  - "api"
+  - "data"
+blockedBy:
+  - "4dcfe521-97ae-41ae-bbb7-4d539f698282"
+acceptanceCriteria:
+  - "GET /api/tasks returns Task[] read from Prisma (the default source)"
+  - "When NOTION_TOKEN is set, also pull tasks via the existing Notion route logic and merge into the result; when absent, return Prisma tasks only (no error)"
+  - "Merge de-dupes (e.g. by source+sourceUrl or id) and returns the unified Task[] shape"
+  - "Graceful error handling: a Notion failure does not break the local-task response"
+---

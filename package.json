@@ -13,12 +13,20 @@
   "dependencies": {
     "@notionhq/client": "^5.22.0",
     "@octokit/rest": "^22.0.1",
+    "@prisma/client": "^6.19.3",
     "chart.js": "^4.5.1",
     "date-fns": "^4.4.0",
     "next": "16.2.7",
     "react": "19.2.4",
     "react-chartjs-2": "^5.3.1",
     "react-dom": "19.2.4"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@prisma/client",
+      "@prisma/engines",
+      "prisma"
+    ]
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
@@ -32,6 +40,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.2.7",
     "jsdom": "^29.1.1",
+    "prisma": "^6.19.3",
     "tailwindcss": "^4",
     "typescript": "^5",
     "vitest": "^4.1.8"

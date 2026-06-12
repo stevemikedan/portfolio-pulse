@@ -1,0 +1,22 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model Task {
+  id           String  @id
+  title        String
+  source       String
+  sourceUrl    String?
+  project      String?
+  status       String
+  priority     String
+  dueDate      String?
+  tags         String? // JSON array serialized as string for SQLite
+  lastActivity String?
+  assignee     String?
+}

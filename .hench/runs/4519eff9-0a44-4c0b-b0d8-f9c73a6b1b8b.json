@@ -1,0 +1,33 @@
+{
+  "id": "4519eff9-0a44-4c0b-b0d8-f9c73a6b1b8b",
+  "taskId": "4dcfe521-97ae-41ae-bbb7-4d539f698282",
+  "taskTitle": "Set up Prisma with SQLite — schema, client singleton, initial migration",
+  "startedAt": "2026-06-12T20:08:12.974Z",
+  "status": "running",
+  "turns": 0,
+  "tokenUsage": {
+    "input": 0,
+    "output": 0
+  },
+  "turnTokenUsage": [],
+  "toolCalls": [],
+  "model": "claude-sonnet-4-6",
+  "invocationContext": "cli",
+  "vendor": "claude",
+  "weight": "standard",
+  "diagnostics": {
+    "tokenDiagnosticStatus": "unavailable",
+    "parseMode": "stream-json",
+    "notes": [],
+    "vendor": "claude",
+    "sandbox": "workspace-write",
+    "approvals": "never"
+  },
+  "lastActivityAt": "2026-06-12T20:11:43.053Z",
+  "tokens": {
+    "input": 0,
+    "output": 0,
+    "cached": 0,
+    "total": 0
+  }
+}

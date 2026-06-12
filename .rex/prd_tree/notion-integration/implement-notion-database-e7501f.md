@@ -13,4 +13,6 @@ endedAt: "2026-06-12T19:55:31.715Z"
 acceptanceCriteria:
   - "GET /api/notion/databases returns list of accessible databases"
   - "Each entry includes id, title, and icon"
+commits:
+  - {"hash":"bd979465ecd5cc421d2fdb368e57a42c521b50de","author":"Steve Daniel","authorEmail":"steve@endotech.us","timestamp":"2026-06-12T15:55:32-04:00"}
 ---
