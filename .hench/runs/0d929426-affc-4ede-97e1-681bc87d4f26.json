@@ -1,0 +1,33 @@
+{
+  "id": "0d929426-affc-4ede-97e1-681bc87d4f26",
+  "taskId": "977ccffc-b2d8-4ce2-be6b-673ec309b07b",
+  "taskTitle": "Add useTasks hook and wire dashboard to live /api/tasks data",
+  "startedAt": "2026-06-12T20:24:15.366Z",
+  "status": "running",
+  "turns": 0,
+  "tokenUsage": {
+    "input": 0,
+    "output": 0
+  },
+  "turnTokenUsage": [],
+  "toolCalls": [],
+  "model": "claude-sonnet-4-6",
+  "invocationContext": "cli",
+  "vendor": "claude",
+  "weight": "standard",
+  "diagnostics": {
+    "tokenDiagnosticStatus": "unavailable",
+    "parseMode": "stream-json",
+    "notes": [],
+    "vendor": "claude",
+    "sandbox": "workspace-write",
+    "approvals": "never"
+  },
+  "lastActivityAt": "2026-06-12T20:26:15.425Z",
+  "tokens": {
+    "input": 0,
+    "output": 0,
+    "cached": 0,
+    "total": 0
+  }
+}

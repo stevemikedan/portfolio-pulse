@@ -18,4 +18,6 @@ acceptanceCriteria:
   - "When NOTION_TOKEN is set, also pull tasks via the existing Notion route logic and merge into the result; when absent, return Prisma tasks only (no error)"
   - "Merge de-dupes (e.g. by source+sourceUrl or id) and returns the unified Task[] shape"
   - "Graceful error handling: a Notion failure does not break the local-task response"
+commits:
+  - {"hash":"1b646d4499a13c87905ab2816c106324e3c563e6","author":"Steve Daniel","authorEmail":"steve@endotech.us","timestamp":"2026-06-12T16:21:50-04:00"}
 ---
