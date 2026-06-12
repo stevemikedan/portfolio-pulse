@@ -14,4 +14,6 @@ acceptanceCriteria:
   - "Filters to user-assigned issues"
   - "Maps labels to priority"
   - "Sets source to github"
+commits:
+  - {"hash":"d838e115c71a446afa69b4c03dab6c43200211f0","author":"Steve Daniel","authorEmail":"steve@endotech.us","timestamp":"2026-06-12T15:28:09-04:00"}
 ---
