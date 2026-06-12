@@ -1,0 +1,33 @@
+{
+  "id": "30dcbdbb-ac39-424b-ac02-a795c97ac93a",
+  "taskId": "f05b02c9-babd-421e-94e9-a570b1dff4f6",
+  "taskTitle": "Add task mutation routes — POST/PATCH/DELETE /api/tasks",
+  "startedAt": "2026-06-12T20:31:29.111Z",
+  "status": "running",
+  "turns": 0,
+  "tokenUsage": {
+    "input": 0,
+    "output": 0
+  },
+  "turnTokenUsage": [],
+  "toolCalls": [],
+  "model": "claude-sonnet-4-6",
+  "invocationContext": "cli",
+  "vendor": "claude",
+  "weight": "standard",
+  "diagnostics": {
+    "tokenDiagnosticStatus": "unavailable",
+    "parseMode": "stream-json",
+    "notes": [],
+    "vendor": "claude",
+    "sandbox": "workspace-write",
+    "approvals": "never"
+  },
+  "lastActivityAt": "2026-06-12T20:32:59.161Z",
+  "tokens": {
+    "input": 0,
+    "output": 0,
+    "cached": 0,
+    "total": 0
+  }
+}

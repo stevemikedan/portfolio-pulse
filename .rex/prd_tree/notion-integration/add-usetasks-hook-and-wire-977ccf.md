@@ -18,4 +18,6 @@ acceptanceCriteria:
   - "StatCards values (totalTasks, inProgress, overdue, etc.) are derived from the live tasks"
   - "Gaps recompute from live tasks via detectGaps(); GapAnalysis reflects real DB data"
   - "Loading and error states handled (skeleton/spinner + error message)"
+commits:
+  - {"hash":"4ed61e27aa1d128a630aefd63634a9d36d602638","author":"Steve Daniel","authorEmail":"steve@endotech.us","timestamp":"2026-06-12T16:26:46-04:00"}
 ---
