@@ -2,13 +2,16 @@
 id: "f93dc3fa-33c6-4973-893e-1fda07e2b869"
 level: "task"
 title: "CSV plan import — upload CSV, parse to tasks, insert into Prisma"
-status: "pending"
+status: "completed"
 priority: "high"
 tags:
   - "backend"
   - "frontend"
   - "data"
   - "interactive"
+startedAt: "2026-06-12T20:46:41.541Z"
+completedAt: "2026-06-12T20:51:04.260Z"
+endedAt: "2026-06-12T20:51:04.260Z"
 acceptanceCriteria:
   - "POST /api/import/csv accepts an uploaded CSV and parses rows into the Task shape (title, status, priority, project, dueDate, tags; sensible header mapping + defaults)"
   - "Rows upsert into Prisma; returns a summary (imported / skipped / errors) without throwing on a single bad row"

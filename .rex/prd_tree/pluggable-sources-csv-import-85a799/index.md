@@ -12,5 +12,5 @@ description: "Self-contained data sources that need no OAuth/tokens. CSV upload 
 
 | Title | Status |
 |-------|--------|
-| [CSV plan import — upload CSV, parse to tasks, insert into Prisma](./csv-plan-import-upload-csv-f93dc3.md) | pending |
+| [CSV plan import — upload CSV, parse to tasks, insert into Prisma](./csv-plan-import-upload-csv-f93dc3.md) | completed |
 | [Local git activity source — read git log from repo paths, map to ActivityEvent](./local-git-activity-source-read-2c4cdc.md) | pending |

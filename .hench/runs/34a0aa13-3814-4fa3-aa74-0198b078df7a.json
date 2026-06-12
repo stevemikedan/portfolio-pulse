@@ -1,0 +1,33 @@
+{
+  "id": "34a0aa13-3814-4fa3-aa74-0198b078df7a",
+  "taskId": "f93dc3fa-33c6-4973-893e-1fda07e2b869",
+  "taskTitle": "CSV plan import — upload CSV, parse to tasks, insert into Prisma",
+  "startedAt": "2026-06-12T20:46:41.656Z",
+  "status": "running",
+  "turns": 0,
+  "tokenUsage": {
+    "input": 0,
+    "output": 0
+  },
+  "turnTokenUsage": [],
+  "toolCalls": [],
+  "model": "claude-sonnet-4-6",
+  "invocationContext": "cli",
+  "vendor": "claude",
+  "weight": "standard",
+  "diagnostics": {
+    "tokenDiagnosticStatus": "unavailable",
+    "parseMode": "stream-json",
+    "notes": [],
+    "vendor": "claude",
+    "sandbox": "workspace-write",
+    "approvals": "never"
+  },
+  "lastActivityAt": "2026-06-12T20:50:11.757Z",
+  "tokens": {
+    "input": 0,
+    "output": 0,
+    "cached": 0,
+    "total": 0
+  }
+}

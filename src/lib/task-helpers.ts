@@ -30,6 +30,6 @@ export function prismaTaskToTask(t: PrismaTaskRow): Task {
   };
 }
 
-export const VALID_SOURCES = ["notion", "github"] as const;
+export const VALID_SOURCES = ["notion", "github", "csv"] as const;
 export const VALID_STATUSES = ["todo", "in_progress", "done", "blocked"] as const;
 export const VALID_PRIORITIES = ["high", "medium", "low", "none"] as const;

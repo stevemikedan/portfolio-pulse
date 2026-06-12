@@ -10,6 +10,7 @@ import { ActivityFeed } from './ActivityFeed';
 import { GapAnalysis } from './GapAnalysis';
 import { RhythmChart } from './RhythmChart';
 import { NewTaskForm } from './NewTaskForm';
+import { CsvImport } from './CsvImport';
 import type { TaskStatus, Priority } from '@/lib/types';
 
 export function Dashboard() {
@@ -115,6 +116,7 @@ export function Dashboard() {
             onStatusChange={handleStatusChange}
             onPriorityChange={handlePriorityChange}
             onDelete={handleDelete}
+            headerActions={<CsvImport onSuccess={refresh} />}
           />
           <ActivityFeed events={activity} />
           <GapAnalysis gaps={gaps} />

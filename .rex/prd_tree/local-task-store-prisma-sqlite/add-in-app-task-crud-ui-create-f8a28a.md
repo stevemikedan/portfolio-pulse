@@ -18,4 +18,6 @@ acceptanceCriteria:
   - "Per-task delete control"
   - "After any mutation, task data refetches (or optimistic update) so StatCards and GapAnalysis recompute live"
   - "Uses the client task hook; loading and error states handled"
+commits:
+  - {"hash":"8ada3afffe015fd86c38a1bb46a756157aa772bf","author":"Steve Daniel","authorEmail":"steve@endotech.us","timestamp":"2026-06-12T16:45:56-04:00"}
 ---

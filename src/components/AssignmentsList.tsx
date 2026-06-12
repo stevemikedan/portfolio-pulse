@@ -19,6 +19,7 @@ const priorityDot: Record<string, string> = {
 const sourceIcon: Record<string, string> = {
   notion: "N",
   github: "GH",
+  csv: "CSV",
 };
 
 function daysUntil(dateStr?: string): number | null {
@@ -33,6 +34,7 @@ interface AssignmentsListProps {
   onStatusChange: (id: string, status: TaskStatus) => void;
   onPriorityChange: (id: string, priority: Priority) => void;
   onDelete: (id: string) => void;
+  headerActions?: React.ReactNode;
 }
 
 export function AssignmentsList({
@@ -41,6 +43,7 @@ export function AssignmentsList({
   onStatusChange,
   onPriorityChange,
   onDelete,
+  headerActions,
 }: AssignmentsListProps) {
   const sorted = [...tasks].sort((a, b) => {
     const prio = { high: 0, medium: 1, low: 2, none: 3 };
@@ -59,15 +62,18 @@ export function AssignmentsList({
             From Notion + GitHub — sorted by status &amp; priority
           </p>
         </div>
-        {onNew && (
-          <button
-            type="button"
-            onClick={onNew}
-            className="flex-shrink-0 text-xs px-2.5 py-1 rounded-lg bg-blue-500 text-white hover:bg-blue-600 transition-colors"
-          >
-            + New
-          </button>
-        )}
+        <div className="flex items-center gap-2 flex-shrink-0">
+          {headerActions}
+          {onNew && (
+            <button
+              type="button"
+              onClick={onNew}
+              className="text-xs px-2.5 py-1 rounded-lg bg-blue-500 text-white hover:bg-blue-600 transition-colors"
+            >
+              + New
+            </button>
+          )}
+        </div>
       </div>
       <div className="divide-y divide-[var(--border)] max-h-[400px] overflow-y-auto">
         {sorted.map((task) => {

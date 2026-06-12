@@ -1,5 +1,5 @@
 export type Priority = "high" | "medium" | "low" | "none";
-export type TaskSource = "notion" | "github";
+export type TaskSource = "notion" | "github" | "csv";
 export type TaskStatus = "todo" | "in_progress" | "done" | "blocked";
 
 export interface Task {
