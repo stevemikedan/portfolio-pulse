@@ -14,4 +14,6 @@ acceptanceCriteria:
   - "Fetches PR events"
   - "Maps to Activity type with correct activityType"
   - "Includes repo context"
+commits:
+  - {"hash":"14c965c55725ca67bea5f4f1603e705764eb1b20","author":"Steve Daniel","authorEmail":"steve@endotech.us","timestamp":"2026-06-12T15:22:56-04:00"}
 ---

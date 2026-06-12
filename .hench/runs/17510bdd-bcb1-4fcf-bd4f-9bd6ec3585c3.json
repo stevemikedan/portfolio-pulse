@@ -1,0 +1,33 @@
+{
+  "id": "17510bdd-bcb1-4fcf-bd4f-9bd6ec3585c3",
+  "taskId": "b1e05303-9664-4231-b2df-053008a42e4a",
+  "taskTitle": "Fetch GitHub issues and map to Task type",
+  "startedAt": "2026-06-12T19:23:16.675Z",
+  "status": "running",
+  "turns": 0,
+  "tokenUsage": {
+    "input": 0,
+    "output": 0
+  },
+  "turnTokenUsage": [],
+  "toolCalls": [],
+  "model": "claude-sonnet-4-6",
+  "invocationContext": "cli",
+  "vendor": "claude",
+  "weight": "standard",
+  "diagnostics": {
+    "tokenDiagnosticStatus": "unavailable",
+    "parseMode": "stream-json",
+    "notes": [],
+    "vendor": "claude",
+    "sandbox": "workspace-write",
+    "approvals": "never"
+  },
+  "lastActivityAt": "2026-06-12T19:27:46.805Z",
+  "tokens": {
+    "input": 0,
+    "output": 0,
+    "cached": 0,
+    "total": 0
+  }
+}
