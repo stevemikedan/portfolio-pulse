@@ -14,4 +14,6 @@ acceptanceCriteria:
   - "Severity color coding (red/yellow/green)"
   - "Summary gap score displayed"
   - "Accepts GapItem[] as props"
+commits:
+  - {"hash":"457be8adeb1abb83560eb0b24020a73efd818968","author":"Steve Daniel","authorEmail":"steve@endotech.us","timestamp":"2026-06-12T15:19:14-04:00"}
 ---

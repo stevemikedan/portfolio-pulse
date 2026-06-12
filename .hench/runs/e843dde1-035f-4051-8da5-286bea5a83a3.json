@@ -1,0 +1,33 @@
+{
+  "id": "e843dde1-035f-4051-8da5-286bea5a83a3",
+  "taskId": "991a2618-9400-49c4-be3e-af626a6ee564",
+  "taskTitle": "Fetch GitHub commits and PRs, map to Activity type",
+  "startedAt": "2026-06-12T19:20:19.218Z",
+  "status": "running",
+  "turns": 0,
+  "tokenUsage": {
+    "input": 0,
+    "output": 0
+  },
+  "turnTokenUsage": [],
+  "toolCalls": [],
+  "model": "claude-sonnet-4-6",
+  "invocationContext": "cli",
+  "vendor": "claude",
+  "weight": "standard",
+  "diagnostics": {
+    "tokenDiagnosticStatus": "unavailable",
+    "parseMode": "stream-json",
+    "notes": [],
+    "vendor": "claude",
+    "sandbox": "workspace-write",
+    "approvals": "never"
+  },
+  "lastActivityAt": "2026-06-12T19:22:19.287Z",
+  "tokens": {
+    "input": 0,
+    "output": 0,
+    "cached": 0,
+    "total": 0
+  }
+}
