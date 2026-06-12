@@ -1,0 +1,33 @@
+{
+  "id": "b406792a-9182-4008-81a3-fc41628b5ef2",
+  "taskId": "dac331d6-59da-4e1c-87a0-f667c63c150a",
+  "taskTitle": "Seed the database with sample tasks from mock-data",
+  "startedAt": "2026-06-12T20:16:04.267Z",
+  "status": "running",
+  "turns": 0,
+  "tokenUsage": {
+    "input": 0,
+    "output": 0
+  },
+  "turnTokenUsage": [],
+  "toolCalls": [],
+  "model": "claude-sonnet-4-6",
+  "invocationContext": "cli",
+  "vendor": "claude",
+  "weight": "standard",
+  "diagnostics": {
+    "tokenDiagnosticStatus": "unavailable",
+    "parseMode": "stream-json",
+    "notes": [],
+    "vendor": "claude",
+    "sandbox": "workspace-write",
+    "approvals": "never"
+  },
+  "lastActivityAt": "2026-06-12T20:17:04.315Z",
+  "tokens": {
+    "input": 0,
+    "output": 0,
+    "cached": 0,
+    "total": 0
+  }
+}

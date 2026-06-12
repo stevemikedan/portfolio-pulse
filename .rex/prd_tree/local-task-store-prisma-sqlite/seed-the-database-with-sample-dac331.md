@@ -2,13 +2,16 @@
 id: "dac331d6-59da-4e1c-87a0-f667c63c150a"
 level: "task"
 title: "Seed the database with sample tasks from mock-data"
-status: "pending"
+status: "completed"
 priority: "high"
 tags:
   - "backend"
   - "data"
 blockedBy:
   - "4dcfe521-97ae-41ae-bbb7-4d539f698282"
+startedAt: "2026-06-12T20:16:04.173Z"
+completedAt: "2026-06-12T20:17:52.139Z"
+endedAt: "2026-06-12T20:17:52.139Z"
 acceptanceCriteria:
   - "prisma/seed.ts inserts the sample tasks currently in src/lib/mock-data.ts into the Task table"
   - "Wired as prisma db seed (package.json prisma.seed) and/or an npm run seed script"

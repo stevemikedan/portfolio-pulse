@@ -17,4 +17,6 @@ acceptanceCriteria:
   - "Prisma client singleton in src/lib/prisma.ts that survives Next dev hot-reload without leaking connections"
   - "Initial migration created (prisma migrate dev --name init) and npx prisma generate runs clean; dev.db gitignored"
   - "npx tsc --noEmit passes and existing tests still green"
+commits:
+  - {"hash":"a2577680d9da5c52e9bc5b7156af967d13e9fdf3","author":"Steve Daniel","authorEmail":"steve@endotech.us","timestamp":"2026-06-12T16:12:30-04:00"}
 ---
