@@ -16,4 +16,6 @@ acceptanceCriteria:
   - "Uses @notionhq/client to query database"
   - "Returns JSON array on success"
   - "Returns error response with message on failure"
+commits:
+  - {"hash":"bf2b01cb00057b6ced2a1740945d879a7ae68f79","author":"Steve Daniel","authorEmail":"steve@endotech.us","timestamp":"2026-06-12T13:37:44-04:00"}
 ---
