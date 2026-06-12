@@ -16,4 +16,6 @@ acceptanceCriteria:
   - "Uses @octokit/rest to fetch events"
   - "Returns JSON array of activities"
   - "Handles auth errors gracefully"
+commits:
+  - {"hash":"9896e38aedd1fad0e57095df178b5bf862f213ee","author":"Steve Daniel","authorEmail":"steve@endotech.us","timestamp":"2026-06-12T12:13:27-04:00"}
 ---

@@ -1,0 +1,33 @@
+{
+  "id": "5529ba48-9b7f-4576-a976-c884559cdc3e",
+  "taskId": "a973d286-fb57-44e9-9cf5-27858fd7a49b",
+  "taskTitle": "Create /api/notion/tasks API route with Notion client setup",
+  "startedAt": "2026-06-12T17:31:33.832Z",
+  "status": "running",
+  "turns": 0,
+  "tokenUsage": {
+    "input": 0,
+    "output": 0
+  },
+  "turnTokenUsage": [],
+  "toolCalls": [],
+  "model": "claude-sonnet-4-6",
+  "invocationContext": "cli",
+  "vendor": "claude",
+  "weight": "standard",
+  "diagnostics": {
+    "tokenDiagnosticStatus": "unavailable",
+    "parseMode": "stream-json",
+    "notes": [],
+    "vendor": "claude",
+    "sandbox": "workspace-write",
+    "approvals": "never"
+  },
+  "lastActivityAt": "2026-06-12T17:37:03.987Z",
+  "tokens": {
+    "input": 0,
+    "output": 0,
+    "cached": 0,
+    "total": 0
+  }
+}
