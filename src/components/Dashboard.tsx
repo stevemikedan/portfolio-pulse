@@ -4,7 +4,7 @@ import { useState, useMemo, useCallback, useEffect } from 'react';
 import { useTasks } from '@/hooks/useTasks';
 import { useActivity } from '@/hooks/useActivity';
 import { detectGaps } from '@/lib/gap-detection';
-import { mockData } from '@/lib/mock-data';
+import { aggregateRhythm } from '@/lib/activity-rhythm';
 import { AppHeader, type SourceStatus } from './AppHeader';
 import { StatCards } from './StatCards';
 import { AssignmentsList } from './AssignmentsList';
@@ -18,7 +18,6 @@ import type { Task } from '@/lib/types';
 export function Dashboard() {
   const { tasks, loading, error, refresh: refreshTasks } = useTasks();
   const { activity, refresh: refreshActivity } = useActivity();
-  const { rhythm } = mockData;
   // undefined = form closed · null = creating a new task · Task = editing that task
   const [formTask, setFormTask] = useState<Task | null | undefined>(undefined);
   const [lastUpdated, setLastUpdated] = useState<Date | null>(null);
@@ -49,6 +48,8 @@ export function Dashboard() {
   }, [tasks]);
 
   const gaps = useMemo(() => detectGaps(tasks, activity), [tasks, activity]);
+
+  const rhythm = useMemo(() => aggregateRhythm(activity, 14), [activity]);
 
   const sources: SourceStatus[] = useMemo(() => {
     const hasLocal = activity.some((a) => a.id?.startsWith('local-'));

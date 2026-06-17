@@ -1,5 +1,18 @@
 import { render, screen } from "@testing-library/react";
-import { describe, it, expect } from "vitest";
+import { describe, it, expect, vi } from "vitest";
+
+// Chart.js renders to a <canvas>, which jsdom doesn't implement — mock the
+// chart and assert on the data we hand it instead.
+vi.mock("react-chartjs-2", () => ({
+  Bar: (props: { data: { labels: string[]; datasets: { label: string }[] } }) => (
+    <div
+      data-testid="bar-chart"
+      data-labels={props.data.labels.length}
+      data-series={props.data.datasets.map((d) => d.label).join(",")}
+    />
+  ),
+}));
+
 import { RhythmChart } from "./RhythmChart";
 import type { RhythmDataPoint } from "@/lib/types";
 
@@ -15,29 +28,26 @@ describe("RhythmChart", () => {
     expect(screen.getByText("Work Rhythm")).toBeInTheDocument();
   });
 
-  it("renders day labels for each data point", () => {
+  it("renders a bar for each day with all activity series", () => {
     render(<RhythmChart data={mockRhythm} />);
-    // Each data point renders a day abbreviation
-    const dayLabels = screen.getAllByText(/Mon|Tue|Wed|Thu|Fri|Sat|Sun/);
-    expect(dayLabels).toHaveLength(3);
+    const chart = screen.getByTestId("bar-chart");
+    expect(chart).toHaveAttribute("data-labels", "3");
+    expect(chart.getAttribute("data-series")).toContain("Commits");
+    expect(chart.getAttribute("data-series")).toContain("PRs Merged");
   });
 
-  it("renders total activity counts", () => {
+  it("shows the total event count", () => {
     render(<RhythmChart data={mockRhythm} />);
-    // Total for first day: 4+1+0+1 = 6
-    expect(screen.getByText("6")).toBeInTheDocument();
-    // Total for second day: 7+0+1+0 = 8
-    expect(screen.getByText("8")).toBeInTheDocument();
+    // 4+1+0+1 + 7+0+1+0 + 2 = 16
+    expect(screen.getByText("16 events")).toBeInTheDocument();
   });
 
-  it("renders legend items", () => {
-    render(<RhythmChart data={mockRhythm} />);
-    expect(screen.getByText("Commits")).toBeInTheDocument();
-    expect(screen.getByText("PRs Merged")).toBeInTheDocument();
-  });
-
-  it("handles empty data", () => {
-    render(<RhythmChart data={[]} />);
+  it("shows an empty-state message when there is no activity", () => {
+    const empty: RhythmDataPoint[] = [
+      { date: "2026-06-02", commits: 0, prsOpened: 0, prsMerged: 0, issuesClosed: 0 },
+    ];
+    render(<RhythmChart data={empty} />);
     expect(screen.getByText("Work Rhythm")).toBeInTheDocument();
+    expect(screen.getByText(/No activity in this window/)).toBeInTheDocument();
   });
 });
