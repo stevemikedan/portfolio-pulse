@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
-import { getRepoPaths, readLocalGitActivity } from "@/lib/local-git-activity";
+import { readLocalGitActivity } from "@/lib/local-git-activity";
+import { getRepoPaths } from "@/lib/repo-store";
 import type { ActivityEvent } from "@/lib/types";
 
 export async function GET() {

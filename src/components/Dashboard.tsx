@@ -13,6 +13,7 @@ import { GapAnalysis } from './GapAnalysis';
 import { RhythmChart } from './RhythmChart';
 import { NewTaskForm } from './NewTaskForm';
 import { CsvImport } from './CsvImport';
+import { LocalRepoPicker } from './LocalRepoPicker';
 import type { Task } from '@/lib/types';
 
 export function Dashboard() {
@@ -119,6 +120,7 @@ export function Dashboard() {
           <ActivityFeed events={activity} />
           <GapAnalysis gaps={gaps} />
           <RhythmChart activity={activity} />
+          <LocalRepoPicker onSave={refreshAll} />
         </div>
       </div>
     );
