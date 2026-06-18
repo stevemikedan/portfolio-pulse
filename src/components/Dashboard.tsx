@@ -3,6 +3,7 @@
 import { useState, useMemo, useCallback, useEffect } from 'react';
 import { useTasks } from '@/hooks/useTasks';
 import { useActivity } from '@/hooks/useActivity';
+import { useGitHub } from '@/hooks/useGitHub';
 import { detectGaps } from '@/lib/gap-detection';
 import { AppHeader, type SourceStatus } from './AppHeader';
 import { StatCards } from './StatCards';
@@ -15,8 +16,15 @@ import { CsvImport } from './CsvImport';
 import type { Task } from '@/lib/types';
 
 export function Dashboard() {
-  const { tasks, loading, error, refresh: refreshTasks } = useTasks();
+  const { tasks: localTasks, loading, error, refresh: refreshTasks } = useTasks();
   const { activity, refresh: refreshActivity } = useActivity();
+  const { tasks: githubTasks, refresh: refreshGitHub } = useGitHub();
+
+  const tasks = useMemo(() => {
+    const localIds = new Set(localTasks.map((t) => t.id));
+    const uniqueGitHub = githubTasks.filter((t) => !localIds.has(t.id));
+    return [...localTasks, ...uniqueGitHub];
+  }, [localTasks, githubTasks]);
   // undefined = form closed · null = creating a new task · Task = editing that task
   const [formTask, setFormTask] = useState<Task | null | undefined>(undefined);
   const [lastUpdated, setLastUpdated] = useState<Date | null>(null);
@@ -28,10 +36,10 @@ export function Dashboard() {
 
   const refreshAll = useCallback(async () => {
     setRefreshing(true);
-    await Promise.all([refreshTasks(), refreshActivity()]);
+    await Promise.all([refreshTasks(), refreshActivity(), refreshGitHub()]);
     setRefreshing(false);
     setLastUpdated(new Date());
-  }, [refreshTasks, refreshActivity]);
+  }, [refreshTasks, refreshActivity, refreshGitHub]);
 
   const stats = useMemo(() => {
     const totalTasks = tasks.length;

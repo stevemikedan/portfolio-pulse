@@ -152,7 +152,7 @@ export function AssignmentsList({ tasks, onNew, onOpen, headerActions }: Assignm
                 aria-hidden
                 className="flex-shrink-0 mt-0.5 text-[0.7rem] text-[var(--text-3)] opacity-0 group-hover:opacity-100 transition-opacity"
               >
-                ✎ edit
+                {task.source === 'github' || task.source === 'notion' ? '↗ open' : '✎ edit'}
               </span>
             </div>
           );

@@ -12,6 +12,7 @@ interface TaskFormProps {
 
 export function NewTaskForm({ task, onClose, onSuccess }: TaskFormProps) {
   const isEdit = !!task;
+  const isReadOnly = task?.source === 'github' || task?.source === 'notion';
   const [title, setTitle] = useState(task?.title ?? '');
   const [status, setStatus] = useState<TaskStatus>(task?.status ?? 'todo');
   const [priority, setPriority] = useState<Priority>(task?.priority ?? 'medium');
@@ -70,6 +71,52 @@ export function NewTaskForm({ task, onClose, onSuccess }: TaskFormProps) {
   }
 
   const busy = submitting || deleting;
+
+  const sourceLabel: Record<string, string> = { github: 'GitHub', notion: 'Notion' };
+
+  if (isReadOnly && task) {
+    return (
+      <div
+        className="fixed inset-0 z-50 flex items-center justify-center bg-black/50"
+        onClick={onClose}
+      >
+        <div
+          className="bg-[var(--bg-card)] border border-[var(--border)] rounded-xl p-6 w-full max-w-md mx-4 shadow-2xl"
+          onClick={(e) => e.stopPropagation()}
+        >
+          <div className="flex items-center justify-between mb-4">
+            <h2 className="text-sm font-semibold">{sourceLabel[task.source] ?? task.source} Task</h2>
+            <button type="button" onClick={onClose} className="text-[var(--text-3)] hover:text-[var(--text-1)] text-sm leading-none" aria-label="Close">✕</button>
+          </div>
+          <div className="space-y-3 text-sm">
+            <p className="font-medium">{task.title}</p>
+            {task.project && <p className="text-xs text-[var(--text-3)]">{task.project}</p>}
+            <div className="flex gap-2 flex-wrap text-xs text-[var(--text-3)]">
+              <span>{task.status.replace('_', ' ')}</span>
+              <span>·</span>
+              <span>{task.priority} priority</span>
+              {task.dueDate && <><span>·</span><span>due {task.dueDate}</span></>}
+            </div>
+          </div>
+          <div className="flex gap-3 mt-6">
+            <button type="button" onClick={onClose} className="flex-1 px-4 py-2 text-sm rounded-lg border border-[var(--border)] hover:bg-[var(--bg-hover)] transition-colors">
+              Close
+            </button>
+            {task.sourceUrl && (
+              <a
+                href={task.sourceUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 px-4 py-2 text-sm rounded-lg bg-blue-500 text-white hover:bg-blue-600 transition-colors text-center"
+              >
+                View on {sourceLabel[task.source] ?? task.source} ↗
+              </a>
+            )}
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div
