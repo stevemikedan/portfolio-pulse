@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import { Bar } from "react-chartjs-2";
 import {
   Chart as ChartJS,
@@ -11,7 +11,8 @@ import {
   Legend,
   type ChartOptions,
 } from "chart.js";
-import type { RhythmDataPoint } from "@/lib/types";
+import type { ActivityEvent } from "@/lib/types";
+import { aggregateRhythm } from "@/lib/activity-rhythm";
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Tooltip, Legend);
 
@@ -22,11 +23,18 @@ const SERIES = [
   { key: "issuesClosed", label: "Issues Closed", color: "#f59e0b" },
 ] as const;
 
+const RANGES = [7, 14, 30] as const;
+type Range = (typeof RANGES)[number];
+
 function dayLabel(isoDate: string): string {
   return new Date(`${isoDate}T00:00:00`).toLocaleDateString("en-US", { weekday: "short" });
 }
 
-export function RhythmChart({ data }: { data: RhythmDataPoint[] }) {
+export function RhythmChart({ activity }: { activity: ActivityEvent[] }) {
+  const [days, setDays] = useState<Range>(14);
+
+  const data = useMemo(() => aggregateRhythm(activity, days), [activity, days]);
+
   const total = useMemo(
     () =>
       data.reduce(
@@ -97,9 +105,23 @@ export function RhythmChart({ data }: { data: RhythmDataPoint[] }) {
       <div className="px-4 py-3 border-b border-[var(--border)] flex items-center justify-between">
         <div>
           <h2 className="text-sm font-semibold">Work Rhythm</h2>
-          <p className="text-xs text-[var(--text-3)]">Daily activity over the past {data.length} days</p>
+          <p className="text-xs text-[var(--text-3)]">Daily activity — {total} events</p>
         </div>
-        <span className="text-[0.65rem] text-[var(--text-3)]">{total} events</span>
+        <div className="flex items-center gap-1">
+          {RANGES.map((r) => (
+            <button
+              key={r}
+              onClick={() => setDays(r)}
+              className={`px-2 py-0.5 text-[0.65rem] rounded font-medium transition-colors ${
+                days === r
+                  ? "bg-blue-600 text-white"
+                  : "text-[var(--text-3)] hover:text-[var(--text-2)]"
+              }`}
+            >
+              {r}d
+            </button>
+          ))}
+        </div>
       </div>
       <div className="p-4">
         {total === 0 ? (
