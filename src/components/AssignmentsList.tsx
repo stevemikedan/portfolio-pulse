@@ -9,6 +9,13 @@ const statusColors: Record<string, string> = {
   blocked: "bg-red-500/10 text-red-400",
 };
 
+const statusLabels: Record<string, string> = {
+  todo: "to do",
+  in_progress: "in progress",
+  done: "done",
+  blocked: "blocked",
+};
+
 const priorityDot: Record<string, string> = {
   high: "bg-red-400",
   medium: "bg-amber-400",
@@ -16,9 +23,17 @@ const priorityDot: Record<string, string> = {
   none: "bg-gray-500",
 };
 
+const priorityLabel: Record<string, string> = {
+  high: "↑ high",
+  medium: "→ medium",
+  low: "↓ low",
+  none: "– none",
+};
+
 const sourceIcon: Record<string, string> = {
   notion: "N",
   github: "GH",
+  csv: "CSV",
 };
 
 function daysUntil(dateStr?: string): number | null {
@@ -27,7 +42,14 @@ function daysUntil(dateStr?: string): number | null {
   return Math.ceil(diff / (1000 * 60 * 60 * 24));
 }
 
-export function AssignmentsList({ tasks }: { tasks: Task[] }) {
+interface AssignmentsListProps {
+  tasks: Task[];
+  onNew?: () => void;
+  onOpen: (task: Task) => void;
+  headerActions?: React.ReactNode;
+}
+
+export function AssignmentsList({ tasks, onNew, onOpen, headerActions }: AssignmentsListProps) {
   const sorted = [...tasks].sort((a, b) => {
     const prio = { high: 0, medium: 1, low: 2, none: 3 };
     const statusOrder = { in_progress: 0, todo: 1, blocked: 2, done: 3 };
@@ -38,9 +60,23 @@ export function AssignmentsList({ tasks }: { tasks: Task[] }) {
 
   return (
     <div className="bg-[var(--bg-card)] border border-[var(--border)] rounded-xl overflow-hidden">
-      <div className="px-4 py-3 border-b border-[var(--border)]">
-        <h2 className="text-sm font-semibold">My Assignments</h2>
-        <p className="text-xs text-[var(--text-3)]">From Notion + GitHub — sorted by status & priority</p>
+      <div className="px-4 py-3 border-b border-[var(--border)] flex items-center justify-between gap-2">
+        <div>
+          <h2 className="text-sm font-semibold">My Assignments</h2>
+          <p className="text-xs text-[var(--text-3)]">Click a task to edit · sorted by status &amp; priority</p>
+        </div>
+        <div className="flex items-center gap-2 flex-shrink-0">
+          {headerActions}
+          {onNew && (
+            <button
+              type="button"
+              onClick={onNew}
+              className="text-xs px-2.5 py-1 rounded-lg bg-blue-500 text-white hover:bg-blue-600 transition-colors"
+            >
+              + New
+            </button>
+          )}
+        </div>
       </div>
       <div className="divide-y divide-[var(--border)] max-h-[400px] overflow-y-auto">
         {sorted.map((task) => {
@@ -51,7 +87,16 @@ export function AssignmentsList({ tasks }: { tasks: Task[] }) {
           return (
             <div
               key={task.id}
-              className="px-4 py-3 hover:bg-[var(--bg-hover)] transition-colors flex items-start gap-3"
+              role="button"
+              tabIndex={0}
+              onClick={() => onOpen(task)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                  e.preventDefault();
+                  onOpen(task);
+                }
+              }}
+              className="px-4 py-3 hover:bg-[var(--bg-hover)] transition-colors flex items-start gap-3 group cursor-pointer focus:outline-none focus:bg-[var(--bg-hover)]"
             >
               <div className={`w-2 h-2 rounded-full mt-1.5 flex-shrink-0 ${priorityDot[task.priority]}`} />
               <div className="flex-1 min-w-0">
@@ -62,6 +107,7 @@ export function AssignmentsList({ tasks }: { tasks: Task[] }) {
                       href={task.sourceUrl}
                       target="_blank"
                       rel="noopener noreferrer"
+                      onClick={(e) => e.stopPropagation()}
                       className="text-[0.6rem] px-1.5 py-0.5 rounded bg-[var(--bg-hover)] text-[var(--text-3)] hover:text-[var(--text-2)] flex-shrink-0"
                     >
                       {sourceIcon[task.source]}
@@ -77,10 +123,16 @@ export function AssignmentsList({ tasks }: { tasks: Task[] }) {
                     <span className="text-[0.65rem] text-[var(--text-3)]">{task.project}</span>
                   )}
                   <span className={`text-[0.6rem] px-1.5 py-0.5 rounded font-medium ${statusColors[task.status]}`}>
-                    {task.status.replace("_", " ")}
+                    {statusLabels[task.status]}
+                  </span>
+                  <span className="text-[0.6rem] px-1.5 py-0.5 rounded bg-[var(--bg-hover)] text-[var(--text-3)]">
+                    {priorityLabel[task.priority]}
                   </span>
                   {task.tags?.map((tag) => (
-                    <span key={tag} className="text-[0.6rem] px-1.5 py-0.5 rounded bg-[var(--bg-hover)] text-[var(--text-3)]">
+                    <span
+                      key={tag}
+                      className="text-[0.6rem] px-1.5 py-0.5 rounded bg-[var(--bg-hover)] text-[var(--text-3)]"
+                    >
                       {tag}
                     </span>
                   ))}
@@ -96,6 +148,12 @@ export function AssignmentsList({ tasks }: { tasks: Task[] }) {
                   )}
                 </div>
               </div>
+              <span
+                aria-hidden
+                className="flex-shrink-0 mt-0.5 text-[0.7rem] text-[var(--text-3)] opacity-0 group-hover:opacity-100 transition-opacity"
+              >
+                {task.source === 'github' || task.source === 'notion' ? '↗ open' : '✎ edit'}
+              </span>
             </div>
           );
         })}

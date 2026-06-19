@@ -1,0 +1,884 @@
+{
+  "id": "84cf0c55-5daf-4018-99d7-953e2e5849d6",
+  "taskId": "7b71fda1-32bc-4613-a9fd-a92dabf89caa",
+  "taskTitle": "Create /api/tasks route — Prisma default, merge Notion when token present",
+  "startedAt": "2026-06-12T20:18:57.565Z",
+  "status": "completed",
+  "turns": 17,
+  "tokenUsage": {
+    "input": 117,
+    "output": 7996,
+    "cacheCreationInput": 150676,
+    "cacheReadInput": 2209375
+  },
+  "turnTokenUsage": [
+    {
+      "turn": 1,
+      "input": 3,
+      "output": 7,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 16953,
+      "cacheReadInput": 21089
+    },
+    {
+      "turn": 1,
+      "input": 3,
+      "output": 7,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 16953,
+      "cacheReadInput": 21089
+    },
+    {
+      "turn": 1,
+      "input": 3,
+      "output": 7,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 16953,
+      "cacheReadInput": 21089
+    },
+    {
+      "turn": 1,
+      "input": 0,
+      "output": 0,
+      "diagnosticStatus": "unavailable",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "turn": 1,
+      "input": 3,
+      "output": 3,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 13024
+    },
+    {
+      "turn": 1,
+      "input": 0,
+      "output": 0,
+      "diagnosticStatus": "unavailable",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "turn": 1,
+      "input": 7,
+      "output": 1,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 259,
+      "cacheReadInput": 13024
+    },
+    {
+      "turn": 1,
+      "input": 0,
+      "output": 0,
+      "diagnosticStatus": "unavailable",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "turn": 1,
+      "input": 5,
+      "output": 1,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 2001,
+      "cacheReadInput": 13283
+    },
+    {
+      "turn": 1,
+      "input": 0,
+      "output": 0,
+      "diagnosticStatus": "unavailable",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "turn": 1,
+      "input": 5,
+      "output": 1,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 406,
+      "cacheReadInput": 15284
+    },
+    {
+      "turn": 1,
+      "input": 0,
+      "output": 0,
+      "diagnosticStatus": "unavailable",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "turn": 1,
+      "input": 5,
+      "output": 1,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 406,
+      "cacheReadInput": 15284
+    },
+    {
+      "turn": 1,
+      "input": 0,
+      "output": 0,
+      "diagnosticStatus": "unavailable",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "turn": 1,
+      "input": 5,
+      "output": 1,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 406,
+      "cacheReadInput": 15284
+    },
+    {
+      "turn": 1,
+      "input": 0,
+      "output": 0,
+      "diagnosticStatus": "unavailable",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "turn": 1,
+      "input": 5,
+      "output": 1,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 406,
+      "cacheReadInput": 15284
+    },
+    {
+      "turn": 1,
+      "input": 0,
+      "output": 0,
+      "diagnosticStatus": "unavailable",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "turn": 1,
+      "input": 6,
+      "output": 1,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 3315,
+      "cacheReadInput": 15690
+    },
+    {
+      "turn": 1,
+      "input": 0,
+      "output": 0,
+      "diagnosticStatus": "unavailable",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "turn": 1,
+      "input": 6,
+      "output": 1,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 3315,
+      "cacheReadInput": 15690
+    },
+    {
+      "turn": 1,
+      "input": 0,
+      "output": 0,
+      "diagnosticStatus": "unavailable",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "turn": 1,
+      "input": 6,
+      "output": 1,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 3315,
+      "cacheReadInput": 15690
+    },
+    {
+      "turn": 1,
+      "input": 0,
+      "output": 0,
+      "diagnosticStatus": "unavailable",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "turn": 1,
+      "input": 6,
+      "output": 1,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 2048,
+      "cacheReadInput": 19005
+    },
+    {
+      "turn": 1,
+      "input": 0,
+      "output": 0,
+      "diagnosticStatus": "unavailable",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "turn": 1,
+      "input": 1,
+      "output": 12,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 1300,
+      "cacheReadInput": 38042
+    },
+    {
+      "turn": 2,
+      "input": 1,
+      "output": 12,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 1300,
+      "cacheReadInput": 38042
+    },
+    {
+      "turn": 2,
+      "input": 1,
+      "output": 12,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 1300,
+      "cacheReadInput": 38042
+    },
+    {
+      "turn": 2,
+      "input": 1,
+      "output": 12,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 1300,
+      "cacheReadInput": 38042
+    },
+    {
+      "turn": 2,
+      "input": 1,
+      "output": 12,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 1300,
+      "cacheReadInput": 38042
+    },
+    {
+      "turn": 2,
+      "input": 1,
+      "output": 8,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 5203,
+      "cacheReadInput": 39342
+    },
+    {
+      "turn": 3,
+      "input": 1,
+      "output": 8,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 5203,
+      "cacheReadInput": 39342
+    },
+    {
+      "turn": 3,
+      "input": 1,
+      "output": 8,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 5203,
+      "cacheReadInput": 39342
+    },
+    {
+      "turn": 3,
+      "input": 1,
+      "output": 30,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 2335,
+      "cacheReadInput": 44545
+    },
+    {
+      "turn": 4,
+      "input": 1,
+      "output": 30,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 2335,
+      "cacheReadInput": 44545
+    },
+    {
+      "turn": 4,
+      "input": 1,
+      "output": 30,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 2335,
+      "cacheReadInput": 44545
+    },
+    {
+      "turn": 5,
+      "input": 1,
+      "output": 2,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 2064,
+      "cacheReadInput": 46880
+    },
+    {
+      "turn": 5,
+      "input": 1,
+      "output": 2,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 2064,
+      "cacheReadInput": 46880
+    },
+    {
+      "turn": 6,
+      "input": 1,
+      "output": 2,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 583,
+      "cacheReadInput": 48944
+    },
+    {
+      "turn": 6,
+      "input": 1,
+      "output": 2,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 583,
+      "cacheReadInput": 48944
+    },
+    {
+      "turn": 6,
+      "input": 1,
+      "output": 63,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 130,
+      "cacheReadInput": 49527
+    },
+    {
+      "turn": 7,
+      "input": 1,
+      "output": 6,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 753,
+      "cacheReadInput": 49657
+    },
+    {
+      "turn": 7,
+      "input": 1,
+      "output": 6,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 753,
+      "cacheReadInput": 49657
+    },
+    {
+      "turn": 8,
+      "input": 1,
+      "output": 1,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 151,
+      "cacheReadInput": 50410
+    },
+    {
+      "turn": 8,
+      "input": 1,
+      "output": 1,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 151,
+      "cacheReadInput": 50410
+    },
+    {
+      "turn": 9,
+      "input": 1,
+      "output": 2,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 249,
+      "cacheReadInput": 50561
+    },
+    {
+      "turn": 9,
+      "input": 1,
+      "output": 2,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 249,
+      "cacheReadInput": 50561
+    },
+    {
+      "turn": 9,
+      "input": 1,
+      "output": 49,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 649,
+      "cacheReadInput": 50810
+    },
+    {
+      "turn": 10,
+      "input": 1,
+      "output": 2,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 305,
+      "cacheReadInput": 51459
+    },
+    {
+      "turn": 10,
+      "input": 1,
+      "output": 2,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 305,
+      "cacheReadInput": 51459
+    },
+    {
+      "turn": 10,
+      "input": 3,
+      "output": 5,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 572,
+      "cacheReadInput": 51764
+    },
+    {
+      "turn": 10,
+      "input": 1,
+      "output": 64,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 211,
+      "cacheReadInput": 52336
+    },
+    {
+      "turn": 11,
+      "input": 1,
+      "output": 1,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 286,
+      "cacheReadInput": 52547
+    },
+    {
+      "turn": 11,
+      "input": 19,
+      "output": 7576,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 31744,
+      "cacheReadInput": 697913
+    }
+  ],
+  "toolCalls": [
+    {
+      "turn": 1,
+      "tool": "Agent",
+      "input": {
+        "description": "Explore portfolio-pulse API structure",
+        "subagent_type": "Explore",
+        "prompt": "Explore the portfolio-pulse project at C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse. I need to understand:\n\n1. The file structure under src/app/api/ - what routes exist?\n2. The content of src/lib/types.ts - especially the Task type\n3. The content of src/lib/prisma.ts - the Prisma client singleton\n4. Any existing Notion API routes (look for files under src/app/api/notion/ or similar)\n5. The prisma/schema.prisma file\n6. The content of src/app/api/notion/tasks/route.ts if it exists\n\nPlease show me the full contents of these files. Search breadth: medium."
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 1,
+      "tool": "Bash",
+      "input": {
+        "command": "Get-ChildItem -Path \"C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse\" -Force"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 1,
+      "tool": "Bash",
+      "input": {
+        "command": "ls -la \"C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse\""
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 1,
+      "tool": "Bash",
+      "input": {
+        "command": "find \"C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse\\src\\app\\api\" -type f -o -type d | head -50"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 1,
+      "tool": "Read",
+      "input": {
+        "file_path": "C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse\\src\\lib\\types.ts"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 1,
+      "tool": "Read",
+      "input": {
+        "file_path": "C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse\\src\\lib\\prisma.ts"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 1,
+      "tool": "Read",
+      "input": {
+        "file_path": "C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse\\prisma\\schema.prisma"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 1,
+      "tool": "Read",
+      "input": {
+        "file_path": "C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse\\src\\app\\api\\notion\\tasks\\route.ts"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 1,
+      "tool": "Read",
+      "input": {
+        "file_path": "C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse\\src\\app\\api\\notion\\databases\\route.ts"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 1,
+      "tool": "Read",
+      "input": {
+        "file_path": "C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse\\src\\app\\api\\github\\activity\\route.ts"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 1,
+      "tool": "Read",
+      "input": {
+        "file_path": "C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse\\src\\app\\api\\github\\issues\\route.ts"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 1,
+      "tool": "Bash",
+      "input": {
+        "command": "find \"C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse\\src\\app\\api\" -type f | sort"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 2,
+      "tool": "Read",
+      "input": {
+        "file_path": "C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse\\src\\app\\api\\notion\\tasks\\route.ts"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 2,
+      "tool": "Read",
+      "input": {
+        "file_path": "C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse\\src\\lib\\types.ts"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 2,
+      "tool": "Read",
+      "input": {
+        "file_path": "C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse\\src\\lib\\prisma.ts"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 3,
+      "tool": "Glob",
+      "input": {
+        "pattern": "src/lib/**/*",
+        "path": "C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 4,
+      "tool": "Write",
+      "input": {
+        "file_path": "C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse\\src\\lib\\notion-tasks.ts",
+        "content": "import { Client } from \"@notionhq/client\";\nimport type { Task, Priority, TaskStatus } from \"@/lib/types\";\nimport type { PageObjectResponse } from \"@notionhq/client/build/src/api-endpoints/common\";\n\ntype PageProperty = PageObjectResponse[\"properties\"][string];\n\nfunction isFullPage(result: unknown): result is PageObjectResponse {\n  return (\n    result !== null &&\n    typeof result === \"object\" &&\n    \"object\" in result &&\n    (result as Record<string, unknown>).object === \"page\" &&\n    \"properties\" in result &&\n    \"url\" in result &&\n    \"last_edited_time\" in result\n  );\n}\n\nfunction getProp(\n  props: PageObjectResponse[\"properties\"],\n  ...names: string[]\n): PageProperty | undefined {\n  for (const name of names) {\n    if (name in props) return props[name];\n  }\n  return undefined;\n}\n\nfunction extractTitle(prop: PageProperty): string {\n  if (prop.type === \"title\") return prop.title.map((t) => t.plain_text).join(\"\");\n  if (prop.type === \"rich_text\") return prop.rich_text.map((t) => t.plain_text).join(\"\");\n  return \"\";\n}\n\nfunction extractSelect(prop: PageProperty | undefined): string | undefined {\n  if (!prop) return undefined;\n  if (prop.type === \"select\") return prop.select?.name;\n  if (prop.type === \"status\") return prop.status?.name;\n  return undefined;\n}\n\nfunction extractMultiSelect(prop: PageProperty | undefined): string[] {\n  if (!prop || prop.type !== \"multi_select\") return [];\n  return prop.multi_select.map((s) => s.name);\n}\n\nfunction extractDate(prop: PageProperty | undefined): string | undefined {\n  if (!prop || prop.type !== \"date\") return undefined;\n  return prop.date?.start ?? undefined;\n}\n\nfunction extractPeople(prop: PageProperty | undefined): string | undefined {\n  if (!prop || prop.type !== \"people\") return undefined;\n  const first = prop.people[0];\n  if (!first) return undefined;\n  return \"name\" in first ? (first.name ?? undefined) : undefined;\n}\n\nfunction mapStatus(raw: string | undefined): TaskStatus {\n  if (!raw) return \"todo\";\n  const lower = raw.toLowerCase();\n  if (lower.includes(\"progress\") || lower.includes(\"doing\") || lower.includes(\"active\"))\n    return \"in_progress\";\n  if (lower.includes(\"done\") || lower.includes(\"complete\") || lower.includes(\"finish\"))\n    return \"done\";\n  if (lower.includes(\"block\") || lower.includes(\"hold\") || lower.includes(\"wait\"))\n    return \"blocked\";\n  return \"todo\";\n}\n\nfunction mapPriority(raw: string | undefined): Priority {\n  if (!raw) return \"none\";\n  const lower = raw.toLowerCase();\n  if (lower.includes(\"urgent\") || lower.includes(\"high\") || lower.includes(\"critical\"))\n    return \"high\";\n  if (lower.includes(\"medium\") || lower.includes(\"normal\") || lower.includes(\"mid\"))\n    return \"medium\";\n  if (lower.includes(\"low\")) return \"low\";\n  return \"none\";\n}\n\nfunction pageToTask(page: PageObjectResponse): Task | null {\n  const props = page.properties;\n\n  const titleProp =\n    getProp(props, \"Name\", \"Title\", \"Task\") ??\n    Object.values(props).find((p) => p.type === \"title\");\n\n  const title = titleProp ? extractTitle(titleProp) : \"\";\n  if (!title.trim()) return null;\n\n  const statusRaw = extractSelect(getProp(props, \"Status\", \"State\"));\n  const priorityRaw = extractSelect(getProp(props, \"Priority\"));\n  const projectRaw = extractSelect(getProp(props, \"Project\", \"Epic\", \"Category\"));\n  const dueDate = extractDate(getProp(props, \"Due Date\", \"Due\", \"Deadline\"));\n  const tags = extractMultiSelect(getProp(props, \"Tags\", \"Labels\"));\n  const assignee = extractPeople(getProp(props, \"Assignee\", \"Assigned To\", \"Owner\"));\n\n  return {\n    id: page.id,\n    title,\n    source: \"notion\",\n    sourceUrl: page.url,\n    project: projectRaw,\n    status: mapStatus(statusRaw),\n    priority: mapPriority(priorityRaw),\n    dueDate,\n    tags: tags.length > 0 ? tags : undefined,\n    lastActivity: page.last_edited_time,\n    assignee,\n  };\n}\n\nexport async function fetchNotionTasks(token: string, databaseId: string): Promise<Task[]> {\n  const notion = new Client({ auth: token });\n  const response = await notion.dataSources.query({ data_source_id: databaseId });\n  return response.results.filter(isFullPage).map(pageToTask).filter((t): t is Task => t !== null);\n}\n"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 5,
+      "tool": "Write",
+      "input": {
+        "file_path": "C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse\\src\\app\\api\\notion\\tasks\\route.ts",
+        "content": "import { NextResponse } from \"next/server\";\nimport { fetchNotionTasks } from \"@/lib/notion-tasks\";\n\nexport async function GET() {\n  const token = process.env.NOTION_TOKEN;\n  const databaseId = process.env.NOTION_TASKS_DATABASE_ID;\n\n  if (!token) {\n    return NextResponse.json(\n      { error: \"NOTION_TOKEN not configured\" },\n      { status: 500 }\n    );\n  }\n  if (!databaseId) {\n    return NextResponse.json(\n      { error: \"NOTION_TASKS_DATABASE_ID not configured\" },\n      { status: 500 }\n    );\n  }\n\n  try {\n    const tasks = await fetchNotionTasks(token, databaseId);\n    return NextResponse.json(tasks);\n  } catch (error) {\n    if (error !== null && typeof error === \"object\" && \"code\" in error) {\n      const code = (error as { code: string }).code;\n      if (code === \"unauthorized\" || code === \"restricted_resource\") {\n        return NextResponse.json(\n          { error: \"Notion authentication failed. Check your NOTION_TOKEN.\" },\n          { status: 401 }\n        );\n      }\n      if (code === \"object_not_found\") {\n        return NextResponse.json(\n          { error: \"Notion database not found. Check your NOTION_TASKS_DATABASE_ID.\" },\n          { status: 404 }\n        );\n      }\n    }\n\n    return NextResponse.json(\n      { error: \"Failed to fetch Notion tasks\" },\n      { status: 500 }\n    );\n  }\n}\n"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 6,
+      "tool": "Bash",
+      "input": {
+        "command": "mkdir -p \"C:/Users/steve/dev/Claude CoWork/portfolio-pulse/src/app/api/tasks\"",
+        "description": "Create api/tasks directory"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 6,
+      "tool": "Write",
+      "input": {
+        "file_path": "C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse\\src\\app\\api\\tasks\\route.ts",
+        "content": "import { NextResponse } from \"next/server\";\nimport { prisma } from \"@/lib/prisma\";\nimport { fetchNotionTasks } from \"@/lib/notion-tasks\";\nimport type { Task } from \"@/lib/types\";\n\nfunction prismaTaskToTask(t: {\n  id: string;\n  title: string;\n  source: string;\n  sourceUrl: string | null;\n  project: string | null;\n  status: string;\n  priority: string;\n  dueDate: string | null;\n  tags: string | null;\n  lastActivity: string | null;\n  assignee: string | null;\n}): Task {\n  return {\n    id: t.id,\n    title: t.title,\n    source: t.source as Task[\"source\"],\n    sourceUrl: t.sourceUrl ?? undefined,\n    project: t.project ?? undefined,\n    status: t.status as Task[\"status\"],\n    priority: t.priority as Task[\"priority\"],\n    dueDate: t.dueDate ?? undefined,\n    tags: t.tags ? (JSON.parse(t.tags) as string[]) : undefined,\n    lastActivity: t.lastActivity ?? undefined,\n    assignee: t.assignee ?? undefined,\n  };\n}\n\n// Merge remote tasks over local ones, de-duping by id.\n// Live remote data wins when IDs collide.\nfunction mergeTasks(local: Task[], remote: Task[]): Task[] {\n  const byId = new Map<string, Task>();\n  for (const task of local) byId.set(task.id, task);\n  for (const task of remote) byId.set(task.id, task);\n  return Array.from(byId.values());\n}\n\nexport async function GET() {\n  const dbRows = await prisma.task.findMany();\n  const localTasks = dbRows.map(prismaTaskToTask);\n\n  const token = process.env.NOTION_TOKEN;\n  const databaseId = process.env.NOTION_TASKS_DATABASE_ID;\n\n  if (!token || !databaseId) {\n    return NextResponse.json(localTasks);\n  }\n\n  let notionTasks: Task[] = [];\n  try {\n    notionTasks = await fetchNotionTasks(token, databaseId);\n  } catch {\n    // Notion failure is non-fatal — return local tasks only\n  }\n\n  return NextResponse.json(mergeTasks(localTasks, notionTasks));\n}\n"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 7,
+      "tool": "Bash",
+      "input": {
+        "command": "cd \"C:/Users/steve/dev/Claude CoWork/portfolio-pulse\" && npx tsc --noEmit 2>&1",
+        "description": "TypeScript type check",
+        "timeout": 60000
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 8,
+      "tool": "Bash",
+      "input": {
+        "command": "cd \"C:/Users/steve/dev/Claude CoWork/portfolio-pulse\" && npm test 2>&1",
+        "description": "Run test suite",
+        "timeout": 60000
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 9,
+      "tool": "Bash",
+      "input": {
+        "command": "cd \"C:/Users/steve/dev/Claude CoWork/portfolio-pulse\" && git add -A",
+        "description": "Stage all changes"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 9,
+      "tool": "Write",
+      "input": {
+        "file_path": "C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse\\.hench-commit-msg.txt",
+        "content": "feat: add GET /api/tasks — Prisma default, optional Notion merge\n\n- Extract Notion page-mapping helpers into src/lib/notion-tasks.ts (fetchNotionTasks)\n- Refactor src/app/api/notion/tasks/route.ts to import from the shared module (no behaviour change)\n- Add src/app/api/tasks/route.ts: reads all tasks from Prisma, and when both NOTION_TOKEN and NOTION_TASKS_DATABASE_ID are present also fetches live Notion tasks and merges them (id-keyed map, live data wins on collision); Notion failure is non-fatal and falls back to Prisma-only response\n"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 10,
+      "tool": "ToolSearch",
+      "input": {
+        "query": "select:mcp__rex__update_task_status,mcp__rex__append_log",
+        "max_results": 2
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 10,
+      "tool": "mcp__rex__update_task_status",
+      "input": {
+        "id": "7b71fda1-32bc-4613-a9fd-a92dabf89caa",
+        "status": "completed",
+        "resolutionType": "code-change",
+        "resolutionDetail": "Created GET /api/tasks with Prisma as default source and optional Notion merge via shared notion-tasks lib"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 10,
+      "tool": "mcp__rex__append_log",
+      "input": {
+        "event": "task_completed",
+        "itemId": "7b71fda1-32bc-4613-a9fd-a92dabf89caa",
+        "detail": "Implemented GET /api/tasks. Extracted Notion page-mapping helpers into src/lib/notion-tasks.ts (fetchNotionTasks). Refactored /api/notion/tasks/route.ts to import from the shared module. Created /api/tasks/route.ts: reads Prisma tasks as default; when NOTION_TOKEN+NOTION_TASKS_DATABASE_ID present, fetches live Notion tasks and merges (id-keyed map, live wins on collision); Notion errors are non-fatal. All 121 tests pass, tsc clean."
+      },
+      "output": "",
+      "durationMs": 0
+    }
+  ],
+  "model": "claude-sonnet-4-6",
+  "invocationContext": "cli",
+  "vendor": "claude",
+  "weight": "standard",
+  "diagnostics": {
+    "tokenDiagnosticStatus": "unavailable",
+    "parseMode": "stream-json",
+    "notes": [],
+    "vendor": "claude",
+    "sandbox": "workspace-write",
+    "approvals": "never",
+    "promptSections": [
+      {
+        "name": "system",
+        "byteLength": 1678
+      },
+      {
+        "name": "brief",
+        "byteLength": 5075
+      }
+    ]
+  },
+  "lastActivityAt": "2026-06-12T20:21:50.869Z",
+  "tokens": {
+    "input": 117,
+    "output": 7996,
+    "cached": 2360051,
+    "total": 2368164
+  },
+  "summary": "The implementation is complete. Here's a summary of what was done:\n\n**Files created/modified:**\n\n- **`src/lib/notion-tasks.ts`** (new) — Extracted all Notion page-mapping helpers (`isFullPage`, `getProp`, `extractTitle`, etc.) plus a `fetchNotionTasks(token, databaseId)` function that handles the Notion API call and maps pages to `Task[]`\n\n- **`src/app/api/notion/tasks/route.ts`** (updated) — Refactored to import `fetchNotionTasks` from the shared module; identical behaviour, much less code\n\n- *",
+  "structuredSummary": {
+    "filesChanged": [
+      ".hench/locks/13372.lock",
+      ".hench/locks/23016.lock",
+      ".hench/runs/84cf0c55-5daf-4018-99d7-953e2e5849d6.json",
+      ".hench/runs/b406792a-9182-4008-81a3-fc41628b5ef2.json",
+      ".rex/prd_tree/local-task-store-prisma-sqlite/create-api-tasks-route-prisma-7b71fd.md",
+      ".rex/prd_tree/local-task-store-prisma-sqlite/index.md",
+      ".rex/prd_tree/local-task-store-prisma-sqlite/seed-the-database-with-sample-dac331.md",
+      "src/app/api/notion/tasks/route.ts",
+      "src/app/api/tasks/route.ts",
+      "src/lib/notion-tasks.ts"
+    ],
+    "filesRead": [],
+    "commandsExecuted": [],
+    "testsRun": [],
+    "counts": {
+      "filesRead": 0,
+      "filesChanged": 10,
+      "commandsExecuted": 0,
+      "testsRun": 0,
+      "toolCallsTotal": 27
+    },
+    "fileChangesWithStatus": [
+      "D\t.hench/locks/13372.lock",
+      "A\t.hench/locks/23016.lock",
+      "A\t.hench/runs/84cf0c55-5daf-4018-99d7-953e2e5849d6.json",
+      "M\t.hench/runs/b406792a-9182-4008-81a3-fc41628b5ef2.json",
+      "M\t.rex/prd_tree/local-task-store-prisma-sqlite/create-api-tasks-route-prisma-7b71fd.md",
+      "M\t.rex/prd_tree/local-task-store-prisma-sqlite/index.md",
+      "M\t.rex/prd_tree/local-task-store-prisma-sqlite/seed-the-database-with-sample-dac331.md",
+      "M\tsrc/app/api/notion/tasks/route.ts",
+      "A\tsrc/app/api/tasks/route.ts",
+      "A\tsrc/lib/notion-tasks.ts"
+    ]
+  },
+  "memoryStats": {
+    "peakRssBytes": 110841856,
+    "systemAvailableAtStartBytes": 9467559936,
+    "systemAvailableAtEndBytes": 9602994176,
+    "systemTotalBytes": 34040307712
+  },
+  "testGate": {
+    "ran": false,
+    "passed": true,
+    "packages": [],
+    "skipReason": "No files modified in prior phases"
+  },
+  "finishedAt": "2026-06-12T20:21:50.869Z"
+}

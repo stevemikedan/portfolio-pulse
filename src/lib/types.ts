@@ -1,5 +1,5 @@
 export type Priority = "high" | "medium" | "low" | "none";
-export type TaskSource = "notion" | "github";
+export type TaskSource = "notion" | "github" | "csv";
 export type TaskStatus = "todo" | "in_progress" | "done" | "blocked";
 
 export interface Task {
@@ -27,11 +27,14 @@ export interface ActivityEvent {
   matchedTaskId?: string; // links activity to a task
 }
 
+export type GapCategory = "neglected" | "unplanned" | "overloaded";
+export type GapSeverity = "warning" | "info" | "danger";
+
 export interface GapItem {
-  type: "neglected" | "unplanned" | "overloaded";
+  type: GapCategory;
   label: string;
   detail: string;
-  severity: "warning" | "info" | "danger";
+  severity: GapSeverity;
   relatedTaskId?: string;
 }
 

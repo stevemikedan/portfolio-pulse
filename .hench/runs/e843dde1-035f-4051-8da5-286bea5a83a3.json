@@ -1,0 +1,617 @@
+{
+  "id": "e843dde1-035f-4051-8da5-286bea5a83a3",
+  "taskId": "991a2618-9400-49c4-be3e-af626a6ee564",
+  "taskTitle": "Fetch GitHub commits and PRs, map to Activity type",
+  "startedAt": "2026-06-12T19:20:19.218Z",
+  "status": "completed",
+  "turns": 19,
+  "tokenUsage": {
+    "input": 64,
+    "output": 8881,
+    "cacheCreationInput": 146559,
+    "cacheReadInput": 2172550
+  },
+  "turnTokenUsage": [
+    {
+      "turn": 1,
+      "input": 3,
+      "output": 6,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 16773,
+      "cacheReadInput": 21089
+    },
+    {
+      "turn": 1,
+      "input": 3,
+      "output": 6,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 16773,
+      "cacheReadInput": 21089
+    },
+    {
+      "turn": 1,
+      "input": 3,
+      "output": 6,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 16773,
+      "cacheReadInput": 21089
+    },
+    {
+      "turn": 1,
+      "input": 3,
+      "output": 6,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 16773,
+      "cacheReadInput": 21089
+    },
+    {
+      "turn": 1,
+      "input": 1,
+      "output": 8,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 1748,
+      "cacheReadInput": 37862
+    },
+    {
+      "turn": 1,
+      "input": 1,
+      "output": 8,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 1748,
+      "cacheReadInput": 37862
+    },
+    {
+      "turn": 1,
+      "input": 1,
+      "output": 8,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 1748,
+      "cacheReadInput": 37862
+    },
+    {
+      "turn": 1,
+      "input": 1,
+      "output": 31,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 3198,
+      "cacheReadInput": 39610
+    },
+    {
+      "turn": 1,
+      "input": 1,
+      "output": 31,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 3198,
+      "cacheReadInput": 39610
+    },
+    {
+      "turn": 1,
+      "input": 1,
+      "output": 31,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 3198,
+      "cacheReadInput": 39610
+    },
+    {
+      "turn": 1,
+      "input": 1,
+      "output": 29,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 463,
+      "cacheReadInput": 42808
+    },
+    {
+      "turn": 2,
+      "input": 1,
+      "output": 29,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 463,
+      "cacheReadInput": 42808
+    },
+    {
+      "turn": 2,
+      "input": 1,
+      "output": 29,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 463,
+      "cacheReadInput": 42808
+    },
+    {
+      "turn": 2,
+      "input": 1,
+      "output": 29,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 463,
+      "cacheReadInput": 42808
+    },
+    {
+      "turn": 2,
+      "input": 1,
+      "output": 19,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 4151,
+      "cacheReadInput": 43271
+    },
+    {
+      "turn": 3,
+      "input": 1,
+      "output": 19,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 4151,
+      "cacheReadInput": 43271
+    },
+    {
+      "turn": 3,
+      "input": 1,
+      "output": 19,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 4151,
+      "cacheReadInput": 43271
+    },
+    {
+      "turn": 4,
+      "input": 1,
+      "output": 2,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 2539,
+      "cacheReadInput": 47422
+    },
+    {
+      "turn": 4,
+      "input": 1,
+      "output": 2,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 2539,
+      "cacheReadInput": 47422
+    },
+    {
+      "turn": 5,
+      "input": 1,
+      "output": 2,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 521,
+      "cacheReadInput": 49961
+    },
+    {
+      "turn": 5,
+      "input": 1,
+      "output": 2,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 521,
+      "cacheReadInput": 49961
+    },
+    {
+      "turn": 6,
+      "input": 1,
+      "output": 2,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 2975,
+      "cacheReadInput": 50482
+    },
+    {
+      "turn": 6,
+      "input": 1,
+      "output": 2,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 2975,
+      "cacheReadInput": 50482
+    },
+    {
+      "turn": 7,
+      "input": 1,
+      "output": 1,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 210,
+      "cacheReadInput": 53457
+    },
+    {
+      "turn": 7,
+      "input": 1,
+      "output": 1,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 210,
+      "cacheReadInput": 53457
+    },
+    {
+      "turn": 7,
+      "input": 1,
+      "output": 53,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 630,
+      "cacheReadInput": 53667
+    },
+    {
+      "turn": 8,
+      "input": 1,
+      "output": 1,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 259,
+      "cacheReadInput": 54297
+    },
+    {
+      "turn": 8,
+      "input": 1,
+      "output": 1,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 259,
+      "cacheReadInput": 54297
+    },
+    {
+      "turn": 8,
+      "input": 3,
+      "output": 6,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 571,
+      "cacheReadInput": 54556
+    },
+    {
+      "turn": 8,
+      "input": 3,
+      "output": 6,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 571,
+      "cacheReadInput": 54556
+    },
+    {
+      "turn": 8,
+      "input": 1,
+      "output": 57,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 257,
+      "cacheReadInput": 55127
+    },
+    {
+      "turn": 8,
+      "input": 1,
+      "output": 57,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 222,
+      "cacheReadInput": 55384
+    },
+    {
+      "turn": 9,
+      "input": 1,
+      "output": 1,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 274,
+      "cacheReadInput": 55606
+    },
+    {
+      "turn": 9,
+      "input": 19,
+      "output": 8371,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 34791,
+      "cacheReadInput": 714599
+    }
+  ],
+  "toolCalls": [
+    {
+      "turn": 1,
+      "tool": "Read",
+      "input": {
+        "file_path": "C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse\\src\\app\\api\\github\\activity\\route.ts"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 1,
+      "tool": "Glob",
+      "input": {
+        "pattern": "src/**/*.ts",
+        "path": "C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 1,
+      "tool": "Read",
+      "input": {
+        "file_path": "C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse\\src\\lib\\types.ts"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 1,
+      "tool": "Glob",
+      "input": {
+        "pattern": "**/*.md",
+        "path": "C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse\\.rex\\prd_tree\\github-integration"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 1,
+      "tool": "Read",
+      "input": {
+        "file_path": "C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse\\.rex\\prd_tree\\github-integration\\fetch-github-commits-and-prs-991a26.md"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 1,
+      "tool": "Glob",
+      "input": {
+        "pattern": "**/*.test.ts",
+        "path": "C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse\\src"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 2,
+      "tool": "Read",
+      "input": {
+        "file_path": "C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse\\package.json"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 2,
+      "tool": "Read",
+      "input": {
+        "file_path": "C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse\\src\\lib\\gap-detection.test.ts"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 3,
+      "tool": "Write",
+      "input": {
+        "file_path": "C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse\\src\\lib\\github-activity.ts",
+        "content": "import type { ActivityEvent } from \"./types\";\n\nexport const ACTIVITY_WINDOW_DAYS = 7;\n\nexport interface GitHubEvent {\n  id: string;\n  type: string | null;\n  repo: { name: string };\n  created_at: string | null;\n  payload: unknown;\n}\n\ntype PushPayload = {\n  commits?: Array<{ message: string; sha: string }>;\n  ref?: string;\n};\n\ntype PullRequestPayload = {\n  action?: string;\n  pull_request?: {\n    title: string;\n    html_url: string;\n    merged?: boolean;\n  };\n};\n\ntype IssuesPayload = {\n  action?: string;\n  issue?: {\n    title: string;\n    html_url: string;\n  };\n};\n\nexport function isWithinWindow(\n  timestamp: string,\n  days: number = ACTIVITY_WINDOW_DAYS,\n  now: Date = new Date()\n): boolean {\n  const cutoff = new Date(now.getTime() - days * 24 * 60 * 60 * 1000);\n  return new Date(timestamp) >= cutoff;\n}\n\nexport function mapEventToActivities(event: GitHubEvent): ActivityEvent[] {\n  const repo = event.repo.name.split(\"/\")[1] ?? event.repo.name;\n  const timestamp = event.created_at ?? new Date().toISOString();\n\n  if (event.type === \"PushEvent\") {\n    const payload = event.payload as PushPayload;\n    const commits = payload.commits ?? [];\n    const branch = payload.ref?.replace(\"refs/heads/\", \"\");\n    return commits.slice(0, 3).map((commit, ci) => ({\n      id: `${event.id}-${ci}`,\n      type: \"commit\" as const,\n      title: commit.message.split(\"\\n\")[0],\n      repo,\n      branch,\n      timestamp,\n      url: `https://github.com/${event.repo.name}/commit/${commit.sha}`,\n    }));\n  }\n\n  if (event.type === \"PullRequestEvent\") {\n    const payload = event.payload as PullRequestPayload;\n    const pr = payload.pull_request;\n    if (!pr) return [];\n\n    if (payload.action === \"opened\") {\n      return [\n        {\n          id: event.id,\n          type: \"pr_opened\" as const,\n          title: pr.title,\n          repo,\n          timestamp,\n          url: pr.html_url,\n        },\n      ];\n    }\n    if (payload.action === \"closed\" && pr.merged) {\n      return [\n        {\n          id: event.id,\n          type: \"pr_merged\" as const,\n          title: pr.title,\n          repo,\n          timestamp,\n          url: pr.html_url,\n        },\n      ];\n    }\n  }\n\n  if (event.type === \"IssuesEvent\") {\n    const payload = event.payload as IssuesPayload;\n    const issue = payload.issue;\n    if (!issue) return [];\n\n    if (payload.action === \"opened\") {\n      return [\n        {\n          id: event.id,\n          type: \"issue_opened\" as const,\n          title: issue.title,\n          repo,\n          timestamp,\n          url: issue.html_url,\n        },\n      ];\n    }\n    if (payload.action === \"closed\") {\n      return [\n        {\n          id: event.id,\n          type: \"issue_closed\" as const,\n          title: issue.title,\n          repo,\n          timestamp,\n          url: issue.html_url,\n        },\n      ];\n    }\n  }\n\n  return [];\n}\n\nexport function filterAndMapEvents(\n  events: GitHubEvent[],\n  now: Date = new Date()\n): ActivityEvent[] {\n  return events\n    .filter((e) => {\n      if (!e.created_at) return false;\n      return isWithinWindow(e.created_at, ACTIVITY_WINDOW_DAYS, now);\n    })\n    .flatMap(mapEventToActivities);\n}\n"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 4,
+      "tool": "Write",
+      "input": {
+        "file_path": "C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse\\src\\app\\api\\github\\activity\\route.ts",
+        "content": "import { NextResponse } from \"next/server\";\nimport { Octokit } from \"@octokit/rest\";\nimport { filterAndMapEvents } from \"@/lib/github-activity\";\n\nexport async function GET() {\n  const username = process.env.GITHUB_USERNAME;\n  if (!username) {\n    return NextResponse.json(\n      { error: \"GITHUB_USERNAME not configured\" },\n      { status: 500 }\n    );\n  }\n\n  const octokit = new Octokit({\n    auth: process.env.GITHUB_TOKEN || undefined,\n  });\n\n  try {\n    const { data: events } = await octokit.activity.listPublicEventsForUser({\n      username,\n      per_page: 100,\n    });\n\n    const activities = filterAndMapEvents(events);\n\n    return NextResponse.json(activities);\n  } catch (error) {\n    if (error !== null && typeof error === \"object\" && \"status\" in error) {\n      const status = (error as { status: number }).status;\n      if (status === 401 || status === 403) {\n        return NextResponse.json(\n          { error: \"GitHub authentication failed. Check your GITHUB_TOKEN.\" },\n          { status: 401 }\n        );\n      }\n    }\n\n    return NextResponse.json(\n      { error: \"Failed to fetch GitHub activity\" },\n      { status: 500 }\n    );\n  }\n}\n"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 5,
+      "tool": "Write",
+      "input": {
+        "file_path": "C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse\\src\\lib\\github-activity.test.ts",
+        "content": "import { describe, it, expect } from \"vitest\";\nimport {\n  isWithinWindow,\n  mapEventToActivities,\n  filterAndMapEvents,\n  ACTIVITY_WINDOW_DAYS,\n  type GitHubEvent,\n} from \"./github-activity\";\n\nconst NOW = new Date(\"2026-06-12T12:00:00Z\");\n\nconst makeEvent = (overrides: Partial<GitHubEvent>): GitHubEvent => ({\n  id: \"evt1\",\n  type: \"PushEvent\",\n  repo: { name: \"owner/my-repo\" },\n  created_at: \"2026-06-12T10:00:00Z\",\n  payload: { commits: [{ message: \"fix: bug\", sha: \"abc123\" }], ref: \"refs/heads/main\" },\n  ...overrides,\n});\n\ndescribe(\"isWithinWindow\", () => {\n  it(\"returns true for a timestamp within the window\", () => {\n    const ts = \"2026-06-10T00:00:00Z\"; // 2 days ago\n    expect(isWithinWindow(ts, 7, NOW)).toBe(true);\n  });\n\n  it(\"returns true for a timestamp exactly at the boundary\", () => {\n    const ts = \"2026-06-05T12:00:00Z\"; // exactly 7 days ago\n    expect(isWithinWindow(ts, 7, NOW)).toBe(true);\n  });\n\n  it(\"returns false for a timestamp before the window\", () => {\n    const ts = \"2026-06-04T00:00:00Z\"; // 8+ days ago\n    expect(isWithinWindow(ts, 7, NOW)).toBe(false);\n  });\n\n  it(\"uses ACTIVITY_WINDOW_DAYS as the default window\", () => {\n    expect(ACTIVITY_WINDOW_DAYS).toBe(7);\n  });\n});\n\ndescribe(\"mapEventToActivities\", () => {\n  describe(\"PushEvent\", () => {\n    it(\"maps each commit to a separate ActivityEvent\", () => {\n      const event = makeEvent({\n        payload: {\n          commits: [\n            { message: \"feat: add x\", sha: \"aaa\" },\n            { message: \"fix: bug\\n\\ndetails\", sha: \"bbb\" },\n          ],\n          ref: \"refs/heads/feature\",\n        },\n      });\n      const result = mapEventToActivities(event);\n      expect(result).toHaveLength(2);\n      expect(result[0].type).toBe(\"commit\");\n      expect(result[0].title).toBe(\"feat: add x\");\n      expect(result[0].repo).toBe(\"my-repo\");\n      expect(result[0].branch).toBe(\"feature\");\n      expect(result[0].url).toContain(\"aaa\");\n    });\n\n    it(\"truncates commit message at first newline\", () => {\n      const event = makeEvent({\n        payload: {\n          commits: [{ message: \"fix: thing\\n\\nbody text\", sha: \"ccc\" }],\n          ref: \"refs/heads/main\",\n        },\n      });\n      const result = mapEventToActivities(event);\n      expect(result[0].title).toBe(\"fix: thing\");\n    });\n\n    it(\"caps at 3 commits per push\", () => {\n      const event = makeEvent({\n        payload: {\n          commits: [\n            { message: \"a\", sha: \"1\" },\n            { message: \"b\", sha: \"2\" },\n            { message: \"c\", sha: \"3\" },\n            { message: \"d\", sha: \"4\" },\n          ],\n          ref: \"refs/heads/main\",\n        },\n      });\n      const result = mapEventToActivities(event);\n      expect(result).toHaveLength(3);\n    });\n\n    it(\"uses repo short name (after slash)\", () => {\n      const event = makeEvent({ repo: { name: \"org/long-repo-name\" } });\n      const result = mapEventToActivities(event);\n      expect(result[0].repo).toBe(\"long-repo-name\");\n    });\n\n    it(\"returns empty array when commits is missing\", () => {\n      const event = makeEvent({ payload: { ref: \"refs/heads/main\" } });\n      const result = mapEventToActivities(event);\n      expect(result).toHaveLength(0);\n    });\n  });\n\n  describe(\"PullRequestEvent\", () => {\n    it(\"maps opened PR to pr_opened\", () => {\n      const event = makeEvent({\n        type: \"PullRequestEvent\",\n        payload: {\n          action: \"opened\",\n          pull_request: { title: \"New feature\", html_url: \"https://github.com/pr/1\", merged: false },\n        },\n      });\n      const result = mapEventToActivities(event);\n      expect(result).toHaveLength(1);\n      expect(result[0].type).toBe(\"pr_opened\");\n      expect(result[0].title).toBe(\"New feature\");\n      expect(result[0].url).toBe(\"https://github.com/pr/1\");\n    });\n\n    it(\"maps closed+merged PR to pr_merged\", () => {\n      const event = makeEvent({\n        type: \"PullRequestEvent\",\n        payload: {\n          action: \"closed\",\n          pull_request: { title: \"Merged PR\", html_url: \"https://github.com/pr/2\", merged: true },\n        },\n      });\n      const result = mapEventToActivities(event);\n      expect(result).toHaveLength(1);\n      expect(result[0].type).toBe(\"pr_merged\");\n    });\n\n    it(\"ignores closed PR that is not merged\", () => {\n      const event = makeEvent({\n        type: \"PullRequestEvent\",\n        payload: {\n          action: \"closed\",\n          pull_request: { title: \"Closed PR\", html_url: \"https://github.com/pr/3\", merged: false },\n        },\n      });\n      const result = mapEventToActivities(event);\n      expect(result).toHaveLength(0);\n    });\n\n    it(\"ignores PR events with unrecognized action\", () => {\n      const event = makeEvent({\n        type: \"PullRequestEvent\",\n        payload: {\n          action: \"labeled\",\n          pull_request: { title: \"Some PR\", html_url: \"https://github.com/pr/4\" },\n        },\n      });\n      const result = mapEventToActivities(event);\n      expect(result).toHaveLength(0);\n    });\n\n    it(\"returns empty array when pull_request payload is absent\", () => {\n      const event = makeEvent({\n        type: \"PullRequestEvent\",\n        payload: { action: \"opened\" },\n      });\n      const result = mapEventToActivities(event);\n      expect(result).toHaveLength(0);\n    });\n  });\n\n  describe(\"IssuesEvent\", () => {\n    it(\"maps opened issue to issue_opened\", () => {\n      const event = makeEvent({\n        type: \"IssuesEvent\",\n        payload: {\n          action: \"opened\",\n          issue: { title: \"Bug report\", html_url: \"https://github.com/issues/1\" },\n        },\n      });\n      const result = mapEventToActivities(event);\n      expect(result).toHaveLength(1);\n      expect(result[0].type).toBe(\"issue_opened\");\n      expect(result[0].title).toBe(\"Bug report\");\n    });\n\n    it(\"maps closed issue to issue_closed\", () => {\n      const event = makeEvent({\n        type: \"IssuesEvent\",\n        payload: {\n          action: \"closed\",\n          issue: { title: \"Fixed bug\", html_url: \"https://github.com/issues/2\" },\n        },\n      });\n      const result = mapEventToActivities(event);\n      expect(result).toHaveLength(1);\n      expect(result[0].type).toBe(\"issue_closed\");\n    });\n\n    it(\"ignores issue events with unrecognized action\", () => {\n      const event = makeEvent({\n        type: \"IssuesEvent\",\n        payload: {\n          action: \"labeled\",\n          issue: { title: \"Some issue\", html_url: \"https://github.com/issues/3\" },\n        },\n      });\n      const result = mapEventToActivities(event);\n      expect(result).toHaveLength(0);\n    });\n  });\n\n  describe(\"unrecognized event types\", () => {\n    it(\"returns empty array for unknown event type\", () => {\n      const event = makeEvent({ type: \"WatchEvent\", payload: { action: \"started\" } });\n      const result = mapEventToActivities(event);\n      expect(result).toHaveLength(0);\n    });\n\n    it(\"returns empty array for null event type\", () => {\n      const event = makeEvent({ type: null });\n      const result = mapEventToActivities(event);\n      expect(result).toHaveLength(0);\n    });\n  });\n});\n\ndescribe(\"filterAndMapEvents\", () => {\n  it(\"includes events within the 7-day window\", () => {\n    const event = makeEvent({ created_at: \"2026-06-10T00:00:00Z\" });\n    const result = filterAndMapEvents([event], NOW);\n    expect(result.length).toBeGreaterThan(0);\n  });\n\n  it(\"excludes events older than 7 days\", () => {\n    const event = makeEvent({ created_at: \"2026-06-01T00:00:00Z\" });\n    const result = filterAndMapEvents([event], NOW);\n    expect(result).toHaveLength(0);\n  });\n\n  it(\"excludes events with null created_at\", () => {\n    const event = makeEvent({ created_at: null });\n    const result = filterAndMapEvents([event], NOW);\n    expect(result).toHaveLength(0);\n  });\n\n  it(\"includes repo context in each ActivityEvent\", () => {\n    const event = makeEvent({\n      repo: { name: \"owner/cool-project\" },\n      created_at: \"2026-06-11T00:00:00Z\",\n    });\n    const result = filterAndMapEvents([event], NOW);\n    expect(result[0].repo).toBe(\"cool-project\");\n  });\n\n  it(\"returns multiple activity events from multiple qualifying events\", () => {\n    const events = [\n      makeEvent({\n        id: \"e1\",\n        created_at: \"2026-06-11T00:00:00Z\",\n        payload: { commits: [{ message: \"commit a\", sha: \"sha1\" }], ref: \"refs/heads/main\" },\n      }),\n      makeEvent({\n        id: \"e2\",\n        type: \"PullRequestEvent\",\n        created_at: \"2026-06-10T00:00:00Z\",\n        payload: {\n          action: \"opened\",\n          pull_request: { title: \"New PR\", html_url: \"https://github.com/pr/5\" },\n        },\n      }),\n    ];\n    const result = filterAndMapEvents(events, NOW);\n    expect(result).toHaveLength(2);\n    const types = result.map((r) => r.type);\n    expect(types).toContain(\"commit\");\n    expect(types).toContain(\"pr_opened\");\n  });\n});\n"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 6,
+      "tool": "Bash",
+      "input": {
+        "command": "cd \"C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse\" && npx vitest run 2>&1",
+        "timeout": 60000
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 7,
+      "tool": "Bash",
+      "input": {
+        "command": "cd \"C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse\" && git add -A",
+        "description": "Stage all changes"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 7,
+      "tool": "Write",
+      "input": {
+        "file_path": "C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse\\.hench-commit-msg.txt",
+        "content": "feat: fetch GitHub commits and PRs, filter to last 7 days\n\nExtract event mapping and 7-day window filtering into `src/lib/github-activity.ts`\nas testable pure functions (`isWithinWindow`, `mapEventToActivities`,\n`filterAndMapEvents`). Slim the route handler to use these functions.\nAdd 24 tests covering commit/PR/issue mapping, date filtering, edge cases,\nand repo-name extraction. All 78 tests pass.\n"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 8,
+      "tool": "ToolSearch",
+      "input": {
+        "query": "select:mcp__rex__update_task_status,mcp__rex__append_log",
+        "max_results": 2
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 8,
+      "tool": "mcp__rex__update_task_status",
+      "input": {
+        "id": "991a2618-9400-49c4-be3e-af626a6ee564",
+        "status": "completed",
+        "resolutionType": "code-change",
+        "resolutionDetail": "Extracted event mapping and 7-day window filtering into src/lib/github-activity.ts as pure functions; updated route to use them; added 24 tests covering all acceptance criteria."
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 8,
+      "tool": "mcp__rex__update_task_status",
+      "input": {
+        "id": "991a2618-9400-49c4-be3e-af626a6ee564",
+        "status": "completed",
+        "resolutionType": "code-change",
+        "resolutionDetail": "Extracted event mapping and 7-day window filtering into src/lib/github-activity.ts as pure functions; updated route to use them; added 24 tests covering all acceptance criteria."
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 8,
+      "tool": "mcp__rex__append_log",
+      "input": {
+        "event": "task_completed",
+        "itemId": "991a2618-9400-49c4-be3e-af626a6ee564",
+        "detail": "Extracted event-to-ActivityEvent mapping and 7-day window filter into src/lib/github-activity.ts (isWithinWindow, mapEventToActivities, filterAndMapEvents). Route handler slimmed to delegate to these pure functions. Added 24 tests; all 78 project tests pass. Acceptance criteria met: commits filtered to last 7 days, PR events mapped to pr_opened/pr_merged, IssuesEvent mapped to issue_opened/issue_closed, repo short-name included in every ActivityEvent."
+      },
+      "output": "",
+      "durationMs": 0
+    }
+  ],
+  "model": "claude-sonnet-4-6",
+  "invocationContext": "cli",
+  "vendor": "claude",
+  "weight": "standard",
+  "diagnostics": {
+    "tokenDiagnosticStatus": "complete",
+    "parseMode": "stream-json",
+    "notes": [],
+    "vendor": "claude",
+    "sandbox": "workspace-write",
+    "approvals": "never",
+    "promptSections": [
+      {
+        "name": "system",
+        "byteLength": 1678
+      },
+      {
+        "name": "brief",
+        "byteLength": 4603
+      }
+    ]
+  },
+  "lastActivityAt": "2026-06-12T19:22:56.295Z",
+  "tokens": {
+    "input": 64,
+    "output": 8881,
+    "cached": 2319109,
+    "total": 2328054
+  },
+  "summary": "The MCP tools need approval — please grant permission when prompted. The implementation is complete either way.\n\n**Done.** Here's what changed:\n\n- **`src/lib/github-activity.ts`** (new) — pure functions extracted from the route:\n  - `isWithinWindow(timestamp, days, now)` — date-range check, injectable `now` for testability\n  - `mapEventToActivities(event)` — maps a single GitHub event to zero or more `ActivityEvent` objects (commit, pr_opened, pr_merged, issue_opened, issue_closed), including re",
+  "structuredSummary": {
+    "filesChanged": [
+      ".hench/locks/34664.lock",
+      ".hench/locks/43032.lock",
+      ".hench/runs/e4e92dd3-2dd0-4929-af90-5c2525c92dd0.json",
+      ".hench/runs/e843dde1-035f-4051-8da5-286bea5a83a3.json",
+      ".rex/prd_tree/gap-analysis-engine/implement-gapanalysis-component-e0d341.md",
+      ".rex/prd_tree/github-integration/fetch-github-commits-and-prs-991a26.md",
+      ".rex/prd_tree/github-integration/index.md",
+      "src/app/api/github/activity/route.ts",
+      "src/lib/github-activity.test.ts",
+      "src/lib/github-activity.ts"
+    ],
+    "filesRead": [],
+    "commandsExecuted": [],
+    "testsRun": [],
+    "counts": {
+      "filesRead": 0,
+      "filesChanged": 10,
+      "commandsExecuted": 0,
+      "testsRun": 0,
+      "toolCallsTotal": 18
+    },
+    "fileChangesWithStatus": [
+      "D\t.hench/locks/34664.lock",
+      "A\t.hench/locks/43032.lock",
+      "M\t.hench/runs/e4e92dd3-2dd0-4929-af90-5c2525c92dd0.json",
+      "A\t.hench/runs/e843dde1-035f-4051-8da5-286bea5a83a3.json",
+      "M\t.rex/prd_tree/gap-analysis-engine/implement-gapanalysis-component-e0d341.md",
+      "M\t.rex/prd_tree/github-integration/fetch-github-commits-and-prs-991a26.md",
+      "M\t.rex/prd_tree/github-integration/index.md",
+      "M\tsrc/app/api/github/activity/route.ts",
+      "A\tsrc/lib/github-activity.test.ts",
+      "A\tsrc/lib/github-activity.ts"
+    ]
+  },
+  "memoryStats": {
+    "peakRssBytes": 109879296,
+    "systemAvailableAtStartBytes": 9676357632,
+    "systemAvailableAtEndBytes": 9825058816,
+    "systemTotalBytes": 34040307712
+  },
+  "testGate": {
+    "ran": false,
+    "passed": true,
+    "packages": [],
+    "skipReason": "No files modified in prior phases"
+  },
+  "finishedAt": "2026-06-12T19:22:56.295Z"
+}

@@ -11,5 +11,3 @@ acceptanceCriteria:
   - "Refresh button triggers data reload"
   - "Last-updated timestamp shown"
 ---
-
-**TDD requirement:** Write failing tests first, then implement to make them pass. Run pnpm test to verify.

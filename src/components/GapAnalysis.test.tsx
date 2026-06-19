@@ -57,4 +57,25 @@ describe("GapAnalysis", () => {
     render(<GapAnalysis gaps={[]} />);
     expect(screen.getByText(/No gaps detected/)).toBeInTheDocument();
   });
+
+  it("displays gap score summary", () => {
+    render(<GapAnalysis gaps={mockGaps} />);
+    // 1 danger (3pts) + 1 warning (2pts) + 1 info (1pt) = 6
+    expect(screen.getByText("Gap Score")).toBeInTheDocument();
+    expect(screen.getByText("6")).toBeInTheDocument();
+  });
+
+  it("hides gap score when there are no gaps", () => {
+    render(<GapAnalysis gaps={[]} />);
+    expect(screen.queryByText("Gap Score")).not.toBeInTheDocument();
+  });
+
+  it("groups items under category section headers", () => {
+    render(<GapAnalysis gaps={mockGaps} />);
+    const headers = document.querySelectorAll(".text-\\[0\\.6rem\\].font-bold.uppercase");
+    const headerTexts = Array.from(headers).map((h) => h.textContent);
+    expect(headerTexts).toContain("Neglected");
+    expect(headerTexts).toContain("Unplanned Work");
+    expect(headerTexts).toContain("Overloaded");
+  });
 });

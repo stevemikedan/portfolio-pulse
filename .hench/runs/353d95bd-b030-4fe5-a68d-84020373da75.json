@@ -1,0 +1,601 @@
+{
+  "id": "353d95bd-b030-4fe5-a68d-84020373da75",
+  "taskId": "bd852929-d43f-4b9e-9585-b468896b93b0",
+  "taskTitle": "Build gap detection logic — compare assignments vs activity",
+  "startedAt": "2026-06-12T17:38:53.336Z",
+  "status": "completed",
+  "turns": 19,
+  "tokenUsage": {
+    "input": 512,
+    "output": 12007,
+    "cacheCreationInput": 166651,
+    "cacheReadInput": 2178320
+  },
+  "turnTokenUsage": [
+    {
+      "turn": 1,
+      "input": 3,
+      "output": 8,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 16732,
+      "cacheReadInput": 21089
+    },
+    {
+      "turn": 1,
+      "input": 3,
+      "output": 8,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 16732,
+      "cacheReadInput": 21089
+    },
+    {
+      "turn": 1,
+      "input": 3,
+      "output": 8,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 16732,
+      "cacheReadInput": 21089
+    },
+    {
+      "turn": 1,
+      "input": 3,
+      "output": 8,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 16732,
+      "cacheReadInput": 21089
+    },
+    {
+      "turn": 1,
+      "input": 150,
+      "output": 48,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 366,
+      "cacheReadInput": 37821
+    },
+    {
+      "turn": 1,
+      "input": 150,
+      "output": 48,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 366,
+      "cacheReadInput": 37821
+    },
+    {
+      "turn": 1,
+      "input": 1,
+      "output": 9,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 5392,
+      "cacheReadInput": 38187
+    },
+    {
+      "turn": 2,
+      "input": 1,
+      "output": 9,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 5392,
+      "cacheReadInput": 38187
+    },
+    {
+      "turn": 2,
+      "input": 1,
+      "output": 9,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 5392,
+      "cacheReadInput": 38187
+    },
+    {
+      "turn": 2,
+      "input": 1,
+      "output": 9,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 5392,
+      "cacheReadInput": 38187
+    },
+    {
+      "turn": 2,
+      "input": 1,
+      "output": 23,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 2330,
+      "cacheReadInput": 43579
+    },
+    {
+      "turn": 3,
+      "input": 1,
+      "output": 23,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 2330,
+      "cacheReadInput": 43579
+    },
+    {
+      "turn": 3,
+      "input": 1,
+      "output": 23,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 2330,
+      "cacheReadInput": 43579
+    },
+    {
+      "turn": 3,
+      "input": 1,
+      "output": 23,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 2330,
+      "cacheReadInput": 43579
+    },
+    {
+      "turn": 3,
+      "input": 1,
+      "output": 49,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 1422,
+      "cacheReadInput": 45909
+    },
+    {
+      "turn": 4,
+      "input": 1,
+      "output": 49,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 1422,
+      "cacheReadInput": 45909
+    },
+    {
+      "turn": 4,
+      "input": 1,
+      "output": 49,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 1422,
+      "cacheReadInput": 45909
+    },
+    {
+      "turn": 4,
+      "input": 1,
+      "output": 22,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 5675,
+      "cacheReadInput": 47331
+    },
+    {
+      "turn": 5,
+      "input": 1,
+      "output": 22,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 5675,
+      "cacheReadInput": 47331
+    },
+    {
+      "turn": 5,
+      "input": 1,
+      "output": 22,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 5675,
+      "cacheReadInput": 47331
+    },
+    {
+      "turn": 6,
+      "input": 1,
+      "output": 1,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 284,
+      "cacheReadInput": 53006
+    },
+    {
+      "turn": 6,
+      "input": 1,
+      "output": 1,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 284,
+      "cacheReadInput": 53006
+    },
+    {
+      "turn": 7,
+      "input": 1,
+      "output": 2,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 1038,
+      "cacheReadInput": 53290
+    },
+    {
+      "turn": 7,
+      "input": 1,
+      "output": 2,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 1038,
+      "cacheReadInput": 53290
+    },
+    {
+      "turn": 7,
+      "input": 1,
+      "output": 67,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 2680,
+      "cacheReadInput": 54328
+    },
+    {
+      "turn": 8,
+      "input": 1,
+      "output": 7,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 225,
+      "cacheReadInput": 57008
+    },
+    {
+      "turn": 8,
+      "input": 1,
+      "output": 7,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 225,
+      "cacheReadInput": 57008
+    },
+    {
+      "turn": 8,
+      "input": 3,
+      "output": 8,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 686,
+      "cacheReadInput": 57233
+    },
+    {
+      "turn": 8,
+      "input": 3,
+      "output": 8,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 686,
+      "cacheReadInput": 57233
+    },
+    {
+      "turn": 8,
+      "input": 3,
+      "output": 8,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 686,
+      "cacheReadInput": 57233
+    },
+    {
+      "turn": 8,
+      "input": 1,
+      "output": 58,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 553,
+      "cacheReadInput": 57919
+    },
+    {
+      "turn": 8,
+      "input": 1,
+      "output": 48,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 198,
+      "cacheReadInput": 58472
+    },
+    {
+      "turn": 9,
+      "input": 1,
+      "output": 1,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 324,
+      "cacheReadInput": 58670
+    },
+    {
+      "turn": 9,
+      "input": 167,
+      "output": 11320,
+      "diagnosticStatus": "complete",
+      "vendor": "claude",
+      "model": "claude-sonnet-4-6",
+      "cacheCreationInput": 37905,
+      "cacheReadInput": 683842
+    }
+  ],
+  "toolCalls": [
+    {
+      "turn": 1,
+      "tool": "Glob",
+      "input": {
+        "pattern": "src/**/*.ts"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 1,
+      "tool": "Glob",
+      "input": {
+        "pattern": "src/**/*.tsx"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 1,
+      "tool": "Read",
+      "input": {
+        "file_path": "C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse\\src\\lib\\types.ts"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 1,
+      "tool": "Read",
+      "input": {
+        "file_path": "C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse\\src\\lib\\mock-data.ts"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 2,
+      "tool": "Read",
+      "input": {
+        "file_path": "C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse\\src\\components\\GapAnalysis.tsx"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 2,
+      "tool": "Read",
+      "input": {
+        "file_path": "C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse\\src\\components\\GapAnalysis.test.tsx"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 3,
+      "tool": "Read",
+      "input": {
+        "file_path": "C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse\\src\\test\\setup.ts"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 3,
+      "tool": "Read",
+      "input": {
+        "file_path": "C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse\\src\\components\\StatCards.test.tsx"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 4,
+      "tool": "Read",
+      "input": {
+        "file_path": "C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse\\package.json"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 5,
+      "tool": "Bash",
+      "input": {
+        "command": "cd \"C:/Users/steve/dev/Claude CoWork/portfolio-pulse\" && npm test 2>&1",
+        "description": "Run existing tests to confirm clean baseline"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 6,
+      "tool": "Write",
+      "input": {
+        "file_path": "C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse\\src\\lib\\gap-detection.ts",
+        "content": "import type { Task, ActivityEvent, GapItem, GapSeverity } from \"./types\";\n\nconst NEGLECT_THRESHOLD_DAYS = 3;\n\nfunction daysSince(isoDate: string, now: Date): number {\n  return (now.getTime() - new Date(isoDate).getTime()) / (1000 * 60 * 60 * 24);\n}\n\nfunction priorityToSeverity(priority: Task[\"priority\"]): GapSeverity {\n  if (priority === \"high\") return \"danger\";\n  if (priority === \"medium\") return \"warning\";\n  return \"info\";\n}\n\nexport function detectGaps(\n  tasks: Task[],\n  activity: ActivityEvent[],\n  now: Date = new Date()\n): GapItem[] {\n  const gaps: GapItem[] = [];\n\n  // Build taskId → most recent matched activity timestamp\n  const latestActivityByTask = new Map<string, string>();\n  for (const event of activity) {\n    if (event.matchedTaskId) {\n      const existing = latestActivityByTask.get(event.matchedTaskId);\n      if (!existing || event.timestamp > existing) {\n        latestActivityByTask.set(event.matchedTaskId, event.timestamp);\n      }\n    }\n  }\n\n  // Neglected: active tasks with no recent activity\n  for (const task of tasks) {\n    if (task.status === \"done\" || task.status === \"blocked\") continue;\n\n    const latestActivity = latestActivityByTask.get(task.id) ?? task.lastActivity;\n    const projectName = task.project ?? task.title;\n\n    if (!latestActivity) {\n      gaps.push({\n        type: \"neglected\",\n        label: `${projectName} has no activity yet`,\n        detail: `No activity found for \"${task.title}\". This is a ${task.priority}-priority task with no recorded progress.`,\n        severity: priorityToSeverity(task.priority),\n        relatedTaskId: task.id,\n      });\n    } else if (daysSince(latestActivity, now) >= NEGLECT_THRESHOLD_DAYS) {\n      const days = Math.floor(daysSince(latestActivity, now));\n      gaps.push({\n        type: \"neglected\",\n        label: `${projectName} has no activity in ${days} days`,\n        detail: `Last activity was ${days} days ago. \"${task.title}\" is a ${task.priority}-priority task with no recent progress.`,\n        severity: priorityToSeverity(task.priority),\n        relatedTaskId: task.id,\n      });\n    }\n  }\n\n  // Unplanned: activity with no matched task, grouped by repo\n  const unplannedByRepo = new Map<string, ActivityEvent[]>();\n  for (const event of activity) {\n    if (!event.matchedTaskId) {\n      const list = unplannedByRepo.get(event.repo) ?? [];\n      list.push(event);\n      unplannedByRepo.set(event.repo, list);\n    }\n  }\n\n  for (const [repo, events] of unplannedByRepo) {\n    const count = events.length;\n    gaps.push({\n      type: \"unplanned\",\n      label: `${count} untracked ${count === 1 ? \"event\" : \"events\"} on ${repo}`,\n      detail: `Recent activity on \"${repo}\" doesn't match any tracked task. Consider adding a task or linking this work.`,\n      severity: \"info\",\n    });\n  }\n\n  return gaps;\n}\n"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 7,
+      "tool": "Write",
+      "input": {
+        "file_path": "C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse\\src\\lib\\gap-detection.test.ts",
+        "content": "import { describe, it, expect } from \"vitest\";\nimport { detectGaps } from \"./gap-detection\";\nimport type { Task, ActivityEvent } from \"./types\";\n\nconst NOW = new Date(\"2026-06-12T12:00:00Z\");\n\nconst makeTask = (overrides: Partial<Task>): Task => ({\n  id: \"t1\",\n  title: \"Test Task\",\n  source: \"notion\",\n  status: \"todo\",\n  priority: \"medium\",\n  ...overrides,\n});\n\nconst makeActivity = (overrides: Partial<ActivityEvent>): ActivityEvent => ({\n  id: \"a1\",\n  type: \"commit\",\n  title: \"Some commit\",\n  repo: \"test-repo\",\n  timestamp: \"2026-06-12T10:00:00Z\",\n  ...overrides,\n});\n\ndescribe(\"detectGaps\", () => {\n  describe(\"neglected tasks\", () => {\n    it(\"flags a task with no lastActivity and no matching events\", () => {\n      const task = makeTask({ id: \"t1\", status: \"todo\", priority: \"high\", project: \"MyProject\" });\n      const gaps = detectGaps([task], [], NOW);\n      expect(gaps).toHaveLength(1);\n      expect(gaps[0].type).toBe(\"neglected\");\n      expect(gaps[0].relatedTaskId).toBe(\"t1\");\n    });\n\n    it(\"flags a task whose lastActivity is 3+ days ago\", () => {\n      const task = makeTask({\n        id: \"t1\",\n        status: \"in_progress\",\n        priority: \"high\",\n        lastActivity: \"2026-06-08T00:00:00Z\",\n      });\n      const gaps = detectGaps([task], [], NOW);\n      expect(gaps).toHaveLength(1);\n      expect(gaps[0].type).toBe(\"neglected\");\n      expect(gaps[0].label).toContain(\"4 days\");\n    });\n\n    it(\"flags a task at exactly the 3-day threshold\", () => {\n      const task = makeTask({\n        id: \"t1\",\n        status: \"todo\",\n        lastActivity: \"2026-06-09T12:00:00Z\",\n      });\n      const gaps = detectGaps([task], [], NOW);\n      expect(gaps).toHaveLength(1);\n      expect(gaps[0].type).toBe(\"neglected\");\n    });\n\n    it(\"does not flag a task active within the last 3 days\", () => {\n      const task = makeTask({\n        id: \"t1\",\n        status: \"in_progress\",\n        lastActivity: \"2026-06-11T00:00:00Z\",\n      });\n      const gaps = detectGaps([task], [], NOW);\n      expect(gaps).toHaveLength(0);\n    });\n\n    it(\"uses matched activity event when more recent than lastActivity\", () => {\n      const task = makeTask({\n        id: \"t1\",\n        status: \"in_progress\",\n        lastActivity: \"2026-06-08T00:00:00Z\",\n      });\n      const activity = makeActivity({\n        timestamp: \"2026-06-11T00:00:00Z\",\n        matchedTaskId: \"t1\",\n      });\n      const gaps = detectGaps([task], [activity], NOW);\n      expect(gaps).toHaveLength(0);\n    });\n\n    it(\"uses the most recent of multiple matching events\", () => {\n      const task = makeTask({ id: \"t1\", status: \"in_progress\" });\n      const activities = [\n        makeActivity({ id: \"a1\", timestamp: \"2026-06-01T00:00:00Z\", matchedTaskId: \"t1\" }),\n        makeActivity({ id: \"a2\", timestamp: \"2026-06-11T00:00:00Z\", matchedTaskId: \"t1\" }),\n      ];\n      const gaps = detectGaps([task], activities, NOW);\n      expect(gaps).toHaveLength(0);\n    });\n\n    it(\"maps high priority to danger severity\", () => {\n      const task = makeTask({ priority: \"high\", status: \"todo\" });\n      const gaps = detectGaps([task], [], NOW);\n      expect(gaps[0].severity).toBe(\"danger\");\n    });\n\n    it(\"maps medium priority to warning severity\", () => {\n      const task = makeTask({ priority: \"medium\", status: \"todo\" });\n      const gaps = detectGaps([task], [], NOW);\n      expect(gaps[0].severity).toBe(\"warning\");\n    });\n\n    it(\"maps low priority to info severity\", () => {\n      const task = makeTask({ priority: \"low\", status: \"todo\" });\n      const gaps = detectGaps([task], [], NOW);\n      expect(gaps[0].severity).toBe(\"info\");\n    });\n\n    it(\"maps none priority to info severity\", () => {\n      const task = makeTask({ priority: \"none\", status: \"todo\" });\n      const gaps = detectGaps([task], [], NOW);\n      expect(gaps[0].severity).toBe(\"info\");\n    });\n\n    it(\"skips done tasks\", () => {\n      const task = makeTask({ status: \"done\" });\n      const gaps = detectGaps([task], [], NOW);\n      expect(gaps).toHaveLength(0);\n    });\n\n    it(\"skips blocked tasks\", () => {\n      const task = makeTask({ status: \"blocked\" });\n      const gaps = detectGaps([task], [], NOW);\n      expect(gaps).toHaveLength(0);\n    });\n\n    it(\"includes relatedTaskId on neglected gap\", () => {\n      const task = makeTask({ id: \"task-abc\", status: \"todo\" });\n      const gaps = detectGaps([task], [], NOW);\n      expect(gaps[0].relatedTaskId).toBe(\"task-abc\");\n    });\n\n    it(\"uses project name in the label when available\", () => {\n      const task = makeTask({ status: \"todo\", project: \"MyProject\" });\n      const gaps = detectGaps([task], [], NOW);\n      expect(gaps[0].label).toContain(\"MyProject\");\n    });\n\n    it(\"falls back to task title in the label when project is absent\", () => {\n      const task = makeTask({ status: \"todo\", title: \"My Task Title\", project: undefined });\n      const gaps = detectGaps([task], [], NOW);\n      expect(gaps[0].label).toContain(\"My Task Title\");\n    });\n  });\n\n  describe(\"unplanned work\", () => {\n    it(\"flags activity with no matched task\", () => {\n      const activity = makeActivity({ repo: \"some-repo\" });\n      const gaps = detectGaps([], [activity], NOW);\n      expect(gaps).toHaveLength(1);\n      expect(gaps[0].type).toBe(\"unplanned\");\n      expect(gaps[0].label).toContain(\"some-repo\");\n    });\n\n    it(\"groups unplanned events by repo\", () => {\n      const activities = [\n        makeActivity({ id: \"a1\", repo: \"repo-a\" }),\n        makeActivity({ id: \"a2\", repo: \"repo-a\" }),\n        makeActivity({ id: \"a3\", repo: \"repo-b\" }),\n      ];\n      const gaps = detectGaps([], activities, NOW);\n      const unplanned = gaps.filter((g) => g.type === \"unplanned\");\n      expect(unplanned).toHaveLength(2);\n      const repoA = unplanned.find((g) => g.label.includes(\"repo-a\"));\n      expect(repoA?.label).toContain(\"2 untracked events\");\n    });\n\n    it(\"uses singular 'event' for a single unmatched activity\", () => {\n      const activity = makeActivity({ repo: \"solo-repo\" });\n      const gaps = detectGaps([], [activity], NOW);\n      expect(gaps[0].label).toContain(\"1 untracked event\");\n    });\n\n    it(\"does not flag activity that is matched to a task\", () => {\n      const activity = makeActivity({ matchedTaskId: \"t1\" });\n      const gaps = detectGaps([], [activity], NOW);\n      expect(gaps.filter((g) => g.type === \"unplanned\")).toHaveLength(0);\n    });\n\n    it(\"assigns info severity to unplanned gaps\", () => {\n      const activity = makeActivity({ repo: \"some-repo\" });\n      const gaps = detectGaps([], [activity], NOW);\n      expect(gaps[0].severity).toBe(\"info\");\n    });\n\n    it(\"does not include relatedTaskId on unplanned gaps\", () => {\n      const activity = makeActivity({ repo: \"some-repo\" });\n      const gaps = detectGaps([], [activity], NOW);\n      expect(gaps[0].relatedTaskId).toBeUndefined();\n    });\n  });\n\n  describe(\"return type and shape\", () => {\n    it(\"returns empty array when no tasks or activity\", () => {\n      expect(detectGaps([], [], NOW)).toEqual([]);\n    });\n\n    it(\"returns empty array when all tasks are done with no unplanned activity\", () => {\n      const task = makeTask({ status: \"done\" });\n      const activity = makeActivity({ matchedTaskId: \"t1\" });\n      expect(detectGaps([task], [activity], NOW)).toEqual([]);\n    });\n\n    it(\"each gap item has required fields\", () => {\n      const task = makeTask({ status: \"todo\" });\n      const gaps = detectGaps([task], [], NOW);\n      expect(gaps[0]).toMatchObject({\n        type: expect.any(String),\n        label: expect.any(String),\n        detail: expect.any(String),\n        severity: expect.any(String),\n      });\n    });\n\n    it(\"returns both neglected and unplanned gaps together\", () => {\n      const task = makeTask({ id: \"t1\", status: \"todo\" });\n      const activity = makeActivity({ repo: \"other-repo\" });\n      const gaps = detectGaps([task], [activity], NOW);\n      expect(gaps.some((g) => g.type === \"neglected\")).toBe(true);\n      expect(gaps.some((g) => g.type === \"unplanned\")).toBe(true);\n    });\n  });\n});\n"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 7,
+      "tool": "Bash",
+      "input": {
+        "command": "cd \"C:/Users/steve/dev/Claude CoWork/portfolio-pulse\" && npm test 2>&1",
+        "description": "Run all tests including new gap detection tests"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 8,
+      "tool": "ToolSearch",
+      "input": {
+        "query": "select:mcp__rex__update_task_status,mcp__rex__append_log",
+        "max_results": 2
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 8,
+      "tool": "mcp__rex__update_task_status",
+      "input": {
+        "id": "bd852929-d43f-4b9e-9585-b468896b93b0",
+        "status": "completed",
+        "resolutionType": "code-change",
+        "resolutionDetail": "Created src/lib/gap-detection.ts with detectGaps function and 25 passing tests in gap-detection.test.ts"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 8,
+      "tool": "mcp__rex__append_log",
+      "input": {
+        "event": "task_completed",
+        "itemId": "bd852929-d43f-4b9e-9585-b468896b93b0",
+        "detail": "Implemented detectGaps(tasks, activity, now) in src/lib/gap-detection.ts. Neglected detection: skips done/blocked tasks, uses most-recent matched activity event vs task.lastActivity, flags at 3+ day threshold, maps priority→severity (high→danger, medium→warning, low→info). Unplanned detection: groups activity with no matchedTaskId by repo, always severity info. Injected now: Date param for testability. 25 tests cover threshold boundary, severity mapping, grouping, skipped statuses, and mixed output."
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 8,
+      "tool": "Bash",
+      "input": {
+        "command": "cd \"C:/Users/steve/dev/Claude CoWork/portfolio-pulse\" && git add src/lib/gap-detection.ts src/lib/gap-detection.test.ts",
+        "description": "Stage new gap detection files"
+      },
+      "output": "",
+      "durationMs": 0
+    },
+    {
+      "turn": 8,
+      "tool": "Write",
+      "input": {
+        "file_path": "C:\\Users\\steve\\dev\\Claude CoWork\\portfolio-pulse\\.hench-commit-msg.txt",
+        "content": "feat: add gap detection logic for neglected tasks and unplanned work\n\nImplements detectGaps(tasks, activity, now) in src/lib/gap-detection.ts:\n- Neglected: flags active (non-done, non-blocked) tasks with no activity\n  in 3+ days; uses matched ActivityEvent timestamps when more recent than\n  task.lastActivity; maps priority → severity (high→danger, medium→warning,\n  low/none→info)\n- Unplanned: groups activity events with no matchedTaskId by repo; always\n  severity info\n- Injects `now: Date` for deterministic testing\n\n25 tests in gap-detection.test.ts cover threshold boundary, severity\nmapping, grouping, skipped statuses, and mixed output.\n"
+      },
+      "output": "",
+      "durationMs": 0
+    }
+  ],
+  "model": "claude-sonnet-4-6",
+  "invocationContext": "cli",
+  "vendor": "claude",
+  "weight": "standard",
+  "diagnostics": {
+    "tokenDiagnosticStatus": "complete",
+    "parseMode": "stream-json",
+    "notes": [],
+    "vendor": "claude",
+    "sandbox": "workspace-write",
+    "approvals": "never",
+    "promptSections": [
+      {
+        "name": "system",
+        "byteLength": 1678
+      },
+      {
+        "name": "brief",
+        "byteLength": 4362
+      }
+    ]
+  },
+  "lastActivityAt": "2026-06-12T17:41:51.562Z",
+  "tokens": {
+    "input": 512,
+    "output": 12007,
+    "cached": 2344971,
+    "total": 2357490
+  },
+  "summary": "**Done.** Created `src/lib/gap-detection.ts` with:\n\n- **`detectGaps(tasks, activity, now?)`** — pure function with injectable `now: Date` for testability\n- **Neglected detection**: skips `done`/`blocked` tasks; resolves each task's most recent activity from matched `ActivityEvent` timestamps (preferred) or `task.lastActivity` (fallback); flags at the 3-day threshold; maps priority → severity (`high`→`danger`, `medium`→`warning`, `low`/`none`→`info`)\n- **Unplanned detection**: collects events wit",
+  "structuredSummary": {
+    "filesChanged": [
+      ".rex/prd_tree/gap-analysis-engine/build-gap-detection-logic-bd8529.md",
+      ".rex/prd_tree/gap-analysis-engine/index.md",
+      ".rex/prd_tree/notion-integration/create-api-notion-tasks-api-a973d2.md",
+      "src/lib/gap-detection.test.ts",
+      "src/lib/gap-detection.ts"
+    ],
+    "filesRead": [],
+    "commandsExecuted": [],
+    "testsRun": [],
+    "counts": {
+      "filesRead": 0,
+      "filesChanged": 5,
+      "commandsExecuted": 0,
+      "testsRun": 0,
+      "toolCallsTotal": 18
+    },
+    "fileChangesWithStatus": [
+      "M\t.rex/prd_tree/gap-analysis-engine/build-gap-detection-logic-bd8529.md",
+      "M\t.rex/prd_tree/gap-analysis-engine/index.md",
+      "M\t.rex/prd_tree/notion-integration/create-api-notion-tasks-api-a973d2.md",
+      "A\tsrc/lib/gap-detection.test.ts",
+      "A\tsrc/lib/gap-detection.ts"
+    ]
+  },
+  "memoryStats": {
+    "peakRssBytes": 103383040,
+    "systemAvailableAtStartBytes": 9409900544,
+    "systemAvailableAtEndBytes": 9506123776,
+    "systemTotalBytes": 34040307712
+  },
+  "testGate": {
+    "ran": false,
+    "passed": true,
+    "packages": [],
+    "skipReason": "No files modified in prior phases"
+  },
+  "finishedAt": "2026-06-12T17:41:51.562Z"
+}

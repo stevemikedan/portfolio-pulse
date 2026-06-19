@@ -1,0 +1,7 @@
+title,status,priority,project,dueDate,tags
+Build login page,in_progress,high,MyApp,2026-06-20,frontend;auth
+Write API docs,todo,medium,MyApp,,documentation
+Fix auth bug,blocked,high,MyApp,2026-06-15,backend;auth
+Deploy to staging,todo,low,MyApp,,devops
+Code review backlog,todo,medium,MyApp,,review
+Update dependencies,todo,low,MyApp,,maintenance;devops
