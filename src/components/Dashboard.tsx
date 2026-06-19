@@ -6,6 +6,7 @@ import { useActivity } from '@/hooks/useActivity';
 import { useGitHub } from '@/hooks/useGitHub';
 import { detectGaps } from '@/lib/gap-detection';
 import { AppHeader, type SourceStatus } from './AppHeader';
+import { ProjectFilter } from './ProjectFilter';
 import { StatCards } from './StatCards';
 import { AssignmentsList } from './AssignmentsList';
 import { ActivityFeed } from './ActivityFeed';
@@ -26,10 +27,12 @@ export function Dashboard() {
     const uniqueGitHub = githubTasks.filter((t) => !localIds.has(t.id));
     return [...localTasks, ...uniqueGitHub];
   }, [localTasks, githubTasks]);
-  // undefined = form closed · null = creating a new task · Task = editing that task
+
   const [formTask, setFormTask] = useState<Task | null | undefined>(undefined);
   const [lastUpdated, setLastUpdated] = useState<Date | null>(null);
   const [refreshing, setRefreshing] = useState(false);
+  const [selectedProjects, setSelectedProjects] = useState<string[]>([]);
+  const [showSettings, setShowSettings] = useState(false);
 
   useEffect(() => {
     if (!loading) setLastUpdated(new Date());
@@ -42,20 +45,48 @@ export function Dashboard() {
     setLastUpdated(new Date());
   }, [refreshTasks, refreshActivity, refreshGitHub]);
 
-  const stats = useMemo(() => {
-    const totalTasks = tasks.length;
-    const inProgress = tasks.filter((t) => t.status === 'in_progress').length;
-    const now = new Date();
-    const overdue = tasks.filter(
-      (t) => t.dueDate && new Date(t.dueDate) < now && t.status !== 'done'
-    ).length;
-    const done = tasks.filter((t) => t.status === 'done').length;
-    const finishRate = totalTasks > 0 ? done / totalTasks : 0;
-    const activeRepos = new Set(tasks.map((t) => t.project).filter(Boolean)).size;
-    return { totalTasks, inProgress, overdue, finishRate, activeRepos };
+  // Sorted unique project list derived from all tasks
+  const projects = useMemo(() => {
+    const names = [...new Set(tasks.map((t) => t.project).filter(Boolean) as string[])];
+    return names.sort((a, b) => a.localeCompare(b));
   }, [tasks]);
 
-  const gaps = useMemo(() => detectGaps(tasks, activity), [tasks, activity]);
+  // Task count per project for the filter badges
+  const taskCounts = useMemo(() => {
+    const counts: Record<string, number> = {};
+    for (const t of tasks) {
+      if (t.project) counts[t.project] = (counts[t.project] ?? 0) + 1;
+    }
+    return counts;
+  }, [tasks]);
+
+  // Filtered tasks — when no project selected, show all
+  const filteredTasks = useMemo(() => {
+    if (selectedProjects.length === 0) return tasks;
+    return tasks.filter((t) => t.project && selectedProjects.includes(t.project));
+  }, [tasks, selectedProjects]);
+
+  // Filtered activity — match repo name against selected projects (case-insensitive)
+  const filteredActivity = useMemo(() => {
+    if (selectedProjects.length === 0) return activity;
+    const lower = selectedProjects.map((p) => p.toLowerCase());
+    return activity.filter((a) => lower.some((p) => a.repo.toLowerCase().includes(p) || p.includes(a.repo.toLowerCase())));
+  }, [activity, selectedProjects]);
+
+  const stats = useMemo(() => {
+    const totalTasks = filteredTasks.length;
+    const inProgress = filteredTasks.filter((t) => t.status === 'in_progress').length;
+    const now = new Date();
+    const overdue = filteredTasks.filter(
+      (t) => t.dueDate && new Date(t.dueDate) < now && t.status !== 'done'
+    ).length;
+    const done = filteredTasks.filter((t) => t.status === 'done').length;
+    const finishRate = totalTasks > 0 ? done / totalTasks : 0;
+    const activeRepos = new Set(filteredTasks.map((t) => t.project).filter(Boolean)).size;
+    return { totalTasks, inProgress, overdue, finishRate, activeRepos };
+  }, [filteredTasks]);
+
+  const gaps = useMemo(() => detectGaps(filteredTasks, filteredActivity), [filteredTasks, filteredActivity]);
 
   const sources: SourceStatus[] = useMemo(() => {
     const hasLocal = activity.some((a) => a.id?.startsWith('local-'));
@@ -102,7 +133,35 @@ export function Dashboard() {
     );
   } else {
     body = (
-      <div className="space-y-6">
+      <div className="space-y-5">
+        {/* Project filter */}
+        <div className="flex items-center justify-between gap-4">
+          <ProjectFilter
+            projects={projects}
+            taskCounts={taskCounts}
+            selected={selectedProjects}
+            onChange={setSelectedProjects}
+          />
+          <button
+            type="button"
+            onClick={() => setShowSettings((s) => !s)}
+            title="Configure sources"
+            className={`flex-shrink-0 text-xs px-2.5 py-1 rounded-lg border transition-colors ${
+              showSettings
+                ? 'border-[var(--text-3)] text-[var(--text-2)] bg-[var(--bg-hover)]'
+                : 'border-[var(--border)] text-[var(--text-3)] hover:text-[var(--text-2)]'
+            }`}
+          >
+            ⚙ Settings
+          </button>
+        </div>
+
+        {showSettings && (
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+            <LocalRepoPicker onSave={refreshAll} />
+          </div>
+        )}
+
         <StatCards
           totalTasks={stats.totalTasks}
           inProgress={stats.inProgress}
@@ -110,17 +169,17 @@ export function Dashboard() {
           finishRate={stats.finishRate}
           activeRepos={stats.activeRepos}
         />
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <AssignmentsList
-            tasks={tasks}
+            tasks={filteredTasks}
             onNew={() => setFormTask(null)}
             onOpen={(t) => setFormTask(t)}
             headerActions={<CsvImport onSuccess={refreshAll} />}
           />
-          <ActivityFeed events={activity} />
+          <ActivityFeed events={filteredActivity} />
           <GapAnalysis gaps={gaps} />
-          <RhythmChart activity={activity} />
-          <LocalRepoPicker onSave={refreshAll} />
+          <RhythmChart activity={filteredActivity} />
         </div>
       </div>
     );
